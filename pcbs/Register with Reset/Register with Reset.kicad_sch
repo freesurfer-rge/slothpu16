@@ -4,6 +4,10 @@
 	(generator_version "8.0")
 	(uuid "518ea264-7f8b-4a98-ab9e-5523ed4f7eb7")
 	(paper "A4")
+	(title_block
+		(title "16-bit Register with Reset")
+		(rev "0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
 			(pin_names
