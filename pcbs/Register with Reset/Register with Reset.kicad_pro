@@ -606,6 +606,10 @@
     [
       "967a550f-1e18-40e4-a1fc-58b31cabef02",
       "Register 1"
+    ],
+    [
+      "6357b20c-1026-44d1-bccd-d9d2e34091b0",
+      "ResetLogic"
     ]
   ],
   "text_variables": {}
