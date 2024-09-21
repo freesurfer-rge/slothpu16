@@ -2120,6 +2120,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 34.29) (xy 269.24 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373e6d2e-cc06-46fc-ae0e-55db6c5d3a90")
+	)
+	(wire
+		(pts
 			(xy 128.27 125.73) (xy 128.27 129.54)
 		)
 		(stroke
@@ -3230,16 +3240,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 34.29) (xy 269.24 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8723d39-c750-4ccc-b541-0c5b89e8c87c")
-	)
-	(wire
-		(pts
 			(xy 132.08 74.93) (xy 132.08 81.28)
 		)
 		(stroke
@@ -3486,7 +3486,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 95.25 0)
+		(at 196.85 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3495,7 +3495,7 @@
 		(fields_autoplaced yes)
 		(uuid "0046d0af-67a6-40a0-9bfd-bdc38c1e0daf")
 		(property "Reference" "R314"
-			(at 199.39 93.9799 0)
+			(at 199.39 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3504,7 +3504,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 199.39 96.5199 0)
+			(at 199.39 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3513,7 +3513,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 195.072 95.25 90)
+			(at 195.072 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,7 +3522,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 196.85 95.25 0)
+			(at 196.85 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +3531,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 196.85 95.25 0)
+			(at 196.85 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3540,7 +3540,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 196.85 95.25 0)
+			(at 196.85 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,7 +3780,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 166.37 80.01 90)
+		(at 166.37 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3789,7 +3789,7 @@
 		(fields_autoplaced yes)
 		(uuid "27b3710d-777b-48bb-be16-6f7597cdd6a4")
 		(property "Reference" "D303"
-			(at 170.18 80.3274 90)
+			(at 170.18 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3798,7 +3798,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 170.18 82.8674 90)
+			(at 170.18 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +3807,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 166.37 80.01 0)
+			(at 166.37 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +3816,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 166.37 80.01 0)
+			(at 166.37 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,7 +3825,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 166.37 80.01 0)
+			(at 166.37 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3834,7 +3834,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 166.37 80.01 90)
+			(at 166.37 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4003,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 217.17 95.25 0)
+		(at 217.17 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4012,7 +4012,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d4e8972-eaa0-42e8-bcf7-b8a50faf6f23")
 		(property "Reference" "R316"
-			(at 219.71 93.9799 0)
+			(at 219.71 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +4021,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 219.71 96.5199 0)
+			(at 219.71 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +4030,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 215.392 95.25 90)
+			(at 215.392 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +4039,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 217.17 95.25 0)
+			(at 217.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +4048,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 217.17 95.25 0)
+			(at 217.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +4057,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 217.17 95.25 0)
+			(at 217.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4086,7 +4086,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 186.69 80.01 90)
+		(at 186.69 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4095,7 +4095,7 @@
 		(fields_autoplaced yes)
 		(uuid "33dce751-90a8-4256-8c30-c08d00dca9d1")
 		(property "Reference" "D305"
-			(at 190.5 80.3274 90)
+			(at 190.5 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4104,7 +4104,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 190.5 82.8674 90)
+			(at 190.5 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +4113,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 186.69 80.01 0)
+			(at 186.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4122,7 +4122,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 186.69 80.01 0)
+			(at 186.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +4131,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 186.69 80.01 0)
+			(at 186.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +4140,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 186.69 80.01 90)
+			(at 186.69 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4322,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 156.21 95.25 0)
+		(at 156.21 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4331,7 +4331,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e9ace8f-bf0b-4326-b7b5-6d9953126161")
 		(property "Reference" "R310"
-			(at 158.75 93.9799 0)
+			(at 158.75 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +4340,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 158.75 96.5199 0)
+			(at 158.75 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,7 +4349,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 154.432 95.25 90)
+			(at 154.432 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,7 +4358,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 156.21 95.25 0)
+			(at 156.21 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +4367,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 156.21 95.25 0)
+			(at 156.21 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4376,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 156.21 95.25 0)
+			(at 156.21 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,7 +4475,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 95.25 0)
+		(at 147.32 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4484,7 +4484,7 @@
 		(fields_autoplaced yes)
 		(uuid "54e5cf49-901d-4360-a859-8b4a640f3612")
 		(property "Reference" "R309"
-			(at 149.86 93.9799 0)
+			(at 149.86 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4493,7 +4493,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 149.86 96.5199 0)
+			(at 149.86 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4502,7 +4502,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 145.542 95.25 90)
+			(at 145.542 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +4511,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 147.32 95.25 0)
+			(at 147.32 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4520,7 +4520,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 95.25 0)
+			(at 147.32 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +4529,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 147.32 95.25 0)
+			(at 147.32 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4628,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 166.37 95.25 0)
+		(at 166.37 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4637,7 +4637,7 @@
 		(fields_autoplaced yes)
 		(uuid "6123828a-a428-4da0-8c79-28391e9baf51")
 		(property "Reference" "R311"
-			(at 168.91 93.9799 0)
+			(at 168.91 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,7 +4646,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 168.91 96.5199 0)
+			(at 168.91 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4655,7 +4655,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 164.592 95.25 90)
+			(at 164.592 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +4664,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 166.37 95.25 0)
+			(at 166.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4673,7 +4673,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 166.37 95.25 0)
+			(at 166.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,7 +4682,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 166.37 95.25 0)
+			(at 166.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5030,7 +5030,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 176.53 80.01 90)
+		(at 176.53 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5039,7 +5039,7 @@
 		(fields_autoplaced yes)
 		(uuid "71da5c52-0ee1-44da-be4d-8996e42f2c22")
 		(property "Reference" "D304"
-			(at 180.34 80.3274 90)
+			(at 180.34 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +5048,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 180.34 82.8674 90)
+			(at 180.34 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5057,7 +5057,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 176.53 80.01 0)
+			(at 176.53 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5066,7 +5066,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 176.53 80.01 0)
+			(at 176.53 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5075,7 +5075,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 176.53 80.01 0)
+			(at 176.53 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5084,7 +5084,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 176.53 80.01 90)
+			(at 176.53 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5323,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 176.53 95.25 0)
+		(at 176.53 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5332,7 +5332,7 @@
 		(fields_autoplaced yes)
 		(uuid "92f4034f-9c12-4000-846f-03385b4305ac")
 		(property "Reference" "R312"
-			(at 179.07 93.9799 0)
+			(at 179.07 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5341,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 179.07 96.5199 0)
+			(at 179.07 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5350,7 +5350,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 174.752 95.25 90)
+			(at 174.752 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5359,7 +5359,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 176.53 95.25 0)
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5368,7 +5368,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 176.53 95.25 0)
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5377,7 +5377,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 176.53 95.25 0)
+			(at 176.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5631,7 +5631,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 186.69 95.25 0)
+		(at 186.69 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5640,7 +5640,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c515c80-5a4d-4081-918c-e7c4afe5f714")
 		(property "Reference" "R313"
-			(at 189.23 93.9799 0)
+			(at 189.23 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5649,7 +5649,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 189.23 96.5199 0)
+			(at 189.23 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5658,7 +5658,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 184.912 95.25 90)
+			(at 184.912 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5667,7 +5667,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 186.69 95.25 0)
+			(at 186.69 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5676,7 +5676,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 186.69 95.25 0)
+			(at 186.69 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,7 +5685,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 186.69 95.25 0)
+			(at 186.69 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5850,7 +5850,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 207.01 95.25 0)
+		(at 207.01 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5859,7 +5859,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3b71e0b-5b8c-44fa-811a-de3e8b3f6ffd")
 		(property "Reference" "R315"
-			(at 209.55 93.9799 0)
+			(at 209.55 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5868,7 +5868,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 209.55 96.5199 0)
+			(at 209.55 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5877,7 +5877,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 205.232 95.25 90)
+			(at 205.232 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5886,7 +5886,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
-			(at 207.01 95.25 0)
+			(at 207.01 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5895,7 +5895,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 207.01 95.25 0)
+			(at 207.01 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5904,7 +5904,7 @@
 			)
 		)
 		(property "LCSC" "C23162"
-			(at 207.01 95.25 0)
+			(at 207.01 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6016,7 +6016,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 196.85 80.01 90)
+		(at 196.85 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6025,7 +6025,7 @@
 		(fields_autoplaced yes)
 		(uuid "b70283ab-2c61-488d-9f39-4c87a1dd592a")
 		(property "Reference" "D306"
-			(at 200.66 80.3274 90)
+			(at 200.66 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6034,7 +6034,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 200.66 82.8674 90)
+			(at 200.66 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +6043,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 196.85 80.01 0)
+			(at 196.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6052,7 +6052,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 196.85 80.01 0)
+			(at 196.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6061,7 +6061,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 196.85 80.01 0)
+			(at 196.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6070,7 +6070,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 196.85 80.01 90)
+			(at 196.85 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6393,7 +6393,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 217.17 80.01 90)
+		(at 217.17 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6402,7 +6402,7 @@
 		(fields_autoplaced yes)
 		(uuid "d697fd96-2540-453e-9e3d-dfe0cd9ec997")
 		(property "Reference" "D308"
-			(at 220.98 80.3274 90)
+			(at 220.98 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6411,7 +6411,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 220.98 82.8674 90)
+			(at 220.98 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6420,7 +6420,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 217.17 80.01 0)
+			(at 217.17 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6429,7 +6429,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 217.17 80.01 0)
+			(at 217.17 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6438,7 +6438,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 217.17 80.01 0)
+			(at 217.17 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6447,7 +6447,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 217.17 80.01 90)
+			(at 217.17 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6476,7 +6476,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 207.01 80.01 90)
+		(at 207.01 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6485,7 +6485,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2263476-21b9-417a-b13b-263518b7299d")
 		(property "Reference" "D307"
-			(at 210.82 80.3274 90)
+			(at 210.82 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6494,7 +6494,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 210.82 82.8674 90)
+			(at 210.82 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6503,7 +6503,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 207.01 80.01 0)
+			(at 207.01 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,7 +6512,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 207.01 80.01 0)
+			(at 207.01 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +6521,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 207.01 80.01 0)
+			(at 207.01 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,7 +6530,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 207.01 80.01 90)
+			(at 207.01 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6559,7 +6559,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 156.21 80.01 90)
+		(at 156.21 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6568,7 +6568,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea2992e4-65c2-4a57-a9c8-588e344aedc8")
 		(property "Reference" "D302"
-			(at 160.02 80.3274 90)
+			(at 160.02 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6577,7 +6577,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 160.02 82.8674 90)
+			(at 160.02 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6586,7 +6586,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 156.21 80.01 0)
+			(at 156.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,7 +6595,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 156.21 80.01 0)
+			(at 156.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6604,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 156.21 80.01 0)
+			(at 156.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,7 +6613,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 156.21 80.01 90)
+			(at 156.21 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6862,7 +6862,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 147.32 80.01 90)
+		(at 147.32 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6871,7 +6871,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa6f8c73-8f03-450c-98bd-335b5181f70c")
 		(property "Reference" "D301"
-			(at 151.13 80.3274 90)
+			(at 151.13 95.5674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6880,7 +6880,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 151.13 82.8674 90)
+			(at 151.13 98.1074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6889,7 +6889,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 147.32 80.01 0)
+			(at 147.32 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6898,7 +6898,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2305091500_Hubei-KENTO-Elec-KT-0603W_C2290.pdf"
-			(at 147.32 80.01 0)
+			(at 147.32 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6907,7 +6907,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (White)"
-			(at 147.32 80.01 0)
+			(at 147.32 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6916,7 +6916,7 @@
 			)
 		)
 		(property "LCSC" "C2290"
-			(at 147.32 80.01 90)
+			(at 147.32 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
