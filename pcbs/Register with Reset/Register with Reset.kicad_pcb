@@ -4330,7 +4330,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D102"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "59f86334-49cd-4908-96dd-e345ed9eacfb")
@@ -4342,7 +4342,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "b03017f5-0f81-4076-afaa-54716db539a7")
 			(effects
@@ -4616,7 +4616,7 @@
 			(uuid "2c1f8812-1b5a-4c59-8319-e88825c2b9ae")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "dd60dd4c-4559-4c92-b473-acfc3007709c")
 			(effects
@@ -11270,7 +11270,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D101"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7ffc0ce4-4b35-4d75-91c3-7b7914d0f49d")
@@ -11282,7 +11282,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "60c3de4b-4e32-4992-935a-43e5f4abe0cf")
 			(effects
@@ -11556,7 +11556,7 @@
 			(uuid "5cea82dd-5269-4917-b71f-703eeaaa7f9e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "c4fe505c-9bdf-4d76-8883-7828b47bbad3")
 			(effects
@@ -16061,7 +16061,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R101"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0e6224a1-d1be-45c8-a677-4a98e94e296f")
@@ -16073,7 +16073,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4a49c33f-43f0-4043-a2c1-acb756d44909")
 			(effects
@@ -16241,7 +16241,7 @@
 			(uuid "bce8d618-8cae-4a15-89c7-c06f6fe0d3c1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e60a773a-b1fe-460a-a356-39f099fcb4d2")
 			(effects
@@ -20239,6 +20239,18 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "728ab395-7db2-4285-9877-4caf40dad4b5")
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 81.28 173.99 0)
+		(layer "B.SilkS")
+		(uuid "6bf11153-4bd2-48ba-8847-4b610eec0345")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left mirror)
+		)
 	)
 	(gr_text "64"
 		(at 162.56 116.84 0)

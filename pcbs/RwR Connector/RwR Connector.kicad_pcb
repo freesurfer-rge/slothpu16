@@ -2636,6 +2636,18 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 137.16 172.72 0)
+		(layer "B.SilkS")
+		(uuid "939f6907-4406-40be-b101-59919aa9b1f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "${TITLE}"
 		(at 106.68 170.18 90)
 		(layer "F.SilkS")
