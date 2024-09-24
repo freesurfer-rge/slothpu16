@@ -1930,12 +1930,6 @@
 		)
 	)
 	(junction
-		(at 223.52 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3acb3bdc-cda0-4c1b-8481-3fa1f7e3135a")
-	)
-	(junction
 		(at 224.79 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1952,6 +1946,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69564356-0822-4e62-84d3-cd063bbd4f7d")
+	)
+	(junction
+		(at 223.52 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74358dbd-458c-4ee7-8e58-e84a1f381378")
 	)
 	(junction
 		(at 190.5 59.69)
@@ -1995,6 +1995,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 46.99) (xy 229.87 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0156c96a-cd39-44d8-bfa8-0c26b74aea5f")
+	)
+	(wire
+		(pts
 			(xy 63.5 71.12) (xy 68.58 71.12)
 		)
 		(stroke
@@ -2022,6 +2032,16 @@
 			(type default)
 		)
 		(uuid "0b333049-24b8-4765-ab76-fa68fc338a12")
+	)
+	(wire
+		(pts
+			(xy 223.52 49.53) (xy 223.52 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cdeb842-b366-479b-9528-8e88dde81828")
 	)
 	(bus
 		(pts
@@ -2102,16 +2122,6 @@
 			(type default)
 		)
 		(uuid "1a8eef7b-0c1b-4137-9353-6c5b126f06bf")
-	)
-	(wire
-		(pts
-			(xy 165.1 49.53) (xy 223.52 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29f00b24-0a88-4108-9eb9-669e08fe4bc0")
 	)
 	(wire
 		(pts
@@ -2205,16 +2215,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 69.85) (xy 229.87 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4745c74e-315b-444f-be37-8181e256075e")
-	)
-	(wire
-		(pts
 			(xy 251.46 46.99) (xy 255.27 46.99)
 		)
 		(stroke
@@ -2302,16 +2302,6 @@
 			(type default)
 		)
 		(uuid "6ec0bf1d-e694-4be3-acf4-4eb5da9a26a1")
-	)
-	(wire
-		(pts
-			(xy 229.87 46.99) (xy 223.52 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ed5b81d-1d95-4032-8c52-b93a5517a3b2")
 	)
 	(wire
 		(pts
@@ -2455,7 +2445,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 49.53) (xy 223.52 69.85)
+			(xy 223.52 46.99) (xy 223.52 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2492,6 +2482,16 @@
 			(type default)
 		)
 		(uuid "acb1ede4-bea7-49dc-891f-6eb8ae01690a")
+	)
+	(wire
+		(pts
+			(xy 165.1 49.53) (xy 223.52 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9ea680-6079-4ddf-b956-8f1fbf9099e3")
 	)
 	(wire
 		(pts
@@ -2555,6 +2555,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 69.85) (xy 229.87 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dccc31b9-ea81-4d1f-bb97-f46c33a3994c")
+	)
+	(wire
+		(pts
 			(xy 63.5 76.2) (xy 68.58 76.2)
 		)
 		(stroke
@@ -2562,16 +2572,6 @@
 			(type default)
 		)
 		(uuid "e667882a-78c3-4542-8ac5-4263211f3216")
-	)
-	(wire
-		(pts
-			(xy 223.52 46.99) (xy 223.52 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec1e9f7f-89d0-4385-a6b4-dbbfbdbd8ae0")
 	)
 	(wire
 		(pts
@@ -4184,16 +4184,6 @@
 				(justify left top)
 			)
 		)
-		(pin "~{ZeroInput}" output
-			(at 165.1 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0cee15a7-3094-4c8d-b3b5-b16a3c0c424a")
-		)
 		(pin "~{RESET}" input
 			(at 137.16 55.88 180)
 			(effects
@@ -4213,6 +4203,16 @@
 				(justify right)
 			)
 			(uuid "ed08b3da-b8fd-46aa-8542-c0260729f9fa")
+		)
+		(pin "ZeroInput" output
+			(at 165.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "07c297c9-69c0-44c2-87d9-c9857ee628a8")
 		)
 		(instances
 			(project "Register with Reset"
@@ -4282,16 +4282,6 @@
 			)
 			(uuid "f2632b0d-c3e4-48c9-94bf-56e0d68397ee")
 		)
-		(pin "~{ZeroInput}" input
-			(at 229.87 69.85 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "edae281d-6684-4701-823f-7f46d1a24270")
-		)
 		(pin "RegClk" input
 			(at 229.87 72.39 180)
 			(effects
@@ -4301,6 +4291,16 @@
 				(justify left)
 			)
 			(uuid "220eb388-1d19-42a2-89e2-1d6165f4fe01")
+		)
+		(pin "ZeroInput" input
+			(at 229.87 69.85 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b058555d-539e-423a-aa2c-7374ff731fd1")
 		)
 		(instances
 			(project "Register with Reset"
@@ -4370,16 +4370,6 @@
 			)
 			(uuid "4ccfb4e4-65df-4f1f-a03b-00a82e0b38d6")
 		)
-		(pin "~{ZeroInput}" input
-			(at 229.87 46.99 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6e6ee84c-09bd-4d69-8131-a5e9a9e9c0ce")
-		)
 		(pin "RegClk" input
 			(at 229.87 49.53 180)
 			(effects
@@ -4389,6 +4379,16 @@
 				(justify left)
 			)
 			(uuid "94aee0de-d8b1-4c8a-be97-302132fce646")
+		)
+		(pin "ZeroInput" input
+			(at 229.87 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d4c038b1-a0cc-4637-8767-3ce3a85e365e")
 		)
 		(instances
 			(project "Register with Reset"

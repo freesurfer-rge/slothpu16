@@ -2090,12 +2090,6 @@
 		(uuid "4f954d7e-a9af-4e15-b237-e5cd760129a7")
 	)
 	(junction
-		(at 205.74 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "561a6fe1-84ff-4014-8f01-fc7cc1747fd8")
-	)
-	(junction
 		(at 195.58 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2162,10 +2156,6 @@
 	(no_connect
 		(at 39.37 162.56)
 		(uuid "d48b1ed3-2ead-4897-865f-e3768bb8f829")
-	)
-	(no_connect
-		(at 226.06 105.41)
-		(uuid "ddbf0785-eff3-4d53-a5b4-25c5bf9bc290")
 	)
 	(wire
 		(pts
@@ -2329,16 +2319,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 120.65) (xy 205.74 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4313e69f-8d54-42d6-8938-863b00435b3b")
-	)
-	(wire
-		(pts
 			(xy 25.4 53.34) (xy 35.56 53.34)
 		)
 		(stroke
@@ -2479,6 +2459,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82fe1368-3516-4bcf-be8b-9c23466abc3f")
+	)
+	(wire
+		(pts
 			(xy 144.78 55.88) (xy 152.4 55.88)
 		)
 		(stroke
@@ -2576,16 +2566,6 @@
 			(type default)
 		)
 		(uuid "afd3c827-1817-434a-ac87-306731245a3c")
-	)
-	(wire
-		(pts
-			(xy 205.74 105.41) (xy 210.82 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1e115bf-2466-42e7-a532-53b56605e500")
 	)
 	(wire
 		(pts
@@ -2831,9 +2811,9 @@
 		)
 		(uuid "a03724b3-bcd4-4051-a102-d432c9174278")
 	)
-	(hierarchical_label "~{ZeroInput}"
+	(hierarchical_label "ZeroInput"
 		(shape output)
-		(at 88.9 38.1 0)
+		(at 111.76 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4184,7 +4164,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 218.44 105.41 0)
+		(at 96.52 38.1 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4193,7 +4173,7 @@
 		(fields_autoplaced yes)
 		(uuid "677a05a6-2486-485b-b1a0-a547c96e1214")
 		(property "Reference" "U402"
-			(at 218.44 96.52 0)
+			(at 96.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +4181,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 218.44 99.06 0)
+			(at 96.52 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4189,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 218.44 105.41 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4198,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141851_Nexperia-74HC14D-653_C5605.pdf"
-			(at 218.44 105.41 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4207,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 218.44 105.41 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,7 +4216,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 218.44 105.41 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
