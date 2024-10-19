@@ -5,11 +5,12 @@ import pytest
 
 from rwr_connector_board import RWRConnectorBoard
 
-pwr_2 = [2**x for x in range(16)]
-pwr_2_off = [65535 - 2**x for x in range(16)]
-pwr_2_off_2 = [65536 - 2**x for x in range(16)]
+pwr_2 = [2 ** x for x in range(16)]
+pwr_2_off = [65535 - 2 ** x for x in range(16)]
+pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
 
 all_vals = pwr_2 + pwr_2_off + pwr_2_off_2
+
 
 class TestRWR:
     @pytest.mark.parametrize("target_value", all_vals)
