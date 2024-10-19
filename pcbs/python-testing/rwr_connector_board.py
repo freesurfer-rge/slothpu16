@@ -1,3 +1,5 @@
+import time
+
 from typing import Dict, List, Union
 
 import bitarray.util
@@ -54,8 +56,11 @@ class RWRConnectorBoard:
         converted = bitarray.util.int2ba(value, length=16, endian="little")
         for i, curr_bit in enumerate(converted):
             self._outputs[self.Output_Pins["RegIn"][i]] = curr_bit
+        self.send()
 
     def read_register(self) -> int:
+        time.sleep(0.01)
+        self.recv()
         vals = []
         for p in self.Input_Pins["RegOut"]:
             vals.append(self._inputs[p])
@@ -65,9 +70,13 @@ class RWRConnectorBoard:
 
     def Reset(self, value: bool):
         self._outputs[self.Output_Pins["Reset"]] = value
+        self.send()
+        time.sleep(0.1)
 
     def OE(self, value: bool):
         self._outputs[self.Output_Pins["OE"]] = value
+        self.send()
 
     def Clock(self, value: bool):
         self._outputs[self.Output_Pins["Clock"]] = value
+        self.send()
