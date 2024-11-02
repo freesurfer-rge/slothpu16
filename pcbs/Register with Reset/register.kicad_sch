@@ -2120,7 +2120,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 34.29) (xy 269.24 34.29)
+			(xy 264.16 67.31) (xy 269.24 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2280,7 +2280,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 22.86) (xy 251.46 26.67)
+			(xy 251.46 78.74) (xy 251.46 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2950,7 +2950,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 67.31) (xy 251.46 71.12)
+			(xy 251.46 34.29) (xy 251.46 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3040,7 +3040,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 36.83) (xy 267.97 36.83)
+			(xy 264.16 64.77) (xy 267.97 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3438,7 +3438,7 @@
 	)
 	(hierarchical_label "~{OE}"
 		(shape input)
-		(at 269.24 34.29 0)
+		(at 269.24 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3863,7 +3863,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 251.46 22.86 180)
+		(at 251.46 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3872,7 +3872,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a6dd800-7ff1-482f-a7fd-ed8369f58429")
 		(property "Reference" "#PWR0312"
-			(at 251.46 16.51 0)
+			(at 251.46 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,7 +3881,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 17.78 0)
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3889,7 +3889,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 22.86 0)
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3898,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 22.86 0)
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3907,7 +3907,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 251.46 22.86 0)
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3933,7 +3933,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 251.46 71.12 180)
+		(at 251.46 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3942,7 +3942,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cc98352-cebf-412f-ba5b-060bf99b8714")
 		(property "Reference" "#PWR0311"
-			(at 251.46 67.31 0)
+			(at 251.46 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3951,7 +3951,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 251.46 76.2 0)
+			(at 251.46 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3959,7 +3959,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 71.12 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,7 +3968,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 71.12 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,7 +3977,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 251.46 71.12 0)
+			(at 251.46 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5406,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 267.97 36.83 90)
+		(at 267.97 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5415,7 +5415,7 @@
 		(fields_autoplaced yes)
 		(uuid "996420ca-94bb-46b8-a435-b8407afc17ab")
 		(property "Reference" "#PWR0310"
-			(at 274.32 36.83 0)
+			(at 274.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5424,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 36.8299 90)
+			(at 271.78 64.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5433,7 +5433,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 267.97 36.83 0)
+			(at 267.97 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5442,7 +5442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 267.97 36.83 0)
+			(at 267.97 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +5451,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 267.97 36.83 0)
+			(at 267.97 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5714,7 +5714,8 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC245")
-		(at 251.46 46.99 180)
+		(at 251.46 54.61 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5722,7 +5723,7 @@
 		(dnp no)
 		(uuid "a2a0e6f5-adf0-42e0-aab8-6abffd6d84a8")
 		(property "Reference" "U303"
-			(at 249.2659 67.31 0)
+			(at 249.2659 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5731,7 +5732,7 @@
 			)
 		)
 		(property "Value" "74HC245"
-			(at 249.2659 64.77 0)
+			(at 249.2659 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5740,7 +5741,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
-			(at 251.46 46.99 0)
+			(at 251.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5749,7 +5750,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC245"
-			(at 251.46 46.99 0)
+			(at 251.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5758,7 +5759,7 @@
 			)
 		)
 		(property "Description" "Octal BUS Transceivers, 3-State outputs"
-			(at 251.46 46.99 0)
+			(at 251.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +5768,7 @@
 			)
 		)
 		(property "LCSC" "C5625"
-			(at 251.46 46.99 0)
+			(at 251.46 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
