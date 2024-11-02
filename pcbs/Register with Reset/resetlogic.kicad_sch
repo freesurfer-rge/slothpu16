@@ -3508,7 +3508,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 218.44 120.65 0)
+		(at 96.52 38.1 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3517,7 +3517,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d935000-fbd9-44a3-9e16-42b7693d78b2")
 		(property "Reference" "U402"
-			(at 218.44 111.76 0)
+			(at 96.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,7 +3525,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 218.44 114.3 0)
+			(at 96.52 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3533,7 +3533,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 218.44 120.65 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3542,7 +3542,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141851_Nexperia-74HC14D-653_C5605.pdf"
-			(at 218.44 120.65 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3551,7 +3551,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 218.44 120.65 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3560,7 +3560,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 218.44 120.65 0)
+			(at 96.52 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,7 +4188,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 96.52 38.1 0)
+		(at 218.44 120.65 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4197,7 +4197,7 @@
 		(fields_autoplaced yes)
 		(uuid "677a05a6-2486-485b-b1a0-a547c96e1214")
 		(property "Reference" "U402"
-			(at 96.52 29.21 0)
+			(at 218.44 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,7 +4205,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 96.52 31.75 0)
+			(at 218.44 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4213,7 +4213,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 96.52 38.1 0)
+			(at 218.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4222,7 +4222,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811141851_Nexperia-74HC14D-653_C5605.pdf"
-			(at 96.52 38.1 0)
+			(at 218.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4231,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 96.52 38.1 0)
+			(at 218.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4240,7 +4240,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 96.52 38.1 0)
+			(at 218.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
