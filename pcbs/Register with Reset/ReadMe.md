@@ -10,6 +10,4 @@ Notes:
 
 Errata:
 
-The CLK and RESET lines block each other, since the clock signal to the registers is the result of ORing the two (well, delay-inverted-output for RESET) together.
-
-In any future revision, board should be revised to remove this limitation (at least so that a high clock line doesn't block RESET).
+- The CLK and RESET lines block each other, since the clock signal to the registers is the result of ORing the two (well, delay-inverted-output for RESET) together. UPDATE for *r1*, the RESET and CLK lines are ANDed together to produce the 'clock' side of the reset, so a low on RESET will inhibit the clock, and should largely avoid this ssue.
