@@ -18,12 +18,9 @@ class TestRWR:
     @pytest.mark.parametrize("target_value", all_vals)
     def test_smoke(self, target_value: int):
         rwrcb = RWRConnectorBoard()
-        rwrcb.OE(False)
-        rwrcb.Reset(True)
 
         # Check we can write a value
         rwrcb.write_register(target_value)
-        rwrcb.Clock(False)
         rwrcb.Clock(True)
         rwrcb.Clock(False)
         assert rwrcb.read_register() == target_value
@@ -31,11 +28,8 @@ class TestRWR:
     @pytest.mark.parametrize("target_value", all_vals)
     def test_output_enable(self, target_value: int):
         rwrcb = RWRConnectorBoard()
-        rwrcb.OE(False)
-        rwrcb.Reset(True)
 
         rwrcb.write_register(target_value)
-        rwrcb.Clock(False)
         rwrcb.Clock(True)
         rwrcb.Clock(False)
 
@@ -48,16 +42,13 @@ class TestRWR:
     @pytest.mark.parametrize("target_value", all_vals)
     def test_reset(self, target_value: int):
         rwrcb = RWRConnectorBoard()
-        rwrcb.OE(False)
-        rwrcb.Reset(True)
 
         rwrcb.write_register(target_value)
-        rwrcb.Clock(False)
         rwrcb.Clock(True)
         rwrcb.Clock(False)
         assert rwrcb.read_register() == target_value
 
         # Check Reset line
-        rwrcb.Reset(False)
-        rwrcb.Reset(True)
+        rwrcb.Reset()
+        assert rwrcb.read_register() == 0
         assert rwrcb.read_register() == 0
