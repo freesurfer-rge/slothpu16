@@ -15,10 +15,8 @@ class RWRConnectorBoard:
         # Start with all outputs disabled
         self._tb.enable_outputs([False for _ in range(5)])
 
-        # Set all outputs low
-        self._outputs = [False for _ in range(self._tb.n_pins)]
-        # ... except for RESET
-        self.Reset(True)
+        # Set all outputs low except for Reset
+        self._outputs = [i == self.Output_Pins["Reset"] for i in range(self._tb.n_pins)]
         self.send()
         self._tb.enable_outputs([True for _ in range(5)])
 
@@ -59,7 +57,7 @@ class RWRConnectorBoard:
         self.send()
 
     def read_register(self) -> int:
-        time.sleep(0.01)
+        time.sleep(0.001)
         self.recv()
         vals = []
         for p in self.Input_Pins["RegOut"]:
@@ -68,10 +66,12 @@ class RWRConnectorBoard:
         value = bitarray.util.ba2int(bitarray.bitarray(vals, endian="little"))
         return value
 
-    def Reset(self, value: bool):
-        self._outputs[self.Output_Pins["Reset"]] = value
+    def Reset(self):
+        self._outputs[self.Output_Pins["Reset"]] = False
         self.send()
-        time.sleep(0.1)
+        time.sleep(0.5)
+        self._outputs[self.Output_Pins["Reset"]] = True
+        self.send()
 
     def OE(self, value: bool):
         self._outputs[self.Output_Pins["OE"]] = value
