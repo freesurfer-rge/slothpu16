@@ -16,7 +16,7 @@ class RWRConnectorBoard:
         self._tb.enable_outputs([False for _ in range(5)])
 
         # Set all outputs low except for Reset
-        self._outputs = [i==self.Output_Pins["Reset"] for i in range(self._tb.n_pins)]
+        self._outputs = [i == self.Output_Pins["Reset"] for i in range(self._tb.n_pins)]
         self.send()
         self._tb.enable_outputs([True for _ in range(5)])
 

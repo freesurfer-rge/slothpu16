@@ -8,10 +8,27 @@ from rwr_connector_board import RWRConnectorBoard
 pwr_2 = [2 ** x for x in range(16)]
 pwr_2_off = [65535 - 2 ** x for x in range(16)]
 pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
+other_vals = [
+    7,
+    13,
+    31,
+    49,
+    265,
+    877,
+    1399,
+    1451,
+    4013,
+    5869,
+    7919,
+    8512,
+    18181,
+    19937,
+    28657,
+    39119,
+    65001,
+]
 
-all_vals = pwr_2 + pwr_2_off + pwr_2_off_2
-
-# all_vals = [ 2**1 +2**3 +  2**5 + 2**9]
+all_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + other_vals
 
 
 class TestRWR:
@@ -50,5 +67,4 @@ class TestRWR:
 
         # Check Reset line
         rwrcb.Reset()
-        assert rwrcb.read_register() == 0
         assert rwrcb.read_register() == 0
