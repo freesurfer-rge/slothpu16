@@ -11,6 +11,8 @@ pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
 
 all_vals = pwr_2 + pwr_2_off + pwr_2_off_2
 
+# all_vals = [ 2**1 +2**3 +  2**5 + 2**9]
+
 
 class TestRWR:
     @pytest.mark.parametrize("target_value", all_vals)
@@ -26,10 +28,33 @@ class TestRWR:
         rwrcb.Clock(False)
         assert rwrcb.read_register() == target_value
 
+    @pytest.mark.parametrize("target_value", all_vals)
+    def test_output_enable(self, target_value: int):
+        rwrcb = RWRConnectorBoard()
+        rwrcb.OE(False)
+        rwrcb.Reset(True)
+
+        rwrcb.write_register(target_value)
+        rwrcb.Clock(False)
+        rwrcb.Clock(True)
+        rwrcb.Clock(False)
+
         # Check output enable
         rwrcb.OE(True)
         assert rwrcb.read_register() == 0
         rwrcb.OE(False)
+        assert rwrcb.read_register() == target_value
+
+    @pytest.mark.parametrize("target_value", all_vals)
+    def test_reset(self, target_value: int):
+        rwrcb = RWRConnectorBoard()
+        rwrcb.OE(False)
+        rwrcb.Reset(True)
+
+        rwrcb.write_register(target_value)
+        rwrcb.Clock(False)
+        rwrcb.Clock(True)
+        rwrcb.Clock(False)
         assert rwrcb.read_register() == target_value
 
         # Check Reset line
