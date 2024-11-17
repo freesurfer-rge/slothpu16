@@ -3570,7 +3570,7 @@
 		(path "/a5e8473b-daf9-4aac-a3fc-07460e301fab/263478a4-8fde-44c4-a0b6-40aa7a270906")
 		(sheetname "Increment 8 Bits (Upper)")
 		(sheetfile "inc8b.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -4563,7 +4563,7 @@
 		(path "/dbdce72a-8ed8-4374-817e-a3da56d07e21/263478a4-8fde-44c4-a0b6-40aa7a270906")
 		(sheetname "Increment 8 Bits (Lower)")
 		(sheetfile "inc8b.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -5768,7 +5768,7 @@
 		(path "/dbdce72a-8ed8-4374-817e-a3da56d07e21/97390062-bdc3-4e1f-969b-542609fc8d01")
 		(sheetname "Increment 8 Bits (Lower)")
 		(sheetfile "inc8b.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -11655,7 +11655,7 @@
 		(path "/a5e8473b-daf9-4aac-a3fc-07460e301fab/97390062-bdc3-4e1f-969b-542609fc8d01")
 		(sheetname "Increment 8 Bits (Upper)")
 		(sheetfile "inc8b.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
