@@ -11342,7 +11342,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D201"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a9bab8de-f9d5-4c4b-ad9e-3f9d698d88e9")
@@ -11354,7 +11354,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "39bacfc8-629f-454a-bad3-6ff3773f29b8")
 			(effects
@@ -11542,7 +11542,7 @@
 			(uuid "84ba9543-312b-4bf3-9810-48cd696abd39")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "f360644c-699c-42c5-9ec0-12e347e73178")
 			(effects
