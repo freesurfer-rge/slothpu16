@@ -1,0 +1,51 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f9807743-2893-4e61-9d6a-d5b530ea0d07")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 63.5 92.075)
+		(size 62.23 48.895)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2cb2e79f-a118-41a1-b791-9ef20db0f5e1")
+		(property "Sheetname" "Shift Block 0"
+			(at 63.5 91.3634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "shiftblock0.kicad_sch"
+			(at 63.5 141.5546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Barrel Shifter"
+				(path "/f9807743-2893-4e61-9d6a-d5b530ea0d07"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
