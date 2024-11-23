@@ -604,6 +604,10 @@
       "Shift Block 0"
     ],
     [
+      "c4c069c6-0adb-4a5a-abca-df5f110788ab",
+      "Shift Block 1"
+    ],
+    [
       "51ef6671-0b64-4007-ab89-0073c35619fe",
       "Shifter 0"
     ],
@@ -634,6 +638,38 @@
     [
       "c4282c61-3be3-46ac-9a69-af7b534056df",
       "Shifter 7"
+    ],
+    [
+      "7ba4d4d7-96f2-423a-b0dc-1b2ef0090b1e",
+      "Shifter 8"
+    ],
+    [
+      "58611b6a-7ab4-4b0b-a52a-822882b0f77c",
+      "Shifter 9"
+    ],
+    [
+      "f2697c69-d4cd-408c-b2e5-c34ed5e41795",
+      "Shifter 10"
+    ],
+    [
+      "4cf4c3e4-bf2c-4a34-9e6b-92b5447efce4",
+      "Shifter 11"
+    ],
+    [
+      "eaa37062-6c26-4613-9606-e3b3e14e906b",
+      "Shifter 12"
+    ],
+    [
+      "d570d0c3-7d70-4cf6-8496-9f2e27c54b2f",
+      "Shifter 13"
+    ],
+    [
+      "a830affe-7f45-497a-b29e-6459c9955498",
+      "Shifter 14"
+    ],
+    [
+      "6505832e-d644-47c7-a495-0e19aacc949a",
+      "Shifter 15"
     ]
   ],
   "text_variables": {}

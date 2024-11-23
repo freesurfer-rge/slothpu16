@@ -5,9 +5,69 @@
 	(uuid "f9807743-2893-4e61-9d6a-d5b530ea0d07")
 	(paper "A4")
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 132.08 52.07) (xy 138.43 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa781b1-7525-4061-99dc-64c7bc8c5ee2")
+	)
+	(bus
+		(pts
+			(xy 132.08 80.01) (xy 138.43 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13b23748-5d62-4034-99eb-6d96fe5cf4ce")
+	)
+	(bus
+		(pts
+			(xy 95.25 36.83) (xy 106.68 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a1fa1b-4afc-47b6-94f3-df1710ecb70c")
+	)
+	(bus
+		(pts
+			(xy 138.43 52.07) (xy 138.43 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55cb0f9b-55db-49e6-9346-337753856096")
+	)
+	(bus
+		(pts
+			(xy 95.25 68.58) (xy 95.25 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8e0450e-3a6f-46f7-b1e9-df21fb37022f")
+	)
+	(bus
+		(pts
+			(xy 106.68 68.58) (xy 95.25 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f180a5-e4b5-492a-b3b6-45ce186312c0")
+	)
 	(sheet
-		(at 63.5 92.075)
-		(size 62.23 48.895)
+		(at 106.68 31.75)
+		(size 25.4 24.765)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -18,7 +78,7 @@
 		)
 		(uuid "2cb2e79f-a118-41a1-b791-9ef20db0f5e1")
 		(property "Sheetname" "Shift Block 0"
-			(at 63.5 91.3634 0)
+			(at 106.68 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,7 +87,7 @@
 			)
 		)
 		(property "Sheetfile" "shiftblock0.kicad_sch"
-			(at 63.5 141.5546 0)
+			(at 106.68 57.0996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35,10 +95,88 @@
 				(justify left top)
 			)
 		)
+		(pin "Out[0..15]" tri_state
+			(at 132.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b5458752-e3fa-4b32-89df-67fe3c46975c")
+		)
+		(pin "A[0..15]" input
+			(at 106.68 36.83 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2248fd83-f273-40a6-9870-c5c727d41fb6")
+		)
 		(instances
 			(project "Barrel Shifter"
 				(path "/f9807743-2893-4e61-9d6a-d5b530ea0d07"
 					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 62.865)
+		(size 25.4 23.495)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c4c069c6-0adb-4a5a-abca-df5f110788ab")
+		(property "Sheetname" "Shift Block 1"
+			(at 106.68 62.1534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "shiftblock1.kicad_sch"
+			(at 106.68 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Out[0..15]" tri_state
+			(at 132.08 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a6b0f26a-db05-49b3-8b77-e3243f1dc124")
+		)
+		(pin "A[0..15]" input
+			(at 106.68 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a81aca52-66f3-4a0a-be35-57d4426e8d59")
+		)
+		(instances
+			(project "Barrel Shifter"
+				(path "/f9807743-2893-4e61-9d6a-d5b530ea0d07"
+					(page "2")
 				)
 			)
 		)
