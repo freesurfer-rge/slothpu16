@@ -6503,6 +6503,25 @@
 		)
 		(uuid "fe5fb320-a16b-45a3-950c-36f096fc03e1")
 	)
+	(text_box "Note that this is only _half_ of a barrel shifter (the lower half, to be precise). The 'B3' line is connected to the 'enable low' pin of the 74HC138 decoder, and there are only eight output options.\n\nTo get a full barrel shifter, combine with a copy, where the B3 line is inverted, and the A0-7 inputs are swapped with the A8-15 inputs."
+		(exclude_from_sim no)
+		(at 20.574 31.75 0)
+		(size 54.61 20.574)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "da7f88c7-e641-43ae-b953-f630f102ec58")
+	)
 	(label "A13"
 		(at 162.56 71.12 0)
 		(fields_autoplaced yes)
@@ -7286,6 +7305,7 @@
 	)
 	(label "B_1"
 		(at 72.39 74.93 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7505,6 +7525,7 @@
 	)
 	(label "B_3"
 		(at 72.39 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8197,6 +8218,7 @@
 	)
 	(label "B_0"
 		(at 72.39 72.39 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8526,6 +8548,7 @@
 	)
 	(label "B_2"
 		(at 72.39 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
