@@ -5,6 +5,7 @@ import pytest
 
 from tester_board import TesterBoard
 
+
 class IncrementerConnectorBoard:
     def __init__(self):
         """Initialise with an internal Testerboard."""
@@ -23,8 +24,8 @@ class IncrementerConnectorBoard:
     @property
     def Output_Pins(self) -> Dict[str, Union[int, List[int]]]:
         op = dict(
-            IncIn=[18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
-            Increment=[14,15,16,17],
+            IncIn=[18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33],
+            Increment=[14, 15, 16, 17],
             OE=35,
         )
         return op
@@ -32,7 +33,7 @@ class IncrementerConnectorBoard:
     @property
     def Input_Pins(self) -> Dict[str, Union[int, List[int]]]:
         ip = dict(
-            IncOut=[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+            IncOut=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
         )
         return ip
 
@@ -63,22 +64,45 @@ class IncrementerConnectorBoard:
         return value
 
     def write_inc_value(self, pin: int):
-        assert pin>=0 and pin<=3
+        assert pin >= 0 and pin <= 3
 
         for i in range(4):
-            self._outputs[self.Output_Pins["Increment"][i]] = (pin==i)
+            self._outputs[self.Output_Pins["Increment"][i]] = pin == i
         self.send()
-    
+
     def OE(self, value: bool):
         self._outputs[self.Output_Pins["OE"]] = value
         self.send()
 
+
 pwr_2 = [2 ** x for x in range(16)]
 pwr_2_off = [65535 - 2 ** x for x in range(16)]
 pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
-others = [ 23, 52, 81, 88, 1236, 1237, 1820, 6703, 6710, 15023, 17022, 20123, 25318, 48181, 53122, 50049, 60099, 63182]
+others = [
+    23,
+    52,
+    81,
+    88,
+    1236,
+    1237,
+    1820,
+    6703,
+    6710,
+    15023,
+    17022,
+    20123,
+    25318,
+    33101,
+    48181,
+    53122,
+    50049,
+    55022,
+    60099,
+    63182,
+]
 
-all_vals = pwr_2 + pwr_2_off+  pwr_2_off_2
+all_vals = pwr_2 + pwr_2_off + pwr_2_off_2
+
 
 class TestIncrementer:
     def test_smoke(self):
@@ -96,16 +120,16 @@ class TestIncrementer:
 
     @pytest.mark.parametrize("value", all_vals)
     @pytest.mark.parametrize("inc_pwr", range(4))
-    def test_full(self, value:int, inc_pwr:int):
+    def test_full(self, value: int, inc_pwr: int):
         icb = IncrementerConnectorBoard()
 
-        inc_amt = 2**inc_pwr
+        inc_amt = 2 ** inc_pwr
 
         icb.write_incrementer(value)
         icb.write_inc_value(inc_pwr)
         icb.OE(False)
         result = icb.read_incrementer()
-        assert result == (value + inc_amt)%65536
+        assert result == (value + inc_amt) % 65536
 
         icb.OE(True)
         result = icb.read_incrementer()
