@@ -6754,7 +6754,7 @@
 		(path "/28f76345-4870-4ed8-ba2a-3b01e4c6eebc")
 		(sheetname "Root")
 		(sheetfile "Barrel Shifter.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -11169,7 +11169,7 @@
 		(path "/8272d6b0-677b-4911-a5d2-0e779cc914b5")
 		(sheetname "Root")
 		(sheetfile "Barrel Shifter.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center -27.94 -5.08)
 			(end -27.432 -5.08)
