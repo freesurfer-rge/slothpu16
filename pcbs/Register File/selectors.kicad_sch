@@ -5580,6 +5580,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5605"
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "82168e23-6d82-4b39-b081-3ca15df28650")
 		)
@@ -6919,6 +6928,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5605"
+			(at 120.65 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "82168e23-6d82-4b39-b081-3ca15df28651")
 		)
@@ -7863,6 +7881,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5605"
+			(at 120.65 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "82168e23-6d82-4b39-b081-3ca15df28652")
 		)
@@ -8079,6 +8106,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5605"
+			(at 120.65 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "82168e23-6d82-4b39-b081-3ca15df28653")
 		)
@@ -8255,6 +8291,15 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
+			(at 120.65 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5605"
 			(at 120.65 154.94 0)
 			(effects
 				(font
@@ -8515,6 +8560,15 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
+			(at 68.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5605"
 			(at 68.58 120.65 0)
 			(effects
 				(font
@@ -9698,6 +9752,15 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
+			(at 48.26 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5605"
 			(at 48.26 163.83 0)
 			(effects
 				(font

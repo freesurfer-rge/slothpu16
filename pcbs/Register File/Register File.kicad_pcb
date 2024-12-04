@@ -38554,7 +38554,7 @@
 		(path "/782a06cb-1c2a-4ee4-bbfa-45cebce49c9e")
 		(sheetname "Root")
 		(sheetfile "Register File.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center -27.94 -5.08)
 			(end -27.432 -5.08)
