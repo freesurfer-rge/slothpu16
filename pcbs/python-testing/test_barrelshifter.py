@@ -22,6 +22,9 @@ class BarrelShifterConnectorBoard:
         self.send()
         self._tb.enable_outputs([True for _ in range(5)])
 
+        # Except OE
+        self.OE(True)
+
         self.recv()
 
     @property
@@ -71,11 +74,34 @@ class BarrelShifterConnectorBoard:
         self.send()
 
 
-pwr_2 = [2 ** x for x in range(16)]
+pwr_2 = [2 ** x for x in range(N_BITS)]
+pwr_2_off = [65535 - 2 ** x for x in range(16)]
+pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
+others = [
+    23,
+    52,
+    81,
+    88,
+    1236,
+    1237,
+    1820,
+    6703,
+    6710,
+    15023,
+    17022,
+    20123,
+    25318,
+    33101,
+    48181,
+    53122,
+    50049,
+    55022,
+    60099,
+    63182,
+]
 
-
-all_A_vals = pwr_2
-all_B_vals = list(range(8))
+all_A_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
+all_B_vals = list(range(N_BITS))
 
 
 class TestBarrelShifter:
@@ -98,8 +124,8 @@ class TestBarrelShifter:
         result = bscb.read_C()
         assert result == bitarray.util.zeros(N_BITS, endian="little")
 
-    @pytest.mark.parametrize("A_val", all_A_vals)
     @pytest.mark.parametrize("B_val", all_B_vals)
+    @pytest.mark.parametrize("A_val", all_A_vals)
     def test_all(self, A_val, B_val):
         bscb = BarrelShifterConnectorBoard()
 
