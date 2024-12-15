@@ -57,12 +57,18 @@ class RegisterFileConnectorBoard:
         self._outputs[self.Output_Pins["Active"]] = value
         self.send()
 
-    def Clock(self):
+    def _clock_high(self):
         self._outputs[self.Output_Pins["Clock"]] = True
         self.send()
-        time.sleep(0.001)
+
+    def _clock_low(self):
         self._outputs[self.Output_Pins["Clock"]] = False
         self.send()
+
+    def Clock(self):
+        self._clock_high()
+        time.sleep(0.001)
+        self._clock_low()
 
     def _read_bus(self, bus_id: str) -> int:
         self.recv()
@@ -107,6 +113,18 @@ class RegisterFileConnectorBoard:
 
 
 pwr_2 = [2 ** x for x in range(N_BITS)]
+pwr_2_off = [255 - 2 ** x for x in range(N_BITS)]
+pwr_2_off_2 = [256 - 2 ** x for x in range(N_BITS)]
+others = [
+    0,
+    23,
+    52,
+    81,
+    88,
+    231,
+]
+
+all_vals = pwr_2_off + pwr_2_off_2 + others
 
 
 class TestRegisterFile:
@@ -114,7 +132,129 @@ class TestRegisterFile:
         rfcb = RegisterFileConnectorBoard()
 
         rfcb.Active(False)
-        for i in range(8):
+        # We go to 16 since these are 'notionally' a
+        # bank of 16 registers.
+        # Since we only have a single board being tested
+        # R8-15 will not be present and always 'read'
+        # as zero
+        for i in range(16):
             rfcb.R_C(i)
             rfcb.write_C(i)
             rfcb.Clock()
+
+        for i in range(16):
+            rfcb.R_A(i)
+            b_loc = (i + 1) % 16
+            rfcb.R_B(b_loc)
+
+            A_val = rfcb.read_A()
+            if i < 8:
+                assert A_val == i
+            else:
+                assert A_val == 0
+
+            B_val = rfcb.read_B()
+            if b_loc < 8:
+                assert B_val == b_loc
+            else:
+                assert B_val == 0
+
+    def _check_register(self, i_r, value: int, expected: int):
+        # Again, we have the 'low' 8 of a 16 entry file
+        if i_r >= 8:
+            assert value == 0
+        else:
+            assert value == expected
+
+    @pytest.mark.parametrize("value", all_vals)
+    @pytest.mark.parametrize("reg", range(16))
+    def test_write_single(self, reg: int, value: int):
+        rfcb = RegisterFileConnectorBoard()
+
+        rfcb.Active(False)
+        # Remember that we have the 'low' 8 of a 16 entry
+        # register file
+
+        # Set up
+        base_vals = [(2 ** i) % 256 for i in range(16)]
+        for i in range(16):
+            rfcb.R_C(i)
+            rfcb.write_C(base_vals[i])
+            rfcb.Clock()
+
+        # Set the 'target' register (which may be
+        # 'off board')
+        rfcb.R_C(reg)
+        rfcb.write_C(value)
+        rfcb.Clock()
+
+        for i_A in range(16):
+            rfcb.R_A(i_A)
+            for i_B in range(16):
+                rfcb.R_B(i_B)
+
+                A_val = rfcb.read_A()
+                B_val = rfcb.read_B()
+
+                if i_A == reg:
+                    self._check_register(i_A, A_val, value)
+                else:
+                    self._check_register(i_A, A_val, base_vals[i_A])
+
+                if i_B == reg:
+                    self._check_register(i_B, B_val, value)
+                else:
+                    self._check_register(i_B, B_val, base_vals[i_B])
+
+                # When board is inactive, should always
+                # read '0' (from Tester board pull downs)
+                rfcb.Active(True)
+                A_val = rfcb.read_A()
+                B_val = rfcb.read_B()
+                assert A_val == 0
+                assert B_val == 0
+                rfcb.Active(False)
+
+    def test_no_write_inactive(self):
+        rfcb = RegisterFileConnectorBoard()
+
+        rfcb.Active(False)
+        # We go to 16 since these are 'notionally' a
+        # bank of 16 registers.
+        # Since we only have a single board being tested
+        # R8-15 will not be present and always 'read'
+        # as zero
+        for i in range(16):
+            rfcb.R_C(i)
+            rfcb.write_C(127 + i)
+            rfcb.Clock()
+
+        for i in range(16):
+            rfcb.R_A(i)
+            A_val = rfcb.read_A()
+            if i < 8:
+                assert A_val == 127 + i
+            else:
+                assert A_val == 0
+
+        # Make board inactive
+        rfcb.Active(True)
+
+        # Write again (should have no effect)
+        for i in range(16):
+            rfcb.R_C(i)
+            rfcb.write_C(i + 8)
+            rfcb.Clock()
+
+        # Make active again
+        rfcb.Active(False)
+
+        # Read values, which should not
+        # be changed
+        for i in range(16):
+            rfcb.R_A(i)
+            A_val = rfcb.read_A()
+            if i < 8:
+                assert A_val == 127 + i
+            else:
+                assert A_val == 0

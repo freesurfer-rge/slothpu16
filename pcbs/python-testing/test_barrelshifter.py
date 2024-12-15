@@ -75,8 +75,8 @@ class BarrelShifterConnectorBoard:
 
 
 pwr_2 = [2 ** x for x in range(N_BITS)]
-pwr_2_off = [65535 - 2 ** x for x in range(16)]
-pwr_2_off_2 = [65536 - 2 ** x for x in range(16)]
+pwr_2_off = [65535 - 2 ** x for x in range(N_BITS)]
+pwr_2_off_2 = [65536 - 2 ** x for x in range(N_BITS)]
 others = [
     23,
     52,
