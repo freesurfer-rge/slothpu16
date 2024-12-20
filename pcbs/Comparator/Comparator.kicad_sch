@@ -4805,7 +4805,7 @@
 		(uuid "2d74bf23-389f-47d3-9f3b-674c6f68c83c")
 	)
 	(label "Out_{A<B}"
-		(at 269.24 96.52 0)
+		(at 269.24 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5124,7 +5124,7 @@
 		(uuid "8f6b4e6d-b2d7-4595-aaeb-d31dbd374d7e")
 	)
 	(label "Out_{A=B}"
-		(at 269.24 99.06 0)
+		(at 269.24 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5377,7 +5377,7 @@
 		(uuid "cbc9a765-5b09-4016-b662-c142b6c5eab3")
 	)
 	(label "Out_{A>B}"
-		(at 269.24 93.98 0)
+		(at 269.24 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
