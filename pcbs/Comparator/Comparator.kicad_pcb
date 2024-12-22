@@ -252,7 +252,7 @@
 		(path "/53f1f2b2-dd13-40c0-b495-c71ee36c5fda")
 		(sheetname "Root")
 		(sheetfile "Comparator.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -980,7 +980,7 @@
 		(path "/c1a60de6-04bb-41be-89cf-7eec2d62004c")
 		(sheetname "Root")
 		(sheetfile "Comparator.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -1969,7 +1969,7 @@
 		(path "/92f686b1-24c3-4b1e-9d13-167657f9ad2e")
 		(sheetname "Root")
 		(sheetfile "Comparator.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -2407,7 +2407,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4c2d56c2-796d-496f-ab5c-12c16c29b5ac")
@@ -2419,7 +2419,7 @@
 			)
 		)
 		(property "Value" "Blue"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "16fc5c12-093d-4a31-9c04-998f5b54730d")
 			(effects
@@ -2607,7 +2607,7 @@
 			(uuid "854f05ca-bea2-4fe2-a35d-fb7cdb143fa5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "da5deb1a-a95c-4029-91ff-b441d7c941f5")
 			(effects
@@ -2720,7 +2720,7 @@
 		(path "/58b231bf-1f11-448d-83a8-8b920bb6bc22")
 		(sheetname "Root")
 		(sheetfile "Comparator.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
@@ -3384,7 +3384,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ffda97f8-11ba-4a55-853c-5c537642e7fa")
@@ -3396,7 +3396,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "8af357f5-78b3-4467-9bda-eb657a68bffc")
 			(effects
@@ -3564,7 +3564,7 @@
 			(uuid "a3d93d4c-a50a-4574-9e64-a6293a234bbc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7970676e-d8fd-4d3f-bc92-9d220bd8c04c")
 			(effects
@@ -3900,7 +3900,7 @@
 		(path "/287c3496-0664-40fb-a4ed-bb589867c840")
 		(sheetname "Root")
 		(sheetfile "Comparator.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center -27.94 -5.08)
 			(end -27.432 -5.08)
@@ -4430,7 +4430,7 @@
 			(layers "B.Cu" "B.Mask")
 			(net 9 "unconnected-(J1-PadB22)")
 			(pinfunction "B22")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "33e9ee90-6f76-4b4c-b836-8b4e93b65463")
 		)

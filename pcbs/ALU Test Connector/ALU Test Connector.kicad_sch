@@ -3216,6 +3216,10 @@
 		(uuid "6e0b8ee4-3e75-4f02-83cd-a164792f928e")
 	)
 	(no_connect
+		(at 147.32 80.01)
+		(uuid "702679b3-aa48-4d0c-bcc6-5df362cdafb8")
+	)
+	(no_connect
 		(at 213.36 59.69)
 		(uuid "710b522c-3ac0-4fe1-bbb5-4389b7093ec7")
 	)
@@ -8825,72 +8829,6 @@
 			(project "ALU Test Connector"
 				(path "/4fd220cc-43e4-4f22-8cf5-4ba061b6915f"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 63.5 30.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0d207a2-fc85-4163-a47d-dd02f858e1f5")
-		(property "Reference" "#PWR03"
-			(at 59.69 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 67.31 30.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 63.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "471f5ac1-30d4-4bbe-8691-e0e48deb4563")
-		)
-		(instances
-			(project "ALU Test Connector"
-				(path "/4fd220cc-43e4-4f22-8cf5-4ba061b6915f"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)

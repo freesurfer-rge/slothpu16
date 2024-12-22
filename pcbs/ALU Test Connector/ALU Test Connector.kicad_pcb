@@ -2326,7 +2326,7 @@
 			(remove_unused_layers no)
 			(net 88 "unconnected-(J4-PadB22)")
 			(pinfunction "B22")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "e8214d25-71bd-4e8a-83a8-5e7c3ca0f1cc")
 		)
 	)

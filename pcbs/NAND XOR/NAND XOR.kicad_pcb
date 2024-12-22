@@ -198,7 +198,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "6db35b90-4e25-4953-a093-4517c7d58022")
 			(effects
@@ -209,7 +209,7 @@
 			)
 		)
 		(property "Value" "Blue"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "ac5e15c5-fd65-46c7-bdf6-e322746450a5")
 			(effects
@@ -397,7 +397,7 @@
 			(uuid "714c4d69-a3fe-41a8-bdf3-5d8b638a40bd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b2e72978-92f3-4d2d-b051-f78ab83f2482")
 			(effects
@@ -743,7 +743,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/a5659a3f-8e9e-4be6-8c78-8afb30601a30")
+		(path "/70a724e7-3be3-45e7-b7e0-1d8ad27211a3")
 		(sheetname "Root")
 		(sheetfile "NAND XOR.kicad_sch")
 		(attr smd)
@@ -2489,7 +2489,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "481a2bd4-262b-4a9e-8491-33f96e117a66")
 			(effects
@@ -2500,7 +2500,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "d0a36d19-ea07-4a0e-a6b6-94327afd671a")
 			(effects
@@ -2668,7 +2668,7 @@
 			(uuid "c1c0621f-4718-42ea-b0b6-b32264ddc7ac")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e3611d44-f943-4320-a6d8-e40dd46a2c85")
 			(effects
@@ -4708,7 +4708,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "b80b306e-91c6-4e8c-8bad-04d5f19299df")
 			(effects
@@ -4719,7 +4719,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "cd31fdbc-92e2-4b6b-90bc-e88d94c65605")
 			(effects
@@ -4887,7 +4887,7 @@
 			(uuid "81dfc807-3b93-43e3-bc0d-862d8e2607be")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "255c06b7-7040-4079-b6e7-0f84221360e7")
 			(effects
@@ -5221,7 +5221,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14*")
-		(path "/fd5b5f69-0980-42ae-9def-81addf75f74c/5ef4ec60-8120-4764-9c82-754ae1017314")
+		(path "/fd5b5f69-0980-42ae-9def-81addf75f74c/760556cf-c578-4784-a2bf-5e9eb4ce6411")
 		(sheetname "NAND")
 		(sheetfile "nand.kicad_sch")
 		(attr through_hole)
@@ -5628,7 +5628,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D2"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "4920c3d9-ae0b-45aa-a5b6-5160544cc3f4")
 			(effects
@@ -5639,7 +5639,7 @@
 			)
 		)
 		(property "Value" "Blue"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "81f1b1c0-c27a-44ad-a09a-eb11243a8490")
 			(effects
@@ -5827,7 +5827,7 @@
 			(uuid "37e72e96-9045-4c69-b1be-f1f07f3a5921")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d25eb72d-3105-4bea-8e67-19620bd5172a")
 			(effects
@@ -5947,7 +5947,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/71ab1397-63ac-42f0-9c59-dd2e466f2aa1")
+		(path "/470c88e5-c245-4427-98a6-ad1270337b76")
 		(sheetname "Root")
 		(sheetfile "NAND XOR.kicad_sch")
 		(attr smd)
