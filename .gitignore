@@ -29,3 +29,7 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# From fabrication toolkit
+pcbs/*/production/*
+pcbs/*/fabrication-toolkit-options.json
