@@ -1784,6 +1784,12 @@
 		(uuid "0faf33be-13fa-4045-a2e2-80e0b526800e")
 	)
 	(junction
+		(at 237.49 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1117011d-f786-4364-9135-3087435a3170")
+	)
+	(junction
 		(at 63.5 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1794,6 +1800,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14d82c6c-5baa-41f4-b3dd-90087d1435d7")
+	)
+	(junction
+		(at 250.19 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19f1a214-3ff9-4938-92db-9d4ea4f0941e")
 	)
 	(junction
 		(at 50.8 266.7)
@@ -1824,6 +1836,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2374b355-3f87-438c-b556-dca22071f15c")
+	)
+	(junction
+		(at 275.59 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "243b6a11-e360-4fa0-81c3-3f10ba4149bc")
 	)
 	(junction
 		(at 127 119.38)
@@ -1976,6 +1994,12 @@
 		(uuid "9781affd-0e17-4047-b942-b5dbf753162d")
 	)
 	(junction
+		(at 262.89 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bbefccc-533d-41fb-ae01-996bfb189c6a")
+	)
+	(junction
 		(at 38.1 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2113,6 +2137,10 @@
 		(color 0 0 0 0)
 		(uuid "fde75f8e-18b3-4832-9654-d7e442941329")
 	)
+	(no_connect
+		(at 342.9 157.48)
+		(uuid "20f86368-ea36-4fd6-b765-790e956ea050")
+	)
 	(bus_entry
 		(at 48.26 234.95)
 		(size 2.54 2.54)
@@ -2141,6 +2169,15 @@
 		(uuid "117d3935-c0ea-4c8d-892f-49cff023ddc1")
 	)
 	(bus_entry
+		(at 260.35 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13bc0a61-88f0-4d51-be08-786bd8df5189")
+	)
+	(bus_entry
 		(at 149.86 234.95)
 		(size 2.54 2.54)
 		(stroke
@@ -2157,6 +2194,24 @@
 			(type default)
 		)
 		(uuid "14dcba9b-0ab4-4968-ba41-540691d5377a")
+	)
+	(bus_entry
+		(at 285.75 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba3dc4b-4be7-4ac0-a656-50e018e40a17")
+	)
+	(bus_entry
+		(at 273.05 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22e47e58-c3b2-4f13-b927-dab023f78e9d")
 	)
 	(bus_entry
 		(at 111.76 184.15)
@@ -2456,6 +2511,15 @@
 		(uuid "8a5f1632-b5b9-4cd2-88c4-77f2488ce731")
 	)
 	(bus_entry
+		(at 247.65 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917eb823-25e7-40b4-abe7-da5648c1c88d")
+	)
+	(bus_entry
 		(at 22.86 234.95)
 		(size 2.54 2.54)
 		(stroke
@@ -2598,6 +2662,15 @@
 			(type default)
 		)
 		(uuid "cea9ddd7-ca4b-4bd3-afad-643ae54dde9d")
+	)
+	(bus_entry
+		(at 234.95 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d774397e-520a-4a39-8743-cf7b7a0848ff")
 	)
 	(bus_entry
 		(at 35.56 133.35)
@@ -2801,6 +2874,16 @@
 	)
 	(wire
 		(pts
+			(xy 342.9 154.94) (xy 345.44 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0513ed78-eacd-4adf-a518-5adfe1fb7742")
+	)
+	(wire
+		(pts
 			(xy 165.1 135.89) (xy 165.1 139.7)
 		)
 		(stroke
@@ -2859,6 +2942,16 @@
 		)
 		(uuid "07757d8f-9292-4ed8-91ac-180240506c62")
 	)
+	(wire
+		(pts
+			(xy 262.89 113.03) (xy 262.89 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07cba8b4-55fc-4e50-b682-58d95589daa7")
+	)
 	(bus
 		(pts
 			(xy 124.46 184.15) (xy 137.16 184.15)
@@ -2878,6 +2971,16 @@
 			(type default)
 		)
 		(uuid "08baeb19-3279-4566-bac6-2cb64de3a96e")
+	)
+	(bus
+		(pts
+			(xy 189.23 30.48) (xy 201.93 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092105f4-77b5-4689-85c0-b113b19fb441")
 	)
 	(wire
 		(pts
@@ -3111,6 +3214,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 118.11) (xy 237.49 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac7839f-7da5-4b65-9473-8e51c5099787")
+	)
+	(wire
+		(pts
 			(xy 203.2 237.49) (xy 203.2 241.3)
 		)
 		(stroke
@@ -3138,6 +3251,16 @@
 			(type default)
 		)
 		(uuid "1edcea17-0522-4308-9f80-51e6a70c9538")
+	)
+	(wire
+		(pts
+			(xy 250.19 88.9) (xy 250.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1efce5aa-a76d-4b62-8906-e52890e993d8")
 	)
 	(wire
 		(pts
@@ -3449,6 +3572,16 @@
 		)
 		(uuid "2eefb5f3-ae1a-4a93-b793-b8fcc620b51a")
 	)
+	(bus
+		(pts
+			(xy 273.05 86.36) (xy 285.75 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31018bc1-0d25-4e81-b93b-dc211b0f491d")
+	)
 	(wire
 		(pts
 			(xy 342.9 46.99) (xy 345.44 46.99)
@@ -3538,6 +3671,16 @@
 			(type default)
 		)
 		(uuid "35034e8a-c647-42e8-81cc-4ada837694d8")
+	)
+	(wire
+		(pts
+			(xy 262.89 100.33) (xy 262.89 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352c17f5-59cd-4fe6-8ece-7852aa372299")
 	)
 	(wire
 		(pts
@@ -3681,6 +3824,26 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 100.33) (xy 288.29 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc6e8d3-7c43-40f8-955f-fce6a8814402")
+	)
+	(bus
+		(pts
+			(xy 232.41 86.36) (xy 234.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe4ff53-cc67-4dcd-b738-7fd3ef9d4711")
+	)
+	(wire
+		(pts
 			(xy 25.4 90.17) (xy 25.4 93.98)
 		)
 		(stroke
@@ -3718,6 +3881,16 @@
 			(type default)
 		)
 		(uuid "41d66692-7900-4ec1-a270-a39f1be0f2c4")
+	)
+	(wire
+		(pts
+			(xy 250.19 118.11) (xy 262.89 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424d74e1-0e9c-403f-8ff0-a74d630d5459")
 	)
 	(wire
 		(pts
@@ -3999,6 +4172,16 @@
 		)
 		(uuid "590d2c68-44be-4137-bc25-7621a91ec52c")
 	)
+	(wire
+		(pts
+			(xy 250.19 100.33) (xy 250.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592d0d6a-6352-45f1-92a4-162831387470")
+	)
 	(bus
 		(pts
 			(xy 200.66 133.35) (xy 213.36 133.35)
@@ -4128,6 +4311,16 @@
 			(type default)
 		)
 		(uuid "6001c4cc-bff1-4993-8d27-e178ce8e72f6")
+	)
+	(wire
+		(pts
+			(xy 327.66 157.48) (xy 330.2 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "601f6e2b-8b13-45b2-b502-8d47d90190fe")
 	)
 	(wire
 		(pts
@@ -4311,6 +4504,26 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 88.9) (xy 288.29 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70150ff4-d8d9-41b2-bb21-ac093781ee1a")
+	)
+	(wire
+		(pts
+			(xy 275.59 118.11) (xy 288.29 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701f005a-b11a-4081-ae2d-3b4262b436d0")
+	)
+	(wire
+		(pts
 			(xy 177.8 198.12) (xy 177.8 203.2)
 		)
 		(stroke
@@ -4431,6 +4644,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 118.11) (xy 250.19 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a2bd8b-cda4-4a0a-92e9-4b6d2577652f")
+	)
+	(wire
+		(pts
 			(xy 25.4 186.69) (xy 25.4 190.5)
 		)
 		(stroke
@@ -4528,6 +4751,16 @@
 			(type default)
 		)
 		(uuid "7feecf03-623b-45ee-88b4-25003a5cd3c1")
+	)
+	(wire
+		(pts
+			(xy 237.49 100.33) (xy 237.49 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80975be2-5c91-4647-a096-f38ee05e2792")
 	)
 	(bus
 		(pts
@@ -4638,6 +4871,16 @@
 			(type default)
 		)
 		(uuid "86a02a3d-9a02-4724-bbdc-45fc8d5dba11")
+	)
+	(wire
+		(pts
+			(xy 262.89 88.9) (xy 262.89 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8709dfe6-712d-4616-84c0-b74f557c303c")
 	)
 	(wire
 		(pts
@@ -4799,6 +5042,16 @@
 		)
 		(uuid "9045bdc8-5779-4019-8549-84e7eb558d20")
 	)
+	(bus
+		(pts
+			(xy 234.95 86.36) (xy 247.65 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90546e76-63f8-4b31-a22f-d83af0fb5e99")
+	)
 	(wire
 		(pts
 			(xy 190.5 237.49) (xy 190.5 241.3)
@@ -4941,6 +5194,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 88.9) (xy 237.49 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9820d252-38a8-44bd-a94f-3379e344a6a6")
+	)
+	(wire
+		(pts
 			(xy 63.5 160.02) (xy 63.5 165.1)
 		)
 		(stroke
@@ -4958,6 +5221,16 @@
 			(type default)
 		)
 		(uuid "9973f8cc-c1fe-4fcc-bded-8aac2c7791d3")
+	)
+	(wire
+		(pts
+			(xy 275.59 88.9) (xy 275.59 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "999bfb3b-bc9d-4008-a0c3-4461dee5cadc")
 	)
 	(wire
 		(pts
@@ -5168,6 +5441,26 @@
 			(type default)
 		)
 		(uuid "a59fbbce-5350-425c-be2d-2fe31127aa4e")
+	)
+	(wire
+		(pts
+			(xy 275.59 100.33) (xy 275.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a5e826-7884-4a02-9575-e8676450388e")
+	)
+	(wire
+		(pts
+			(xy 250.19 113.03) (xy 250.19 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ff1276-45e5-4cc8-b695-c0746caef905")
 	)
 	(bus
 		(pts
@@ -5381,6 +5674,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 118.11) (xy 275.59 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c86785-2a18-4a6a-a614-666ff66fa487")
+	)
+	(wire
+		(pts
 			(xy 25.4 147.32) (xy 25.4 152.4)
 		)
 		(stroke
@@ -5388,6 +5691,16 @@
 			(type default)
 		)
 		(uuid "b4531aa2-d407-4838-ad0a-6a74265deb48")
+	)
+	(wire
+		(pts
+			(xy 327.66 152.4) (xy 330.2 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b47ffe51-d7d4-40ca-ba88-217ca00b13b3")
 	)
 	(wire
 		(pts
@@ -5641,6 +5954,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 113.03) (xy 237.49 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c42328c7-511b-4ea5-bcde-663f95ecf5ea")
+	)
+	(wire
+		(pts
 			(xy 88.9 160.02) (xy 88.9 165.1)
 		)
 		(stroke
@@ -5648,6 +5971,16 @@
 			(type default)
 		)
 		(uuid "c5d494ab-a827-4514-b868-76a883af9c77")
+	)
+	(wire
+		(pts
+			(xy 342.9 152.4) (xy 345.44 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77aa589-704c-4206-b608-4842362056a9")
 	)
 	(wire
 		(pts
@@ -5761,6 +6094,16 @@
 	)
 	(wire
 		(pts
+			(xy 275.59 113.03) (xy 275.59 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cebc7cdd-8148-431f-9443-f461828624bf")
+	)
+	(wire
+		(pts
 			(xy 177.8 165.1) (xy 190.5 165.1)
 		)
 		(stroke
@@ -5861,6 +6204,16 @@
 	)
 	(wire
 		(pts
+			(xy 327.66 154.94) (xy 330.2 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42fb13a-ba28-408f-b628-98b4c80807b6")
+	)
+	(wire
+		(pts
 			(xy 101.6 237.49) (xy 101.6 241.3)
 		)
 		(stroke
@@ -5868,6 +6221,16 @@
 			(type default)
 		)
 		(uuid "d43a73dd-3d15-4ff0-b19c-96836481c157")
+	)
+	(wire
+		(pts
+			(xy 288.29 113.03) (xy 288.29 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e89ae9-bdeb-4a9e-8aed-5194036b05ca")
 	)
 	(wire
 		(pts
@@ -5918,6 +6281,26 @@
 			(type default)
 		)
 		(uuid "d7b3508c-be59-4cc8-bec5-3ee6acb9703d")
+	)
+	(bus
+		(pts
+			(xy 260.35 86.36) (xy 273.05 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d74a73-db8d-4f60-8f33-f870559ffce1")
+	)
+	(bus
+		(pts
+			(xy 247.65 86.36) (xy 260.35 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7e13d7e-5baa-455b-b983-cb53e0ac3513")
 	)
 	(wire
 		(pts
@@ -6028,6 +6411,16 @@
 			(type default)
 		)
 		(uuid "dd6bc4ca-23f7-4d80-9e46-ca635f0f404e")
+	)
+	(bus
+		(pts
+			(xy 190.5 68.58) (xy 203.2 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de09cd53-4269-4cc6-90ec-26e56acb17aa")
 	)
 	(wire
 		(pts
@@ -6693,6 +7086,17 @@
 		)
 		(uuid "02c22d06-a95a-4ac9-af66-8e75264b1ca7")
 	)
+	(label "Cycle1"
+		(at 250.19 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05dc545d-ac5c-4a6d-926a-1d00858cb3b1")
+	)
 	(label "C3"
 		(at 63.5 190.5 0)
 		(fields_autoplaced yes)
@@ -6813,6 +7217,17 @@
 			(justify left bottom)
 		)
 		(uuid "1de908a8-188f-4098-94e5-d8c0490e5527")
+	)
+	(label "Cycle[0..15]"
+		(at 232.41 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26208678-1c3b-41b5-baeb-99c400abe43b")
 	)
 	(label "A8"
 		(at 127 93.98 0)
@@ -7034,6 +7449,28 @@
 		)
 		(uuid "48352399-53b4-410e-ac49-5c854ceebd21")
 	)
+	(label "Cycle0"
+		(at 237.49 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "498ed955-4e86-4feb-9d02-70c5ad280d34")
+	)
+	(label "Cycle4"
+		(at 288.29 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4af3226e-f13c-4091-9ceb-0b48503363ef")
+	)
 	(label "A4"
 		(at 327.66 54.61 180)
 		(fields_autoplaced yes)
@@ -7111,6 +7548,28 @@
 		)
 		(uuid "592655da-3933-4567-ad35-590b909679b0")
 	)
+	(label "Cycle2"
+		(at 327.66 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e5c5c7d-565c-4159-b8fc-b05995bc7361")
+	)
+	(label "Cycle[0..4]"
+		(at 201.93 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60bd0597-a865-49c8-8e12-d84aa4f7f2f4")
+	)
 	(label "A10"
 		(at 327.66 62.23 180)
 		(fields_autoplaced yes)
@@ -7187,6 +7646,17 @@
 			(justify right bottom)
 		)
 		(uuid "68ce7e8b-3795-4f5f-97d6-e33986859de1")
+	)
+	(label "Cycle2"
+		(at 262.89 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c4cf964-4de4-4b4b-b49b-33665dd54170")
 	)
 	(label "C4"
 		(at 76.2 190.5 0)
@@ -7485,6 +7955,17 @@
 		)
 		(uuid "92fe0695-dbed-4b57-8fdb-6511ec3e24a6")
 	)
+	(label "Cycle[0..4]"
+		(at 203.2 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9491ea81-9ff8-4bae-b0f2-b73398eecee6")
+	)
 	(label "B7"
 		(at 345.44 77.47 0)
 		(fields_autoplaced yes)
@@ -7693,6 +8174,17 @@
 			(justify left bottom)
 		)
 		(uuid "b4c7858e-d322-4550-bd1f-832c348931d5")
+	)
+	(label "Cycle0"
+		(at 327.66 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b536a2e1-a7a9-456c-887e-70a55c40379b")
 	)
 	(label "A5"
 		(at 345.44 54.61 0)
@@ -7969,6 +8461,17 @@
 		)
 		(uuid "e80f8efd-85f2-4b5b-ac4e-ae392deecf29")
 	)
+	(label "Cycle4"
+		(at 327.66 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8c7aeee-4d14-41f1-9d4a-4a95d3a86ad3")
+	)
 	(label "A15"
 		(at 215.9 93.98 0)
 		(fields_autoplaced yes)
@@ -7979,6 +8482,17 @@
 			(justify left bottom)
 		)
 		(uuid "eb4fd322-45fa-405f-a294-1480b1c07a90")
+	)
+	(label "Cycle1"
+		(at 345.44 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb58be62-3427-4688-87fc-a9eeeff60680")
 	)
 	(label "B9"
 		(at 139.7 139.7 0)
@@ -8012,6 +8526,17 @@
 			(justify right bottom)
 		)
 		(uuid "eed39d35-aded-498e-ad83-5717c2577531")
+	)
+	(label "Cycle3"
+		(at 345.44 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef73c755-ec22-437e-bbde-e17eaaad65c1")
 	)
 	(label "C9"
 		(at 345.44 121.92 0)
@@ -8133,6 +8658,17 @@
 			(justify left bottom)
 		)
 		(uuid "f969c72d-7ae5-4565-bfa3-f79ce5528ca5")
+	)
+	(label "Cycle3"
+		(at 275.59 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa34511b-0936-489e-bb6e-f6a6dfb91897")
 	)
 	(label "B15"
 		(at 215.9 139.7 0)
@@ -8421,6 +8957,85 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "D1034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09b2c733-2868-4f9f-88e4-63421f6de5c8")
+		(property "Reference" "R1066"
+			(at 252.73 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 252.73 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 248.412 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2efbee4-6172-4c3a-aec8-09f6c40e52b2")
+		)
+		(pin "1"
+			(uuid "53553fed-33ba-4034-ad69-2b68276c7382")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1066")
 					(unit 1)
 				)
 			)
@@ -10787,6 +11402,84 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 262.89 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39b3f5c4-1564-423b-9d9f-27c623480d95")
+		(property "Reference" "R1067"
+			(at 265.43 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 265.43 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 261.112 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 262.89 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 262.89 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 262.89 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7f0151c-9cac-4b77-ab22-ff1103779e7f")
+		)
+		(pin "1"
+			(uuid "8f8127b7-4f90-4137-85f8-f881597c9e2a")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 50.8 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11799,6 +12492,164 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
+		(at 250.19 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44b98d2d-0c9c-45cc-8117-c02ecfdf5668")
+		(property "Reference" "D1066"
+			(at 254 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 254 112.0774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 250.19 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 250.19 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 250.19 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 250.19 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb9a57b9-0af8-4562-9395-52ae5cdc84a3")
+		)
+		(pin "1"
+			(uuid "658205cf-6e9e-4933-bd77-63195ebc222b")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 237.49 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44f7681e-96e9-4044-b9d6-8b4e1dfb4307")
+		(property "Reference" "R1065"
+			(at 240.03 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 240.03 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 235.712 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 237.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 237.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 237.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "49e6aa45-98ed-4e65-8ee7-6f0602a87b8f")
+		)
+		(pin "1"
+			(uuid "c7337bf4-c80e-4895-8763-16c0d36bd11c")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
 		(at 139.7 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12803,6 +13654,164 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "R1063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 275.59 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "673a5627-e5c9-4a33-9982-54b9450ddf9e")
+		(property "Reference" "R1068"
+			(at 278.13 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 278.13 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 273.812 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 275.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 275.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 275.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf1bbdca-4330-400a-b08e-970f263b582d")
+		)
+		(pin "1"
+			(uuid "8dbb7b9c-5d26-444b-924e-f61e7afbb634")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 275.59 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "699279c2-2a49-4d45-ab07-aaaee97146e2")
+		(property "Reference" "D1068"
+			(at 279.4 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 279.4 112.0774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 275.59 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 275.59 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 275.59 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 275.59 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b212f6b7-1f55-46f2-aa40-d2e0596897ef")
+		)
+		(pin "1"
+			(uuid "261b99f0-369f-40a3-9f80-c75910853028")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1068")
 					(unit 1)
 				)
 			)
@@ -14551,6 +15560,85 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "R1047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 237.49 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89d1a4d4-3aa0-4b35-aab0-8a86624d4d08")
+		(property "Reference" "D1065"
+			(at 241.3 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 241.3 112.0774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 237.49 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 237.49 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 237.49 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 237.49 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "241f0f7e-484a-4d93-b3cb-33c8fa8dada5")
+		)
+		(pin "1"
+			(uuid "0a675871-265e-465b-99ee-5396f53ea558")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1065")
 					(unit 1)
 				)
 			)
@@ -16595,6 +17683,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 237.49 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0f19222-c8e3-4dd6-b449-4a56a1236a30")
+		(property "Reference" "#PWR01009"
+			(at 237.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2fc3839a-0f0c-4416-b5fa-3cfc695d795c")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "#PWR01009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 76.2 97.79 0)
 		(unit 1)
@@ -16668,6 +17822,85 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "R1005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 262.89 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1be9b80-d78e-4ea6-88ca-c4273f3e9386")
+		(property "Reference" "D1067"
+			(at 266.7 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 266.7 112.0774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 262.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 262.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 262.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 262.89 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2773f558-9a36-48b3-8a33-35eb1777d83d")
+		)
+		(pin "1"
+			(uuid "79b81206-91c6-48f0-b044-34a77123990f")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1067")
 					(unit 1)
 				)
 			)
@@ -17057,6 +18290,85 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
+		(at 288.29 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb13538f-f75e-463a-8045-8e1bd2851582")
+		(property "Reference" "D1069"
+			(at 292.1 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 292.1 112.0774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 288.29 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 288.29 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 288.29 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 288.29 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "751f609e-ceb1-4f5c-a9e0-f3bfe4aaccf5")
+		)
+		(pin "1"
+			(uuid "48e06202-5d7f-40c5-8142-09c794b81a76")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
 		(at 165.1 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17287,6 +18599,85 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "R1008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 288.29 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d317310d-6cb2-4cb5-b2db-e0ededa2dbc1")
+		(property "Reference" "R1069"
+			(at 290.83 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 290.83 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 286.512 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 288.29 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 288.29 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 288.29 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a7152f3-3fa5-42c3-93a2-b45afff293fd")
+		)
+		(pin "1"
+			(uuid "84cd3f03-63c3-4cb8-ab11-e95fc747c9c4")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1069")
 					(unit 1)
 				)
 			)
@@ -19293,6 +20684,16 @@
 			)
 			(uuid "072a2a95-fb53-4581-bc66-5a94206bba49")
 		)
+		(pin "Cycle[0..4]" input
+			(at 190.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "193b1023-f9ed-414b-9782-6d6fcac26e3c")
+		)
 		(instances
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
@@ -19303,7 +20704,7 @@
 	)
 	(sheet
 		(at 143.51 19.05)
-		(size 45.72 17.78)
+		(size 45.72 24.13)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -19323,7 +20724,7 @@
 			)
 		)
 		(property "Sheetfile" "outputs.kicad_sch"
-			(at 143.51 37.4146 0)
+			(at 143.51 43.7646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19342,7 +20743,7 @@
 			(uuid "eb3fa5f6-f45a-48d0-86b6-f13256f683cb")
 		)
 		(pin "~{A_{enable}}" input
-			(at 143.51 30.48 180)
+			(at 143.51 31.75 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19352,7 +20753,7 @@
 			(uuid "86041140-fa8f-40b0-bbd7-07e157be9e51")
 		)
 		(pin "~{C_{enable}}" input
-			(at 143.51 35.56 180)
+			(at 143.51 36.83 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19372,7 +20773,7 @@
 			(uuid "673c931c-fa63-4b92-8e17-2e83d2a55c81")
 		)
 		(pin "~{B_{enable}}" input
-			(at 143.51 33.02 180)
+			(at 143.51 34.29 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19402,7 +20803,7 @@
 			(uuid "08921b48-3a86-42d3-adab-576830aed8d2")
 		)
 		(pin "~{I_{enable}}" input
-			(at 143.51 27.94 180)
+			(at 143.51 29.21 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19410,6 +20811,56 @@
 				(justify left)
 			)
 			(uuid "bbf44cb1-b7c3-4443-8920-198ec4000eb0")
+		)
+		(pin "RCLK" input
+			(at 143.51 26.67 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5aaca874-df32-4eea-9789-a5832ddd7fac")
+		)
+		(pin "SRCLK" input
+			(at 143.51 24.13 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9ef4cc94-24b8-4b3a-804e-b56392e5d97d")
+		)
+		(pin "DATA" input
+			(at 143.51 21.59 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0c4ed82d-702e-4bc4-a280-eec2272a3a95")
+		)
+		(pin "Cycle[0..4]" tri_state
+			(at 189.23 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "397d3007-5225-4d52-810c-272478e7f31d")
+		)
+		(pin "~{Enable_{Cycle}}" input
+			(at 143.51 39.37 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "65c46ec6-c6ff-4f4c-bda9-70c6b9ada35c")
 		)
 		(instances
 			(project "Pi Backplane Connector"
