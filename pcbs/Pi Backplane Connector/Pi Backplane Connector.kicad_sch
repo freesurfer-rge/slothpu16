@@ -2072,6 +2072,12 @@
 		(uuid "c2ece293-5dea-4c0a-abb1-e3fe1027a8c0")
 	)
 	(junction
+		(at 237.49 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5a5cce4-33ad-4b43-a083-1ad26326689d")
+	)
+	(junction
 		(at 203.2 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2140,6 +2146,22 @@
 	(no_connect
 		(at 342.9 157.48)
 		(uuid "20f86368-ea36-4fd6-b765-790e956ea050")
+	)
+	(no_connect
+		(at 330.2 90.17)
+		(uuid "411cfa1b-1609-41c5-9f3b-a1d2cd7bfbf4")
+	)
+	(no_connect
+		(at 342.9 90.17)
+		(uuid "4bd7bdc2-9bbc-4e03-8e82-510b503400d5")
+	)
+	(no_connect
+		(at 330.2 92.71)
+		(uuid "aee215f5-83b6-4dee-aa6c-6b71b7657913")
+	)
+	(no_connect
+		(at 342.9 92.71)
+		(uuid "f754124c-1ce8-4e12-8b65-f25f2583d851")
 	)
 	(bus_entry
 		(at 48.26 234.95)
@@ -3364,6 +3386,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 137.16) (xy 250.19 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d8e785-6011-4cb4-81b4-072f20c95acf")
+	)
+	(wire
+		(pts
 			(xy 203.2 165.1) (xy 215.9 165.1)
 		)
 		(stroke
@@ -3501,6 +3533,16 @@
 			(type default)
 		)
 		(uuid "2adec355-d6ce-47f2-aec1-b2a338299aff")
+	)
+	(wire
+		(pts
+			(xy 237.49 137.16) (xy 237.49 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b3a0839-2853-484a-825e-1e43585166dd")
 	)
 	(wire
 		(pts
@@ -3814,6 +3856,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 147.32) (xy 250.19 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea2c6c1-557c-475f-8f54-fa8ba9ae7e2c")
+	)
+	(wire
+		(pts
 			(xy 327.66 116.84) (xy 330.2 116.84)
 		)
 		(stroke
@@ -3911,6 +3963,16 @@
 			(type default)
 		)
 		(uuid "434a78ca-2a0d-48d6-bcdf-a8cf8a0e17a5")
+	)
+	(wire
+		(pts
+			(xy 250.19 160.02) (xy 250.19 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441ddbb5-50f4-476f-84f4-773bdb5d398e")
 	)
 	(wire
 		(pts
@@ -4254,6 +4316,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 36.83) (xy 195.58 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e64af90-31b2-4ad0-b578-da3eb580c0e4")
+	)
+	(wire
+		(pts
 			(xy 114.3 135.89) (xy 114.3 139.7)
 		)
 		(stroke
@@ -4451,6 +4523,16 @@
 			(type default)
 		)
 		(uuid "6a196ac9-b20d-471e-80f1-a67f1ea3f4b5")
+	)
+	(wire
+		(pts
+			(xy 342.9 95.25) (xy 345.44 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab7144b-0e38-4554-a053-09f07424436c")
 	)
 	(wire
 		(pts
@@ -4684,6 +4766,16 @@
 	)
 	(wire
 		(pts
+			(xy 327.66 95.25) (xy 330.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792eb01e-5a43-4db0-a9bc-156c9a877276")
+	)
+	(wire
+		(pts
 			(xy 177.8 101.6) (xy 177.8 106.68)
 		)
 		(stroke
@@ -4691,6 +4783,16 @@
 			(type default)
 		)
 		(uuid "798f7755-91ac-4516-b5e8-1a95759277cb")
+	)
+	(wire
+		(pts
+			(xy 237.49 165.1) (xy 237.49 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b518b79-2932-4b6a-8b00-469bdc934cf5")
 	)
 	(wire
 		(pts
@@ -4771,6 +4873,16 @@
 			(type default)
 		)
 		(uuid "8140b9b3-45ae-42ca-b189-66e98668ddbe")
+	)
+	(wire
+		(pts
+			(xy 237.49 147.32) (xy 237.49 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8243ae5c-b947-4aff-8664-97d7899e30b5")
 	)
 	(wire
 		(pts
@@ -5021,6 +5133,16 @@
 			(type default)
 		)
 		(uuid "8f980bd9-741b-44c6-802d-98eb927c9e16")
+	)
+	(wire
+		(pts
+			(xy 189.23 34.29) (xy 195.58 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fbd26ff-603f-43d7-afac-118392922087")
 	)
 	(wire
 		(pts
@@ -6412,6 +6534,16 @@
 		)
 		(uuid "dd6bc4ca-23f7-4d80-9e46-ca635f0f404e")
 	)
+	(wire
+		(pts
+			(xy 190.5 72.39) (xy 196.85 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dda4c02b-b1c2-4a9e-8676-b2a4ad5e2bec")
+	)
 	(bus
 		(pts
 			(xy 190.5 68.58) (xy 203.2 68.58)
@@ -6611,6 +6743,16 @@
 			(type default)
 		)
 		(uuid "e6cde2f0-8bf0-4741-86b0-312f7358d50c")
+	)
+	(wire
+		(pts
+			(xy 237.49 165.1) (xy 250.19 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6d430cf-015c-4139-8c1f-044f70c9fdb6")
 	)
 	(wire
 		(pts
@@ -6904,6 +7046,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 160.02) (xy 237.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f53e4e69-d7b4-4faf-a12d-53f2e05bbb8f")
+	)
+	(wire
+		(pts
 			(xy 127 266.7) (xy 139.7 266.7)
 		)
 		(stroke
@@ -6941,6 +7093,16 @@
 			(type default)
 		)
 		(uuid "f7789403-f473-41a9-b187-fbc49f9669f7")
+	)
+	(wire
+		(pts
+			(xy 190.5 74.93) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f784749b-347b-426b-8790-e96dade55373")
 	)
 	(wire
 		(pts
@@ -7185,6 +7347,17 @@
 		)
 		(uuid "0ef0e2a8-c06a-44f9-a5bc-46ffe5c7c772")
 	)
+	(label "RESET"
+		(at 327.66 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1307c6ee-199e-40af-b080-45de9d469cf0")
+	)
 	(label "C5"
 		(at 345.44 116.84 0)
 		(fields_autoplaced yes)
@@ -7206,6 +7379,17 @@
 			(justify left bottom)
 		)
 		(uuid "14e45eef-ee06-4b33-8566-f1a033ef659d")
+	)
+	(label "CLOCK"
+		(at 237.49 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "187e7d72-5c66-4450-914e-b047b379e908")
 	)
 	(label "C13"
 		(at 345.44 127 0)
@@ -7558,6 +7742,17 @@
 			(justify right bottom)
 		)
 		(uuid "5e5c5c7d-565c-4159-b8fc-b05995bc7361")
+	)
+	(label "RESET"
+		(at 250.19 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60631c34-4eb6-4911-8692-5c7386987bd3")
 	)
 	(label "Cycle[0..4]"
 		(at 201.93 30.48 0)
@@ -8054,6 +8249,17 @@
 		)
 		(uuid "99330fe2-159f-441a-8927-1a5170759133")
 	)
+	(label "CLOCK"
+		(at 345.44 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a2d22c4-ab7d-4c80-87b8-31e0ccab7f97")
+	)
 	(label "C0"
 		(at 25.4 190.5 0)
 		(fields_autoplaced yes)
@@ -8230,6 +8436,17 @@
 		)
 		(uuid "b82dc497-10cf-4d2d-a4fb-c71b623234e6")
 	)
+	(label "RESET"
+		(at 195.58 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb9ae293-3d54-4e6a-b7cc-edfcd6213b0e")
+	)
 	(label "C2"
 		(at 327.66 114.3 180)
 		(fields_autoplaced yes)
@@ -8240,6 +8457,17 @@
 			(justify right bottom)
 		)
 		(uuid "beb87b77-ad6d-42db-9c4f-fbcd02cc5157")
+	)
+	(label "RESET"
+		(at 196.85 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2872e1e-a0b6-45b3-a7e2-9380d7ba1154")
 	)
 	(label "A2"
 		(at 327.66 52.07 180)
@@ -8538,6 +8766,17 @@
 		)
 		(uuid "ef73c755-ec22-437e-bbde-e17eaaad65c1")
 	)
+	(label "CLOCK"
+		(at 195.58 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efcc06fd-fbf5-4ac3-90f0-60d107d041d4")
+	)
 	(label "C9"
 		(at 345.44 121.92 0)
 		(fields_autoplaced yes)
@@ -8636,6 +8875,17 @@
 			(justify left bottom)
 		)
 		(uuid "f823bf2c-c7c1-41b2-b2a3-2aefc8c68f6f")
+	)
+	(label "CLOCK"
+		(at 196.85 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f867ad3c-5b0a-4407-82a6-d03c1efbd403")
 	)
 	(label "I10"
 		(at 152.4 241.3 0)
@@ -11401,6 +11651,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 237.49 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "377cded9-3e2a-448d-acdd-8b8df013fba4")
+		(property "Reference" "#PWR01010"
+			(at 237.49 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.49 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fde51f86-4c70-497a-8281-d6ac722312d5")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "#PWR01010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 262.89 96.52 0)
 		(unit 1)
@@ -13897,6 +14213,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 250.19 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6efe654b-67ab-47cb-a1eb-4abab6b6fb65")
+		(property "Reference" "R1071"
+			(at 252.73 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 252.73 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 248.412 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 250.19 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 250.19 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bde6f8cd-94b3-451a-a069-c32668468be0")
+		)
+		(pin "1"
+			(uuid "16a218de-92f4-4529-aacf-b8d0ecf513b2")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x20_Odd_Even")
 		(at 335.28 69.85 0)
 		(unit 1)
@@ -15166,6 +15561,85 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
 					(reference "R1042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 250.19 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "813efcc9-cb97-4ea5-8ac2-612a9393b333")
+		(property "Reference" "D1071"
+			(at 254 156.5274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 254 159.0674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 250.19 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 250.19 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 250.19 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 250.19 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43f2fe39-4b95-4f9c-b747-3eca6837986c")
+		)
+		(pin "1"
+			(uuid "e5fa95d6-107d-4d69-a024-f8061847ee4a")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1071")
 					(unit 1)
 				)
 			)
@@ -19461,6 +19935,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 237.49 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e468b548-4b61-4d72-915d-9d9617d69000")
+		(property "Reference" "R1070"
+			(at 240.03 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 240.03 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 235.712 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 237.49 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 237.49 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 237.49 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7bcc2a7-0b10-4144-85c4-5921a9cd7bd1")
+		)
+		(pin "1"
+			(uuid "8535b6d1-5bad-4004-a255-9d85aa656ba5")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "R1070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 345.44 160.02 90)
 		(unit 1)
@@ -20329,6 +20882,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 237.49 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa44f092-6a40-43b9-8223-7b4a9d033194")
+		(property "Reference" "D1070"
+			(at 241.3 156.5274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Yellow"
+			(at 241.3 159.0674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 237.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf"
+			(at 237.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode (Yellow)"
+			(at 237.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72038"
+			(at 237.49 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e83ea0bd-bbf7-4841-84f2-786597ccf45c")
+		)
+		(pin "1"
+			(uuid "6fe6bdee-6909-40a5-ac7d-774912724ac3")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
+					(reference "D1070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 38.1 97.79 0)
 		(unit 1)
@@ -20694,6 +21326,26 @@
 			)
 			(uuid "193b1023-f9ed-414b-9782-6d6fcac26e3c")
 		)
+		(pin "CLOCK" input
+			(at 190.5 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e92ff1fc-2367-4102-bbc7-7836f4188e7f")
+		)
+		(pin "RESET" input
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "35ab4ac1-d7f3-4f7a-a4f7-41d405519525")
+		)
 		(instances
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862"
@@ -20703,8 +21355,8 @@
 		)
 	)
 	(sheet
-		(at 143.51 19.05)
-		(size 45.72 24.13)
+		(at 143.51 16.51)
+		(size 45.72 26.67)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -20715,7 +21367,7 @@
 		)
 		(uuid "45c63c05-d3ce-4d45-b830-3951a9c48981")
 		(property "Sheetname" "Outputs"
-			(at 143.51 18.3384 0)
+			(at 143.51 15.7984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20852,7 +21504,47 @@
 			)
 			(uuid "397d3007-5225-4d52-810c-272478e7f31d")
 		)
-		(pin "~{Enable_{Cycle}}" input
+		(pin "~{RESET_{enable}}" input
+			(at 143.51 41.91 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e2185243-4b1a-428c-addc-032285fadedf")
+		)
+		(pin "RESET" tri_state
+			(at 189.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6683730e-73b2-4343-b486-1cbbf6d0b12f")
+		)
+		(pin "~{CLOCK_{enable}}" input
+			(at 143.51 19.05 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8dd07c61-4fff-4535-86af-3823fb5a4266")
+		)
+		(pin "CLOCK" tri_state
+			(at 189.23 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9d8317cf-10d0-49f0-b69c-c12aa915ada7")
+		)
+		(pin "~{Cycle_{enable}}" input
 			(at 143.51 39.37 180)
 			(effects
 				(font
@@ -20860,7 +21552,7 @@
 				)
 				(justify left)
 			)
-			(uuid "65c46ec6-c6ff-4f4c-bda9-70c6b9ada35c")
+			(uuid "d430612c-f4f3-40c7-b1b9-064732899fc4")
 		)
 		(instances
 			(project "Pi Backplane Connector"
