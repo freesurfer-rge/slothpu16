@@ -101,7 +101,7 @@ others = [
     63182,
 ]
 
-all_vals = pwr_2 + pwr_2_off + pwr_2_off_2
+all_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
 
 
 class TestIncrementer:
