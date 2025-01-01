@@ -115,6 +115,11 @@ class TestXorNand:
 
         assert expected == actual
 
+        # And check the off
+        nxcb.NAND(True)
+        zeros = bitarray.util.int2ba(0, length=N_BITS, endian="little")
+        assert zeros == nxcb.read_C()
+
     @pytest.mark.parametrize("a", all_vals)
     @pytest.mark.parametrize("b", all_vals)
     def test_xor(self, a: int, b: int):
@@ -127,6 +132,34 @@ class TestXorNand:
 
         # We are active low for this
         nxcb.XOR(False)
+
+        nxcb.write_A(a_bits)
+        nxcb.write_B(b_bits)
+
+        actual = nxcb.read_C()
+
+        assert expected == actual
+
+        # And check the off
+        nxcb.XOR(True)
+        zeros = bitarray.util.int2ba(0, length=N_BITS, endian="little")
+        assert zeros == nxcb.read_C()
+
+    @pytest.mark.parametrize("a", all_vals)
+    @pytest.mark.parametrize("b", all_vals)
+    def test_both_zero(self, a: int, b: int):
+        # Verifies the interlock on having both active
+        nxcb = NandXorALUBoard()
+
+        a_bits = bitarray.util.int2ba(a, length=N_BITS, endian="little")
+        b_bits = bitarray.util.int2ba(b, length=N_BITS, endian="little")
+
+        # Interlock should turn both outputs off
+        expected = bitarray.util.int2ba(0, length=N_BITS, endian="little")
+
+        # Active low
+        nxcb.XOR(False)
+        nxcb.NAND(False)
 
         nxcb.write_A(a_bits)
         nxcb.write_B(b_bits)
