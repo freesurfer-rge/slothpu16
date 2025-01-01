@@ -8,6 +8,7 @@ from tester_board import TesterBoard
 
 N_BITS = 8
 
+
 class NandXorALUBoard:
     def __init__(self):
         """Initialise with an internal Testerboard."""
@@ -50,7 +51,7 @@ class NandXorALUBoard:
 
     def _write_bus(self, value: bitarray.bitarray, name: str):
         assert len(value) == N_BITS
-        
+
         for i, curr_bit in enumerate(value):
             self._outputs[self.Output_Pins[name][i]] = value[i]
         self.send()
@@ -69,7 +70,6 @@ class NandXorALUBoard:
         self._outputs[self.Output_Pins["XOR"]] = value
         self.send()
 
-        
     def read_C(self) -> bitarray.bitarray:
         self.recv()
         result = bitarray.bitarray(N_BITS, endian="little")
@@ -77,7 +77,6 @@ class NandXorALUBoard:
             result[i] = self._inputs[pin]
 
         return result
-
 
 
 pwr_2 = [2 ** x for x in range(N_BITS)]
@@ -92,7 +91,8 @@ others = [
     231,
 ]
 
-all_vals = pwr_2 # + pwr_2_off + pwr_2_off_2 + others
+all_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
+
 
 class TestXorNand:
     @pytest.mark.parametrize("a", all_vals)
