@@ -129,6 +129,10 @@ class TestAddSubtract:
         assert actual == expected
         assert actual_carry == expected_carry
 
+        # And the inactive state
+        ascb.Add(True)
+        assert 0 == ascb.read_C()
+
     @pytest.mark.parametrize("a", all_vals)
     @pytest.mark.parametrize("b", all_vals)
     def test_subtract(self, a: int, b: int):
@@ -151,3 +155,7 @@ class TestAddSubtract:
         actual_carry = ascb.carry_out()
         assert actual == expected
         assert actual_carry == expected_carry
+
+        # And the inactive state
+        ascb.Subtract(True)
+        assert 0 == ascb.read_C()
