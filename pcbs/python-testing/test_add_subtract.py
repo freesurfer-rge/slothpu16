@@ -72,7 +72,7 @@ class AddSubtractALUBoard:
         self._outputs[self.Output_Pins["ADD"]] = value
         self.send()
 
-    def Subtract(self, value:bool):
+    def Subtract(self, value: bool):
         self._outputs[self.Output_Pins["SUB"]] = value
         self.send()
 
@@ -90,7 +90,6 @@ class AddSubtractALUBoard:
         return result
 
 
-
 pwr_2 = [2 ** x for x in range(N_BITS)]
 pwr_2_off = [255 - 2 ** x for x in range(N_BITS)]
 pwr_2_off_2 = [256 - 2 ** x for x in range(N_BITS)]
@@ -103,7 +102,7 @@ others = [
     231,
 ]
 
-all_vals = pwr_2 # + pwr_2_off + pwr_2_off_2 + others
+all_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
 
 
 class TestAddSubtract:
@@ -114,9 +113,9 @@ class TestAddSubtract:
 
         expected = a + b
         expected_carry = False
-        if expected >= 2**N_BITS:
+        if expected >= 2 ** N_BITS:
             expected_carry = True
-            expected -= 2**N_BITS
+            expected -= 2 ** N_BITS
 
         # We are active low
         ascb.Add(False)
@@ -130,7 +129,6 @@ class TestAddSubtract:
         assert actual == expected
         assert actual_carry == expected_carry
 
-        
     @pytest.mark.parametrize("a", all_vals)
     @pytest.mark.parametrize("b", all_vals)
     def test_subtract(self, a: int, b: int):
@@ -140,7 +138,7 @@ class TestAddSubtract:
         expected_carry = True
         if expected < 0:
             expected_carry = False
-            expected += 2**N_BITS
+            expected += 2 ** N_BITS
 
         # We are active low
         ascb.Subtract(False)
@@ -153,5 +151,3 @@ class TestAddSubtract:
         actual_carry = ascb.carry_out()
         assert actual == expected
         assert actual_carry == expected_carry
-
-        
