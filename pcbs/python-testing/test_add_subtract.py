@@ -129,3 +129,29 @@ class TestAddSubtract:
         actual_carry = ascb.carry_out()
         assert actual == expected
         assert actual_carry == expected_carry
+
+        
+    @pytest.mark.parametrize("a", all_vals)
+    @pytest.mark.parametrize("b", all_vals)
+    def test_subtract(self, a: int, b: int):
+        ascb = AddSubtractALUBoard()
+
+        expected = a - b
+        expected_carry = True
+        if expected < 0:
+            expected_carry = False
+            expected += 2**N_BITS
+
+        # We are active low
+        ascb.Subtract(False)
+
+        ascb.write_A(a)
+        ascb.write_B(b)
+        ascb.carry_in(True)
+
+        actual = ascb.read_C()
+        actual_carry = ascb.carry_out()
+        assert actual == expected
+        assert actual_carry == expected_carry
+
+        
