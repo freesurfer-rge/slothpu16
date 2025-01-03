@@ -21833,7 +21833,7 @@
 			(uuid "9f0cc13a-9420-4f7f-9178-443e2a46fbd3")
 		)
 		(pin "~{OUT_{en}}" output
-			(at 102.87 58.42 0)
+			(at 102.87 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21843,7 +21843,7 @@
 			(uuid "37572f8d-796e-4b1e-b078-5e6bd63ea45d")
 		)
 		(pin "~{IN_{en}}" output
-			(at 102.87 24.13 0)
+			(at 102.87 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
