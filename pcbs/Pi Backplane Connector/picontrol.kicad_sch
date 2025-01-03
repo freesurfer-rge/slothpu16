@@ -5101,6 +5101,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 266.7 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d30ebcf-9518-4dfa-ac0f-1bb97faa65fb")
+		(property "Reference" "#PWR02023"
+			(at 262.89 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 270.51 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 266.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84323a23-0f18-40d9-92fb-a04c5571dc88")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
+					(reference "#PWR02023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "7400_Extras:74LVC4245")
 		(at 135.89 102.87 0)
 		(mirror y)
@@ -5942,73 +6009,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 266.7 139.7 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5391f24f-b627-4e2c-912d-69c28c743f70")
-		(property "Reference" "#PWR02023"
-			(at 262.89 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 270.51 139.6999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 266.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 266.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0650a99b-ca23-4067-bd88-cbf3adc96173")
-		)
-		(instances
-			(project ""
-				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
-					(reference "#PWR02023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 194.31 50.8 90)
 		(unit 1)
@@ -6435,73 +6435,6 @@
 			(project "Pi Backplane Connector"
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
 					(reference "R2007")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 203.2 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95c1a3ae-fa12-4702-955f-63ea756dfdf4")
-		(property "Reference" "#PWR02021"
-			(at 199.39 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 207.01 50.7999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 203.2 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b65e9cfd-8a70-4732-b970-dfcf5fc6fcd7")
-		)
-		(instances
-			(project ""
-				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
-					(reference "#PWR02021")
 					(unit 1)
 				)
 			)
@@ -7736,6 +7669,73 @@
 			(project ""
 				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
 					(reference "J2001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 203.2 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb1e0739-5cdc-4111-84a4-cc95eb0abdbd")
+		(property "Reference" "#PWR02021"
+			(at 199.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 207.01 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c234e101-edc1-4430-8913-0c419dd4a219")
+		)
+		(instances
+			(project "Pi Backplane Connector"
+				(path "/84ab2617-954b-4ceb-a5e3-268c9e11a862/f2d6763d-0b70-425b-969c-e85d688f63f8"
+					(reference "#PWR02021")
 					(unit 1)
 				)
 			)
