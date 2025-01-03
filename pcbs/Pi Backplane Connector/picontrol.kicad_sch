@@ -3824,7 +3824,7 @@
 		(uuid "1a35727b-988f-4545-b1b0-667f04364614")
 	)
 	(label "ResetWire"
-		(at 113.03 110.49 180)
+		(at 113.03 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3901,18 +3901,18 @@
 		(uuid "30e34092-809d-43bd-9db0-d3b3abfad89f")
 	)
 	(label "ResetWire"
-		(at 87.63 58.42 0)
+		(at 22.86 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4565ebcd-4af5-4bc2-9c15-7d5cee8993b2")
 	)
 	(label "ClockWire"
-		(at 92.71 62.23 180)
+		(at 22.86 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4165,7 +4165,7 @@
 		(uuid "dbb28dfd-2ecf-4f27-b3f0-0c505615711b")
 	)
 	(label "ClockWire"
-		(at 113.03 113.03 180)
+		(at 113.03 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4211,7 +4211,7 @@
 	)
 	(hierarchical_label "~{CLOCK_{en}}"
 		(shape output)
-		(at 154.94 113.03 0)
+		(at 154.94 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4235,7 +4235,7 @@
 	)
 	(hierarchical_label "~{RESET_{en}}"
 		(shape output)
-		(at 154.94 110.49 0)
+		(at 154.94 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
