@@ -48,7 +48,7 @@ class _Output:
             GPIO.setup(p, GPIO.OUT)
             GPIO.output(p, GPIO.HIGH)
 
-    def _send(self):
+    def send(self):
         # Prepare to send
         GPIO.output(self._select_out, GPIO.LOW)
         for op in self._outputs:
@@ -74,8 +74,6 @@ class _Output:
             bus_idx = self._buses[target][i]
             self._outputs[bus_idx] = send_values[BUS_WIDTH - i - 1]
 
-        self._send()
-
     def set_cycle(self, step: int):
         # Negative values mean 'turn all off'
         assert step < CYCLE_WIDTH
@@ -87,8 +85,6 @@ class _Output:
         # Turn on desired step
         if step >= 0:
             self._outputs[self._cycle[step]] = True
-
-        self._send()
 
 
 class _Input:
@@ -144,35 +140,3 @@ class _Input:
                 assert step < 0, "Two steps set!"
                 step = i
         return step
-
-
-# Temporary for testing
-
-output = _Output()
-input = _Input()
-
-output.set_oe("A", False)
-output.set_oe("B", False)
-output.set_oe("C", False)
-output.set_oe("Instruction", False)
-output.set_oe("Cycle", False)
-
-import time
-
-start = time.time()
-output.set_bus("A", 21931)
-output.set_bus("B", 5036)
-output.set_bus("C", 345)
-output.set_bus("Instruction", 27)
-stop = time.time()
-print(f"{stop-start} secs to send")
-
-output.set_cycle(4)
-
-
-input.recv()
-print(input.read_bus("A"))
-print(input.read_bus("B"))
-print(input.read_bus("C"))
-print(input.read_bus("Instruction"))
-print(input.read_cycle())
