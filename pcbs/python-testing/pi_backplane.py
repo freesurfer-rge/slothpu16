@@ -32,7 +32,10 @@ class _Output:
             )
 
         self._buses = dict(
-            A=[16 + i for i in range(BUS_WIDTH)]
+            A=[48 + i for i in range(BUS_WIDTH)],
+            B=[32 + i for i in range(BUS_WIDTH)],
+            C=[16+i for i in range(BUS_WIDTH)],
+            Instruction=[0+i for i in range(BUS_WIDTH)],
             )
 
         # Now start the GPIO bits
@@ -75,7 +78,20 @@ class _Output:
 
         for i in range(BUS_WIDTH):
             bus_idx = self._buses[target][i]
-            self._outputs[bus_idx] = send_values[i]
+            self._outputs[bus_idx] = send_values[BUS_WIDTH-i-1]
 
         self._send()
         
+# Temporary for testing
+
+output = _Output()
+output.set_oe("A", False)
+output.set_oe("B", False)
+output.set_oe("C", False)
+output.set_oe("Instruction", False)
+output.set_oe("Cycle", False)
+
+output.set_bus("A", 127)
+output.set_bus("B", 1024)
+output.set_bus("C", 4099)
+output.set_bus("Instruction", 65535)
