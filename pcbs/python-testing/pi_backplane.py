@@ -37,6 +37,8 @@ class _Output:
             C=[16+i for i in range(BUS_WIDTH)],
             Instruction=[0+i for i in range(BUS_WIDTH)],
             )
+        self._cycle = [64 + i for i in reversed(range(CYCLE_WIDTH))]
+        
 
         # Now start the GPIO bits
         GPIO.setmode(GPIO.BOARD)
@@ -81,6 +83,20 @@ class _Output:
             self._outputs[bus_idx] = send_values[BUS_WIDTH-i-1]
 
         self._send()
+
+    def set_cycle(self, step: int):
+        # Negative values mean 'turn all off'
+        assert step < CYCLE_WIDTH
+
+        # Ensure everything is off
+        for i in range(CYCLE_WIDTH):
+            self._outputs[self._cycle[i]] = False
+
+        # Turn on desired step
+        if step >= 0:
+            self._outputs[self._cycle[step]] = True
+
+        self._send()
         
 # Temporary for testing
 
@@ -91,7 +107,14 @@ output.set_oe("C", False)
 output.set_oe("Instruction", False)
 output.set_oe("Cycle", False)
 
-output.set_bus("A", 127)
-output.set_bus("B", 1024)
-output.set_bus("C", 4099)
-output.set_bus("Instruction", 65535)
+import time
+
+start = time.time()
+output.set_bus("A", 0)
+output.set_bus("B", 0)
+output.set_bus("C", 0)
+output.set_bus("Instruction", 0)
+stop = time.time()
+print(f"{stop-start} secs to send")
+
+output.set_cycle(4)
