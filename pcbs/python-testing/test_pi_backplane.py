@@ -60,3 +60,57 @@ def test_buses(A, B, C, Instruction, Cycle):
     assert input.read_bus("C") == C
     assert input.read_bus("Instruction") == Instruction
     assert input.read_cycle() == -1
+
+
+def test_clock():
+    output = _Output()
+    input = _Input()
+
+    output.set_oe("Clock", False)
+
+    output.set_clock(True)
+    output.send()
+    input.recv()
+    assert input.read_clock() == True
+
+    output.set_clock(False)
+    output.send()
+    input.recv()
+    assert input.read_clock() == False
+
+    output.set_clock(True)
+    output.send()
+    input.recv()
+    assert input.read_clock() == True
+
+    # Should be pulled down by LED on isolation
+    output.set_oe("Clock", True)
+    input.recv()
+    assert input.read_clock() == False
+
+
+def test_reset():
+    output = _Output()
+    input = _Input()
+
+    output.set_oe("Reset", False)
+
+    output.set_reset(True)
+    output.send()
+    input.recv()
+    assert input.read_reset() == True
+
+    output.set_reset(False)
+    output.send()
+    input.recv()
+    assert input.read_reset() == False
+
+    output.set_reset(True)
+    output.send()
+    input.recv()
+    assert input.read_reset() == True
+
+    # Should be pulled down by LED on isolation
+    output.set_oe("Reset", True)
+    input.recv()
+    assert input.read_clock() == False

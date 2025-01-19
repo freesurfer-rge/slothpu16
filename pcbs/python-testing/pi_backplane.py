@@ -24,6 +24,7 @@ class _Output:
 
         self._enables = dict(A=8, B=3, C=5, Cycle=10, Instruction=7, Clock=11, Reset=12)
 
+        # Define where things are in the shift register bank
         self._buses = dict(
             A=[48 + i for i in range(BUS_WIDTH)],
             B=[32 + i for i in range(BUS_WIDTH)],
@@ -31,6 +32,8 @@ class _Output:
             Instruction=[0 + i for i in range(BUS_WIDTH)],
         )
         self._cycle = [64 + i for i in reversed(range(CYCLE_WIDTH))]
+        self._clock = 77
+        self._reset = 78
 
         # Now start the GPIO bits
         GPIO.setmode(GPIO.BOARD)
@@ -86,6 +89,12 @@ class _Output:
         if step >= 0:
             self._outputs[self._cycle[step]] = True
 
+    def set_clock(self, value: bool):
+        self._outputs[self._clock] = value
+
+    def set_reset(self, value: bool):
+        self._outputs[self._reset] = value
+
 
 class _Input:
     def __init__(self):
@@ -94,6 +103,8 @@ class _Input:
         self._inputs = [False for _ in range(self.n_pins)]
         self._bus_starts = dict(A=16, B=32, C=48, Instruction=64)
         self._cycle_start = 8
+        self._clock = 6
+        self._reset = 5
 
         # Designate the pins
         self._clk_in = 40
@@ -140,3 +151,9 @@ class _Input:
                 assert step < 0, "Two steps set!"
                 step = i
         return step
+
+    def read_clock(self) -> bool:
+        return self._inputs[self._clock]
+
+    def read_reset(self) -> bool:
+        return self._inputs[self._reset]
