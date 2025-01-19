@@ -97,10 +97,59 @@ class _Output:
             self._outputs[self._cycle[step]] = True
 
         self._send()
+
+class _Input:
+    def __init__(self):
+        self.n_pins = 80
+
+        self._inputs = [False for _ in range(self.n_pins)]
+        self._bus_starts = dict(
+            A=16,
+            B=32,
+            C=48,
+            Instruction=64
+            )
+
+        # Designate the pins
+        self._clk_in = 40
+        self._cipo = 35
+        self._select_in = 26
+        self._load_in = 32
+
+        # Board setup
+        GPIO.setmode(GPIO.BOARD)
         
+        GPIO.setup(self._clk_in, GPIO.OUT)
+        GPIO.setup(self._select_in, GPIO.OUT)
+        GPIO.output(self._select_in, GPIO.HIGH)
+        GPIO.setup(self._load_in, GPIO.OUT)
+        GPIO.setup(self._cipo, GPIO.IN)
+
+    def recv(self):
+        # Load the data
+        GPIO.output(self._load_in, GPIO.LOW)
+        GPIO.output(self._load_in, GPIO.HIGH)
+
+        # Clock everything in
+        GPIO.output(self._select_in, GPIO.LOW)
+        for i in range(self.n_pins):
+            self._inputs[i] = GPIO.input(self._cipo) == 1
+            GPIO.output(self._clk_in, GPIO.LOW)
+            GPIO.output(self._clk_in, GPIO.HIGH)
+        GPIO.output(self._select_in, GPIO.HIGH)
+
+    def read_bus(self, bus: str) -> int:
+        idx = self._bus_starts[bus]
+        byte_0 = list(reversed(self._inputs[idx:idx+BUS_WIDTH//2]))
+        byte_1 = list(reversed(self._inputs[idx+BUS_WIDTH//2:idx+BUS_WIDTH]))
+        ba = bitarray.bitarray(byte_0 + byte_1, endian="little")
+        return bitarray.util.ba2int(ba)
+
 # Temporary for testing
 
 output = _Output()
+input = _Input()
+
 output.set_oe("A", False)
 output.set_oe("B", False)
 output.set_oe("C", False)
@@ -110,11 +159,18 @@ output.set_oe("Cycle", False)
 import time
 
 start = time.time()
-output.set_bus("A", 0)
-output.set_bus("B", 0)
-output.set_bus("C", 0)
-output.set_bus("Instruction", 0)
+output.set_bus("A", 21931)
+output.set_bus("B", 5036)
+output.set_bus("C", 345)
+output.set_bus("Instruction", 27)
 stop = time.time()
 print(f"{stop-start} secs to send")
 
 output.set_cycle(4)
+
+
+input.recv()
+print(input.read_bus("A"))
+print(input.read_bus("B"))
+print(input.read_bus("C"))
+print(input.read_bus("Instruction"))
