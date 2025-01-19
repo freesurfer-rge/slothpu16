@@ -8,6 +8,7 @@ import RPi.GPIO as GPIO
 BUS_WIDTH = 16
 CYCLE_WIDTH = 5
 
+
 class _Output:
     def __init__(self):
         self.n_pins = 80
@@ -21,24 +22,15 @@ class _Output:
         # SPI bus select (RCLK)
         self._select_out = 24
 
-        self._enables = dict(
-            A = 8,
-            B = 3,
-            C = 5,
-            Cycle = 10,
-            Instruction = 7,
-            Clock = 11,
-            Reset = 12
-            )
+        self._enables = dict(A=8, B=3, C=5, Cycle=10, Instruction=7, Clock=11, Reset=12)
 
         self._buses = dict(
             A=[48 + i for i in range(BUS_WIDTH)],
             B=[32 + i for i in range(BUS_WIDTH)],
-            C=[16+i for i in range(BUS_WIDTH)],
-            Instruction=[0+i for i in range(BUS_WIDTH)],
-            )
+            C=[16 + i for i in range(BUS_WIDTH)],
+            Instruction=[0 + i for i in range(BUS_WIDTH)],
+        )
         self._cycle = [64 + i for i in reversed(range(CYCLE_WIDTH))]
-        
 
         # Now start the GPIO bits
         GPIO.setmode(GPIO.BOARD)
@@ -55,7 +47,7 @@ class _Output:
         for p in self._enables.values():
             GPIO.setup(p, GPIO.OUT)
             GPIO.output(p, GPIO.HIGH)
-            
+
     def _send(self):
         # Prepare to send
         GPIO.output(self._select_out, GPIO.LOW)
@@ -67,20 +59,20 @@ class _Output:
         GPIO.output(self._select_out, GPIO.HIGH)
         # Idle clk_out low
         GPIO.output(self._clk_out, GPIO.LOW)
-            
+
     def set_oe(self, target: str, value: bool):
         GPIO.output(self._enables[target], value)
 
     def set_bus(self, target: str, value: Union[int, bitarray.bitarray]):
         if isinstance(value, int):
-            assert value >=0 and value < 2**BUS_WIDTH
+            assert value >= 0 and value < 2 ** BUS_WIDTH
             send_values = bitarray.util.int2ba(value, length=BUS_WIDTH, endian="little")
         else:
             send_values = value
 
         for i in range(BUS_WIDTH):
             bus_idx = self._buses[target][i]
-            self._outputs[bus_idx] = send_values[BUS_WIDTH-i-1]
+            self._outputs[bus_idx] = send_values[BUS_WIDTH - i - 1]
 
         self._send()
 
@@ -98,17 +90,14 @@ class _Output:
 
         self._send()
 
+
 class _Input:
     def __init__(self):
         self.n_pins = 80
 
         self._inputs = [False for _ in range(self.n_pins)]
-        self._bus_starts = dict(
-            A=16,
-            B=32,
-            C=48,
-            Instruction=64
-            )
+        self._bus_starts = dict(A=16, B=32, C=48, Instruction=64)
+        self._cycle_start = 8
 
         # Designate the pins
         self._clk_in = 40
@@ -118,7 +107,7 @@ class _Input:
 
         # Board setup
         GPIO.setmode(GPIO.BOARD)
-        
+
         GPIO.setup(self._clk_in, GPIO.OUT)
         GPIO.setup(self._select_in, GPIO.OUT)
         GPIO.output(self._select_in, GPIO.HIGH)
@@ -140,10 +129,22 @@ class _Input:
 
     def read_bus(self, bus: str) -> int:
         idx = self._bus_starts[bus]
-        byte_0 = list(reversed(self._inputs[idx:idx+BUS_WIDTH//2]))
-        byte_1 = list(reversed(self._inputs[idx+BUS_WIDTH//2:idx+BUS_WIDTH]))
+        byte_0 = list(reversed(self._inputs[idx : idx + BUS_WIDTH // 2]))
+        byte_1 = list(reversed(self._inputs[idx + BUS_WIDTH // 2 : idx + BUS_WIDTH]))
         ba = bitarray.bitarray(byte_0 + byte_1, endian="little")
         return bitarray.util.ba2int(ba)
+
+    def read_cycle(self) -> int:
+        vals = list(
+            reversed(self._inputs[self._cycle_start : self._cycle_start + CYCLE_WIDTH])
+        )
+        step = -1
+        for i in range(CYCLE_WIDTH):
+            if vals[i]:
+                assert step < 0, "Two steps set!"
+                step = i
+        return step
+
 
 # Temporary for testing
 
@@ -174,3 +175,4 @@ print(input.read_bus("A"))
 print(input.read_bus("B"))
 print(input.read_bus("C"))
 print(input.read_bus("Instruction"))
+print(input.read_cycle())
