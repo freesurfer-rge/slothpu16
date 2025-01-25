@@ -606,6 +606,14 @@
     [
       "d091cb3f-7eec-4a36-9d8e-342bc5d89675",
       "Adder Subtractor"
+    ],
+    [
+      "40a4851d-3776-48e7-a0c8-9960207886d9",
+      "Comparator"
+    ],
+    [
+      "a60bb6a4-3574-4ce0-aeef-b55e90231141",
+      "XOR NAND"
     ]
   ],
   "text_variables": {}

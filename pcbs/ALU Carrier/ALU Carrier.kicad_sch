@@ -1463,6 +1463,12 @@
 			)
 		)
 	)
+	(junction
+		(at 166.37 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e80abd3-42c3-44e5-8b84-ee2bd8b268b8")
+	)
 	(no_connect
 		(at 44.45 76.2)
 		(uuid "32b7fce2-0bb5-4d14-b3bb-acf6c70449f7")
@@ -1563,6 +1569,16 @@
 		)
 		(uuid "17d89e6a-4cae-4158-b51a-8dd65684018d")
 	)
+	(bus
+		(pts
+			(xy 227.33 38.1) (xy 215.9 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a6c2833-67f3-4e09-9aca-a12a796f2da9")
+	)
 	(wire
 		(pts
 			(xy 29.21 71.12) (xy 31.75 71.12)
@@ -1655,6 +1671,26 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 62.23) (xy 177.8 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3055e05f-e7d2-49de-81f4-dfe3daedc824")
+	)
+	(bus
+		(pts
+			(xy 166.37 76.2) (xy 166.37 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "329025c3-cb20-4d86-a332-f2988202ccc3")
+	)
+	(wire
+		(pts
 			(xy 44.45 97.79) (xy 46.99 97.79)
 		)
 		(stroke
@@ -1732,6 +1768,16 @@
 			(type default)
 		)
 		(uuid "525fd17d-234f-42ce-9911-d0e0a8f1a04f")
+	)
+	(wire
+		(pts
+			(xy 132.08 38.1) (xy 152.4 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5660b3c8-16a6-45c2-891c-cf3b05a15c87")
 	)
 	(wire
 		(pts
@@ -1903,6 +1949,16 @@
 		)
 		(uuid "9373e114-9216-48f2-8465-cae8bac4424c")
 	)
+	(bus
+		(pts
+			(xy 215.9 72.39) (xy 227.33 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "940faeb7-f689-48af-bf2a-629ddafe3387")
+	)
 	(wire
 		(pts
 			(xy 29.21 97.79) (xy 31.75 97.79)
@@ -1945,7 +2001,7 @@
 	)
 	(bus
 		(pts
-			(xy 165.1 45.72) (xy 177.8 45.72)
+			(xy 165.1 45.72) (xy 166.37 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2023,6 +2079,16 @@
 		)
 		(uuid "ba27fa9d-c9a9-4c6a-b5a1-320afbfaf1da")
 	)
+	(bus
+		(pts
+			(xy 177.8 76.2) (xy 166.37 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbeb4f5b-b376-41ae-bcf9-092ff7ddf965")
+	)
 	(wire
 		(pts
 			(xy 29.21 50.8) (xy 31.75 50.8)
@@ -2033,6 +2099,16 @@
 		)
 		(uuid "bc9b88a9-0e1f-48e3-ad39-8cd2696d5c9b")
 	)
+	(bus
+		(pts
+			(xy 227.33 72.39) (xy 227.33 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf5b56c7-ddff-4400-9f6d-e552fdc6a873")
+	)
 	(wire
 		(pts
 			(xy 44.45 66.04) (xy 46.99 66.04)
@@ -2042,6 +2118,16 @@
 			(type default)
 		)
 		(uuid "c38042ef-8b45-487a-a57e-dff165b84cb2")
+	)
+	(bus
+		(pts
+			(xy 166.37 45.72) (xy 177.8 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6420c53-a446-4737-8a71-89c87277f2b4")
 	)
 	(wire
 		(pts
@@ -2072,6 +2158,16 @@
 			(type default)
 		)
 		(uuid "cf81383f-6a15-498d-8c12-f85163f784d8")
+	)
+	(wire
+		(pts
+			(xy 152.4 38.1) (xy 152.4 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf928604-81ec-4b17-9d52-fdec3746f521")
 	)
 	(wire
 		(pts
@@ -3688,6 +3784,84 @@
 		)
 	)
 	(sheet
+		(at 177.8 58.42)
+		(size 38.1 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "40a4851d-3776-48e7-a0c8-9960207886d9")
+		(property "Sheetname" "Comparator"
+			(at 177.8 57.7084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "compare.kicad_sch"
+			(at 177.8 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A[0..15]" input
+			(at 177.8 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d6cb007d-1e3c-45a2-a93a-a8f142d211a0")
+		)
+		(pin "B[0..15]" input
+			(at 177.8 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2812b6eb-d35b-4c01-adf1-75c7a92736a8")
+		)
+		(pin "~{Compare}" input
+			(at 177.8 62.23 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "415a73ae-c5f7-4b82-bbcc-a2d1ecf6c9da")
+		)
+		(pin "Out[0..15]" tri_state
+			(at 215.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9ba29dba-1563-4a0e-92cf-96f303f43856")
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 100.33 25.4)
 		(size 31.75 25.4)
 		(fields_autoplaced yes)
@@ -3801,6 +3975,44 @@
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 88.9)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a60bb6a4-3574-4ce0-aeef-b55e90231141")
+		(property "Sheetname" "XOR NAND"
+			(at 177.8 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "xornand.kicad_sch"
+			(at 177.8 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
+					(page "5")
 				)
 			)
 		)
