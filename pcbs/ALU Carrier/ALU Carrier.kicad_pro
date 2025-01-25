@@ -602,6 +602,10 @@
     [
       "76c82fde-9a27-48e2-82d2-e603579339ec",
       "Instruction Decoder"
+    ],
+    [
+      "d091cb3f-7eec-4a36-9d8e-342bc5d89675",
+      "Adder Subtractor"
     ]
   ],
   "text_variables": {}

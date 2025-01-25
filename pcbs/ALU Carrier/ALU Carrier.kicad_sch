@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "2be9e5f9-941e-4c29-a733-4c8d2e8b8610")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
 			(pin_names
@@ -1755,6 +1755,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 27.94) (xy 177.8 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c8c6de2-6817-48d4-8469-af38773660c6")
+	)
+	(wire
+		(pts
 			(xy 44.45 128.27) (xy 46.99 128.27)
 		)
 		(stroke
@@ -1865,6 +1875,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 30.48) (xy 177.8 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852b42e6-148b-4f83-bd22-a2a7c82044ae")
+	)
+	(wire
+		(pts
 			(xy 44.45 143.51) (xy 46.99 143.51)
 		)
 		(stroke
@@ -1922,6 +1942,16 @@
 			(type default)
 		)
 		(uuid "a1d843a2-8474-4036-8b96-55f32cc1b237")
+	)
+	(bus
+		(pts
+			(xy 165.1 45.72) (xy 177.8 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a4d84e-83ce-4164-ae8e-b4c4f25acb5d")
 	)
 	(wire
 		(pts
@@ -2860,6 +2890,17 @@
 		)
 		(uuid "d283527a-425b-4a75-94eb-7a52672d5360")
 	)
+	(label "A[0..15]"
+		(at 165.1 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d54fe33b-a50d-43df-bb9d-bb8957354603")
+	)
 	(label "B14"
 		(at 29.21 71.12 180)
 		(fields_autoplaced yes)
@@ -3676,10 +3717,178 @@
 				(justify left top)
 			)
 		)
+		(pin "I[0..15]" input
+			(at 100.33 44.45 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e3d23da0-1dd9-4c77-88e3-4ccc148caa7b")
+		)
+		(pin "Cycle[0..4]" input
+			(at 100.33 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "96b11f5c-2762-4a0c-9407-1898dff24065")
+		)
+		(pin "~{XOR}" output
+			(at 132.08 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5a46808f-612a-41af-aee4-357b383d2028")
+		)
+		(pin "~{Compare}" output
+			(at 132.08 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8f3549ee-780b-4262-96ad-baf954df9f14")
+		)
+		(pin "~{NAND}" output
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9705cb56-696b-40ce-aa88-6dac84d85c18")
+		)
+		(pin "~{SUB}" output
+			(at 132.08 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d2fa212b-b968-4642-845c-bbfd69bfb3bb")
+		)
+		(pin "~{Barrel}" output
+			(at 132.08 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c1aa164b-49da-482b-9a9c-b5d8d490baff")
+		)
+		(pin "~{ADD}" output
+			(at 132.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6c081d51-952c-489e-bce1-15e168795186")
+		)
 		(instances
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 25.4)
+		(size 38.1 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d091cb3f-7eec-4a36-9d8e-342bc5d89675")
+		(property "Sheetname" "Adder Subtractor"
+			(at 177.8 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "addsub.kicad_sch"
+			(at 177.8 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{ADD}" input
+			(at 177.8 27.94 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "31388621-e11a-42de-8815-a1566c18c0ff")
+		)
+		(pin "A[0..15]" input
+			(at 177.8 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7691ca5a-402e-4198-ac88-27a339220d4c")
+		)
+		(pin "B[0..15]" input
+			(at 177.8 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cc1f99e0-f7d7-4644-99ba-c23a90fcaacd")
+		)
+		(pin "~{SUB}" input
+			(at 177.8 30.48 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c9c98405-c722-44df-9b0b-cba315168f9a")
+		)
+		(pin "Out[0..15]" tri_state
+			(at 215.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d9c44835-9b1a-4f1f-a019-f511e50406ac")
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
+					(page "3")
 				)
 			)
 		)
