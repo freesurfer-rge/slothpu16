@@ -614,6 +614,10 @@
     [
       "a60bb6a4-3574-4ce0-aeef-b55e90231141",
       "XOR NAND"
+    ],
+    [
+      "86da08c2-436a-4621-a1d2-44489f176d64",
+      "Barrel Shifter"
     ]
   ],
   "text_variables": {}
