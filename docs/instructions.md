@@ -37,3 +37,18 @@ The individual bits are numbered 0-3 from low memory.
         - Halt
     - Other
         - Set
+
+## Arithmetic Logic Unit
+
+The ALU is only active on the Decode/Execute and Commit stages of the computational cycle.
+During these two stages, the ALU will take its inputs from the A & B buses, and place the appropriate output on the C bus.
+The instructions are:
+
+- `0000` Add (A+B)
+- `1000` Subtract  (A-B)
+- `0010` Compare (three bits of C will indicate, A<B, A=B or A>B)
+- `1010` NAND (A NAND B)
+- `0110` XOR (A XOR B)
+- `1110` Barrel shift (shift A by n bits, where n is the bottom four bits of B)
+
+Note that in all cases i<sub>3</sub> = 0.
