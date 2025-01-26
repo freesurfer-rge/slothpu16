@@ -618,6 +618,10 @@
     [
       "86da08c2-436a-4621-a1d2-44489f176d64",
       "Barrel Shifter"
+    ],
+    [
+      "6830a629-4379-4a8e-8ff8-51ceeb5f4e09",
+      "Enabler"
     ]
   ],
   "text_variables": {}

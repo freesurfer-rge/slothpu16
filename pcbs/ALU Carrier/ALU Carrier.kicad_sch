@@ -1464,43 +1464,43 @@
 		)
 	)
 	(junction
-		(at 227.33 101.6)
+		(at 248.92 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11299fe9-0dd6-4675-aea3-353b562564c4")
 	)
 	(junction
-		(at 170.18 111.76)
+		(at 191.77 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2005bd8d-42f2-47d7-9abe-c717d4a16b46")
 	)
 	(junction
-		(at 166.37 45.72)
+		(at 187.96 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e80abd3-42c3-44e5-8b84-ee2bd8b268b8")
 	)
 	(junction
-		(at 170.18 78.74)
+		(at 191.77 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7256bf15-fb14-468e-96cf-5f70b066ab02")
 	)
 	(junction
-		(at 166.37 76.2)
+		(at 187.96 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbedace5-4381-4df6-9c3f-5c986962b7b5")
 	)
 	(junction
-		(at 227.33 72.39)
+		(at 248.92 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1bc5c52-81fe-408b-a2df-d61c19926d49")
 	)
 	(junction
-		(at 166.37 109.22)
+		(at 187.96 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcf9f560-8a7b-400c-b9b2-dd9c82c667af")
@@ -1557,7 +1557,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 92.71) (xy 177.8 92.71)
+			(xy 171.45 113.03) (xy 199.39 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1617,7 +1617,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 76.2) (xy 166.37 109.22)
+			(xy 187.96 96.52) (xy 187.96 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1627,7 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 95.25) (xy 147.32 95.25)
+			(xy 199.39 115.57) (xy 168.91 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1637,7 +1637,7 @@
 	)
 	(bus
 		(pts
-			(xy 227.33 38.1) (xy 215.9 38.1)
+			(xy 248.92 58.42) (xy 237.49 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1657,7 +1657,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 101.6) (xy 227.33 101.6)
+			(xy 237.49 121.92) (xy 248.92 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1677,7 +1677,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 109.22) (xy 177.8 109.22)
+			(xy 187.96 129.54) (xy 199.39 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1687,7 +1687,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 40.64) (xy 149.86 92.71)
+			(xy 171.45 60.96) (xy 171.45 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1747,7 +1747,7 @@
 	)
 	(bus
 		(pts
-			(xy 170.18 148.59) (xy 170.18 111.76)
+			(xy 191.77 168.91) (xy 191.77 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1777,7 +1777,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 45.72) (xy 132.08 45.72)
+			(xy 166.37 66.04) (xy 153.67 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1787,7 +1787,7 @@
 	)
 	(bus
 		(pts
-			(xy 170.18 48.26) (xy 170.18 78.74)
+			(xy 191.77 68.58) (xy 191.77 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1797,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 62.23) (xy 177.8 62.23)
+			(xy 173.99 82.55) (xy 199.39 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1807,7 +1807,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 76.2) (xy 166.37 45.72)
+			(xy 187.96 96.52) (xy 187.96 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1817,7 +1817,7 @@
 	)
 	(bus
 		(pts
-			(xy 227.33 101.6) (xy 227.33 72.39)
+			(xy 248.92 121.92) (xy 248.92 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1847,7 +1847,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 148.59) (xy 170.18 148.59)
+			(xy 199.39 168.91) (xy 191.77 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1867,7 +1867,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 95.25) (xy 147.32 43.18)
+			(xy 168.91 115.57) (xy 168.91 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1877,7 +1877,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 139.7) (xy 227.33 139.7)
+			(xy 237.49 160.02) (xy 248.92 160.02)
 		)
 		(stroke
 			(width 0)
@@ -1937,7 +1937,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 38.1) (xy 152.4 38.1)
+			(xy 153.67 58.42) (xy 173.99 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1967,7 +1967,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 27.94) (xy 177.8 27.94)
+			(xy 153.67 48.26) (xy 199.39 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2017,7 +2017,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 146.05) (xy 177.8 146.05)
+			(xy 187.96 166.37) (xy 199.39 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2087,7 +2087,7 @@
 	)
 	(bus
 		(pts
-			(xy 170.18 78.74) (xy 177.8 78.74)
+			(xy 191.77 99.06) (xy 199.39 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2097,7 +2097,7 @@
 	)
 	(bus
 		(pts
-			(xy 170.18 111.76) (xy 170.18 78.74)
+			(xy 191.77 132.08) (xy 191.77 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2117,7 +2117,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 30.48) (xy 177.8 30.48)
+			(xy 153.67 50.8) (xy 199.39 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2137,7 +2137,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 40.64) (xy 149.86 40.64)
+			(xy 153.67 60.96) (xy 171.45 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2157,7 +2157,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 72.39) (xy 227.33 72.39)
+			(xy 237.49 92.71) (xy 248.92 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2177,7 +2177,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 132.08) (xy 144.78 45.72)
+			(xy 166.37 152.4) (xy 166.37 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2187,7 +2187,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 48.26) (xy 170.18 48.26)
+			(xy 199.39 68.58) (xy 191.77 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2227,7 +2227,7 @@
 	)
 	(bus
 		(pts
-			(xy 165.1 45.72) (xy 166.37 45.72)
+			(xy 186.69 66.04) (xy 187.96 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2277,7 +2277,7 @@
 	)
 	(bus
 		(pts
-			(xy 227.33 139.7) (xy 227.33 101.6)
+			(xy 248.92 160.02) (xy 248.92 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2317,7 +2317,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 43.18) (xy 132.08 43.18)
+			(xy 168.91 63.5) (xy 153.67 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2327,7 +2327,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 76.2) (xy 166.37 76.2)
+			(xy 199.39 96.52) (xy 187.96 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2347,7 +2347,7 @@
 	)
 	(bus
 		(pts
-			(xy 227.33 72.39) (xy 227.33 38.1)
+			(xy 248.92 92.71) (xy 248.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2367,7 +2367,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 109.22) (xy 166.37 146.05)
+			(xy 187.96 129.54) (xy 187.96 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2377,7 +2377,7 @@
 	)
 	(bus
 		(pts
-			(xy 166.37 45.72) (xy 177.8 45.72)
+			(xy 187.96 66.04) (xy 199.39 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2417,7 +2417,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 38.1) (xy 152.4 62.23)
+			(xy 173.99 58.42) (xy 173.99 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2517,7 +2517,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 132.08) (xy 144.78 132.08)
+			(xy 199.39 152.4) (xy 166.37 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2597,6 +2597,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 48.26) (xy 121.92 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c8dd47-4ab1-4fb3-bfb8-667f85dc84de")
+	)
+	(wire
+		(pts
 			(xy 44.45 113.03) (xy 46.99 113.03)
 		)
 		(stroke
@@ -2607,7 +2617,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 111.76) (xy 170.18 111.76)
+			(xy 199.39 132.08) (xy 191.77 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3263,7 +3273,7 @@
 		(uuid "d283527a-425b-4a75-94eb-7a52672d5360")
 	)
 	(label "A[0..15]"
-		(at 165.1 45.72 180)
+		(at 186.69 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4060,7 +4070,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 58.42)
+		(at 199.39 78.74)
 		(size 38.1 24.13)
 		(fields_autoplaced yes)
 		(stroke
@@ -4072,7 +4082,7 @@
 		)
 		(uuid "40a4851d-3776-48e7-a0c8-9960207886d9")
 		(property "Sheetname" "Comparator"
-			(at 177.8 57.7084 0)
+			(at 199.39 78.0284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4081,7 +4091,7 @@
 			)
 		)
 		(property "Sheetfile" "compare.kicad_sch"
-			(at 177.8 83.1346 0)
+			(at 199.39 103.4546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,7 +4100,7 @@
 			)
 		)
 		(pin "A[0..15]" input
-			(at 177.8 76.2 180)
+			(at 199.39 96.52 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4100,7 +4110,7 @@
 			(uuid "d6cb007d-1e3c-45a2-a93a-a8f142d211a0")
 		)
 		(pin "B[0..15]" input
-			(at 177.8 78.74 180)
+			(at 199.39 99.06 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4120,7 @@
 			(uuid "2812b6eb-d35b-4c01-adf1-75c7a92736a8")
 		)
 		(pin "~{Compare}" input
-			(at 177.8 62.23 180)
+			(at 199.39 82.55 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4120,7 +4130,7 @@
 			(uuid "415a73ae-c5f7-4b82-bbcc-a2d1ecf6c9da")
 		)
 		(pin "Out[0..15]" tri_state
-			(at 215.9 72.39 0)
+			(at 237.49 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4138,7 +4148,65 @@
 		)
 	)
 	(sheet
-		(at 100.33 25.4)
+		(at 85.09 40.64)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6830a629-4379-4a8e-8ff8-51ceeb5f4e09")
+		(property "Sheetname" "Enabler"
+			(at 85.09 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enabler.kicad_sch"
+			(at 85.09 53.9246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{Enable}" output
+			(at 110.49 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "54f62547-19e1-43d6-a7d0-f456ef0ad3bd")
+		)
+		(pin "Cycle[0..4]" input
+			(at 85.09 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "04846ec1-5a5c-45d3-8c1f-c8aeeec0161c")
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 45.72)
 		(size 31.75 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -4150,7 +4218,7 @@
 		)
 		(uuid "76c82fde-9a27-48e2-82d2-e603579339ec")
 		(property "Sheetname" "Instruction Decoder"
-			(at 100.33 24.6884 0)
+			(at 121.92 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4159,7 +4227,7 @@
 			)
 		)
 		(property "Sheetfile" "decoder.kicad_sch"
-			(at 100.33 51.3846 0)
+			(at 121.92 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4168,7 +4236,7 @@
 			)
 		)
 		(pin "I[0..15]" input
-			(at 100.33 44.45 180)
+			(at 121.92 64.77 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4177,18 +4245,8 @@
 			)
 			(uuid "e3d23da0-1dd9-4c77-88e3-4ccc148caa7b")
 		)
-		(pin "Cycle[0..4]" input
-			(at 100.33 48.26 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "96b11f5c-2762-4a0c-9407-1898dff24065")
-		)
 		(pin "~{XOR}" output
-			(at 132.08 40.64 0)
+			(at 153.67 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4198,7 +4256,7 @@
 			(uuid "5a46808f-612a-41af-aee4-357b383d2028")
 		)
 		(pin "~{Compare}" output
-			(at 132.08 38.1 0)
+			(at 153.67 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4208,7 +4266,7 @@
 			(uuid "8f3549ee-780b-4262-96ad-baf954df9f14")
 		)
 		(pin "~{NAND}" output
-			(at 132.08 43.18 0)
+			(at 153.67 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4276,7 @@
 			(uuid "9705cb56-696b-40ce-aa88-6dac84d85c18")
 		)
 		(pin "~{SUB}" output
-			(at 132.08 30.48 0)
+			(at 153.67 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4228,7 +4286,7 @@
 			(uuid "d2fa212b-b968-4642-845c-bbfd69bfb3bb")
 		)
 		(pin "~{Barrel}" output
-			(at 132.08 45.72 0)
+			(at 153.67 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,7 +4296,7 @@
 			(uuid "c1aa164b-49da-482b-9a9c-b5d8d490baff")
 		)
 		(pin "~{ADD}" output
-			(at 132.08 27.94 0)
+			(at 153.67 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4246,6 +4304,16 @@
 				(justify right)
 			)
 			(uuid "6c081d51-952c-489e-bce1-15e168795186")
+		)
+		(pin "~{Enable}" input
+			(at 121.92 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7c4e527f-0445-4e8b-ae14-49b349d3d49e")
 		)
 		(instances
 			(project "ALU Carrier"
@@ -4256,7 +4324,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 127)
+		(at 199.39 147.32)
 		(size 38.1 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -4268,7 +4336,7 @@
 		)
 		(uuid "86da08c2-436a-4621-a1d2-44489f176d64")
 		(property "Sheetname" "Barrel Shifter"
-			(at 177.8 126.2884 0)
+			(at 199.39 146.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4345,7 @@
 			)
 		)
 		(property "Sheetfile" "barrel.kicad_sch"
-			(at 177.8 152.9846 0)
+			(at 199.39 173.3046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4354,7 @@
 			)
 		)
 		(pin "A[0..15]" input
-			(at 177.8 146.05 180)
+			(at 199.39 166.37 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +4364,7 @@
 			(uuid "dd9e60dd-098f-4478-9c40-6fb3690826e6")
 		)
 		(pin "B[0..15]" input
-			(at 177.8 148.59 180)
+			(at 199.39 168.91 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4306,7 +4374,7 @@
 			(uuid "e7377f1e-41ad-4493-aee7-3086e4f827e7")
 		)
 		(pin "Out[0..15]" tri_state
-			(at 215.9 139.7 0)
+			(at 237.49 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4316,7 +4384,7 @@
 			(uuid "df4674b6-3736-4ab8-b145-c6314d39e70a")
 		)
 		(pin "~{Shift}" input
-			(at 177.8 132.08 180)
+			(at 199.39 152.4 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +4402,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 88.9)
+		(at 199.39 109.22)
 		(size 38.1 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -4346,7 +4414,7 @@
 		)
 		(uuid "a60bb6a4-3574-4ce0-aeef-b55e90231141")
 		(property "Sheetname" "XOR NAND"
-			(at 177.8 88.1884 0)
+			(at 199.39 108.5084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4355,7 +4423,7 @@
 			)
 		)
 		(property "Sheetfile" "xornand.kicad_sch"
-			(at 177.8 114.8846 0)
+			(at 199.39 135.2046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4364,7 +4432,7 @@
 			)
 		)
 		(pin "~{NAND}" input
-			(at 177.8 95.25 180)
+			(at 199.39 115.57 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4374,7 +4442,7 @@
 			(uuid "8c63e6a2-8e4c-40ae-8a50-ecff469ca9b7")
 		)
 		(pin "~{XOR}" input
-			(at 177.8 92.71 180)
+			(at 199.39 113.03 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +4452,7 @@
 			(uuid "d0e6f0ab-39de-4db8-acb7-384ebbe556ff")
 		)
 		(pin "A[0..15]" input
-			(at 177.8 109.22 180)
+			(at 199.39 129.54 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4462,7 @@
 			(uuid "d4c53895-e185-43b7-9ffd-53efdf29fb59")
 		)
 		(pin "B[0..15]" input
-			(at 177.8 111.76 180)
+			(at 199.39 132.08 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4472,7 @@
 			(uuid "4837e245-4890-4b86-b3e0-c13a1f1f93f0")
 		)
 		(pin "Out[0..15]" tri_state
-			(at 215.9 101.6 0)
+			(at 237.49 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4490,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 25.4)
+		(at 199.39 45.72)
 		(size 38.1 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -4434,7 +4502,7 @@
 		)
 		(uuid "d091cb3f-7eec-4a36-9d8e-342bc5d89675")
 		(property "Sheetname" "Adder Subtractor"
-			(at 177.8 24.6884 0)
+			(at 199.39 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4443,7 +4511,7 @@
 			)
 		)
 		(property "Sheetfile" "addsub.kicad_sch"
-			(at 177.8 51.3846 0)
+			(at 199.39 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,7 +4520,7 @@
 			)
 		)
 		(pin "~{ADD}" input
-			(at 177.8 27.94 180)
+			(at 199.39 48.26 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4530,7 @@
 			(uuid "31388621-e11a-42de-8815-a1566c18c0ff")
 		)
 		(pin "A[0..15]" input
-			(at 177.8 45.72 180)
+			(at 199.39 66.04 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4472,7 +4540,7 @@
 			(uuid "7691ca5a-402e-4198-ac88-27a339220d4c")
 		)
 		(pin "B[0..15]" input
-			(at 177.8 48.26 180)
+			(at 199.39 68.58 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4482,7 +4550,7 @@
 			(uuid "cc1f99e0-f7d7-4644-99ba-c23a90fcaacd")
 		)
 		(pin "~{SUB}" input
-			(at 177.8 30.48 180)
+			(at 199.39 50.8 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4560,7 @@
 			(uuid "c9c98405-c722-44df-9b0b-cba315168f9a")
 		)
 		(pin "Out[0..15]" tri_state
-			(at 215.9 38.1 0)
+			(at 237.49 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
