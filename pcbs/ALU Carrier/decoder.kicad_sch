@@ -3821,7 +3821,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 152.4 90.17 90)
+		(at 152.4 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3830,19 +3830,21 @@
 		(fields_autoplaced yes)
 		(uuid "0c10b603-a9be-4e68-8fb3-39499a72df65")
 		(property "Reference" "D2005"
-			(at 159.385 91.7575 0)
+			(at 154.94 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 156.845 91.7575 0)
+			(at 154.94 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -4486,7 +4488,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 165.1 90.17 90)
+		(at 165.1 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4495,19 +4497,21 @@
 		(fields_autoplaced yes)
 		(uuid "3bbbcf65-b132-4349-8b27-5b1b11315399")
 		(property "Reference" "D2006"
-			(at 172.085 91.7575 0)
+			(at 167.64 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 169.545 91.7575 0)
+			(at 167.64 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -4556,72 +4560,6 @@
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
 					(reference "D2006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 101.6 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4645a5d4-277f-4327-8db6-5e5182245512")
-		(property "Reference" "#PWR02003"
-			(at 101.6 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 101.6 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7369e77-24c2-4f8e-a0c6-7a23e04a0c35")
-		)
-		(instances
-			(project ""
-				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
-					(reference "#PWR02003")
 					(unit 1)
 				)
 			)
@@ -5253,7 +5191,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 190.5 90.17 90)
+		(at 190.5 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5262,19 +5200,21 @@
 		(fields_autoplaced yes)
 		(uuid "7c8e6575-aa23-4d65-a876-d58560eba55d")
 		(property "Reference" "D2008"
-			(at 197.485 91.7575 0)
+			(at 193.04 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 194.945 91.7575 0)
+			(at 193.04 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -5473,7 +5413,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 101.6 90.17 90)
+		(at 101.6 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5482,19 +5422,21 @@
 		(fields_autoplaced yes)
 		(uuid "84be48d6-a212-450c-924e-53cecab36d33")
 		(property "Reference" "D2001"
-			(at 108.585 91.7575 0)
+			(at 104.14 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 106.045 91.7575 0)
+			(at 104.14 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -5662,8 +5604,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 101.6 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ec09dd5-8b54-4343-b9fe-7a62b2200795")
+		(property "Reference" "#PWR02003"
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 101.6 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49f03e6f-336c-4b3f-80d3-e50c9285f23d")
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
+					(reference "#PWR02003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
-		(at 139.7 90.17 90)
+		(at 139.7 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5672,19 +5680,21 @@
 		(fields_autoplaced yes)
 		(uuid "920869e3-7fea-4b7e-b462-4a89d3f0808d")
 		(property "Reference" "D2004"
-			(at 146.685 91.7575 0)
+			(at 142.24 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Red"
-			(at 144.145 91.7575 0)
+			(at 142.24 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -5853,7 +5863,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 114.3 90.17 90)
+		(at 114.3 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5862,19 +5872,21 @@
 		(fields_autoplaced yes)
 		(uuid "95039155-5baa-4bb6-9a17-327a1a7a9c0a")
 		(property "Reference" "D2002"
-			(at 121.285 91.7575 0)
+			(at 116.84 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 118.745 91.7575 0)
+			(at 116.84 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -6227,7 +6239,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 127 90.17 90)
+		(at 127 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6236,19 +6248,21 @@
 		(fields_autoplaced yes)
 		(uuid "b4e7890b-e730-4250-87fd-5b816c81b159")
 		(property "Reference" "D2003"
-			(at 133.985 91.7575 0)
+			(at 129.54 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Red"
-			(at 131.445 91.7575 0)
+			(at 129.54 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
@@ -6458,7 +6472,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 177.8 90.17 90)
+		(at 177.8 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6467,19 +6481,21 @@
 		(fields_autoplaced yes)
 		(uuid "dec36a35-6312-4b56-93c7-59dd8277d141")
 		(property "Reference" "D2007"
-			(at 184.785 91.7575 0)
+			(at 180.34 87.3124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Blue"
-			(at 182.245 91.7575 0)
+			(at 180.34 89.8524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
