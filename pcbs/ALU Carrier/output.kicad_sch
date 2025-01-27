@@ -1724,6 +1724,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 63.5) (xy 63.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fde557f-c7d0-4cde-adb8-68ba4ac0eadb")
+	)
+	(wire
+		(pts
 			(xy 119.38 173.99) (xy 127 173.99)
 		)
 		(stroke
@@ -2251,6 +2261,16 @@
 			(type default)
 		)
 		(uuid "a2b5fb11-9b59-4c50-baf9-f31f0b84e51e")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 152.4 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a30a901f-ca77-4f9c-ba21-1ef6e96c76b0")
 	)
 	(wire
 		(pts
@@ -2784,6 +2804,7 @@
 	)
 	(label "Out6"
 		(at 88.9 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2794,6 +2815,7 @@
 	)
 	(label "C6"
 		(at 40.64 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2804,6 +2826,7 @@
 	)
 	(label "Out7"
 		(at 88.9 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2814,6 +2837,7 @@
 	)
 	(label "Out13"
 		(at 177.8 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2835,6 +2859,7 @@
 	)
 	(label "Out9"
 		(at 177.8 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2856,6 +2881,7 @@
 	)
 	(label "Out10"
 		(at 177.8 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2888,6 +2914,7 @@
 	)
 	(label "C15"
 		(at 129.54 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2898,6 +2925,7 @@
 	)
 	(label "C14"
 		(at 129.54 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2908,6 +2936,7 @@
 	)
 	(label "Out15"
 		(at 177.8 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2918,6 +2947,7 @@
 	)
 	(label "C0"
 		(at 40.64 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2928,6 +2958,7 @@
 	)
 	(label "Out0"
 		(at 88.9 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2960,6 +2991,7 @@
 	)
 	(label "Out3"
 		(at 88.9 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2970,6 +3002,7 @@
 	)
 	(label "Out8"
 		(at 177.8 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2991,6 +3024,7 @@
 	)
 	(label "C3"
 		(at 40.64 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3001,6 +3035,7 @@
 	)
 	(label "Out2"
 		(at 88.9 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3011,6 +3046,7 @@
 	)
 	(label "C7"
 		(at 40.64 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3032,6 +3068,7 @@
 	)
 	(label "C5"
 		(at 40.64 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3042,6 +3079,7 @@
 	)
 	(label "C2"
 		(at 40.64 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3052,6 +3090,7 @@
 	)
 	(label "C11"
 		(at 129.54 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3062,6 +3101,7 @@
 	)
 	(label "Out14"
 		(at 177.8 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3072,6 +3112,7 @@
 	)
 	(label "Out12"
 		(at 177.8 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3093,6 +3134,7 @@
 	)
 	(label "C12"
 		(at 129.54 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3125,6 +3167,7 @@
 	)
 	(label "C10"
 		(at 129.54 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3146,6 +3189,7 @@
 	)
 	(label "C1"
 		(at 40.64 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3156,6 +3200,7 @@
 	)
 	(label "C13"
 		(at 129.54 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3177,6 +3222,7 @@
 	)
 	(label "Out11"
 		(at 177.8 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3198,6 +3244,7 @@
 	)
 	(label "C9"
 		(at 129.54 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3208,6 +3255,7 @@
 	)
 	(label "Out5"
 		(at 88.9 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3218,6 +3266,7 @@
 	)
 	(label "C4"
 		(at 40.64 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3228,6 +3277,7 @@
 	)
 	(label "C8"
 		(at 129.54 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3249,6 +3299,7 @@
 	)
 	(label "Out4"
 		(at 88.9 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3259,6 +3310,7 @@
 	)
 	(label "Out1"
 		(at 88.9 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4914,6 +4966,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 50.8 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6318df41-cbd5-4596-afb1-7192af0479f3")
+		(property "Reference" "#PWR08008"
+			(at 44.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2d6ec7f-56fc-49ad-8e32-e7947e433c66")
+		)
+		(instances
+			(project ""
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/08238967-dc73-4239-b057-bfde33a1b185"
+					(reference "#PWR08008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 143.51 153.67 270)
 		(unit 1)
@@ -5931,6 +6050,73 @@
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/08238967-dc73-4239-b057-bfde33a1b185"
 					(reference "R8015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afc4e77b-e7b7-49da-ac29-e98d1ae5c316")
+		(property "Reference" "#PWR08009"
+			(at 133.35 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03864692-e274-4a72-a5db-4dc3ef40cd39")
+		)
+		(instances
+			(project "ALU Carrier"
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/08238967-dc73-4239-b057-bfde33a1b185"
+					(reference "#PWR08009")
 					(unit 1)
 				)
 			)
