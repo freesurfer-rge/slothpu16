@@ -1681,7 +1681,7 @@
 		)
 		(uuid "c6a7384b-f2ad-4b7e-bc5f-50c77399d23e")
 	)
-	(hierarchical_label "I[0..15]"
+	(hierarchical_label "I[0..3]"
 		(shape input)
 		(at 25.4 25.4 180)
 		(fields_autoplaced yes)
