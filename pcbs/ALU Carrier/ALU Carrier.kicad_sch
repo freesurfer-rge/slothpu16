@@ -2541,6 +2541,16 @@
 		)
 		(uuid "98fdabdf-afa5-4822-8a93-a45602a67999")
 	)
+	(wire
+		(pts
+			(xy 74.93 44.45) (xy 85.09 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bb3845d-6d2a-4d6f-9a7b-5f4d2d61263e")
+	)
 	(bus
 		(pts
 			(xy 199.39 68.58) (xy 191.77 68.58)
@@ -3521,6 +3531,17 @@
 			(justify left bottom)
 		)
 		(uuid "9871d17b-1eef-4e74-9b31-1162e69d2c21")
+	)
+	(label "I3"
+		(at 74.93 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99359f1a-5079-4ee7-b9a7-7634be1838bf")
 	)
 	(label "B11"
 		(at 46.99 66.04 0)
@@ -5122,6 +5143,16 @@
 				(justify left)
 			)
 			(uuid "a6c76767-2a55-4268-9272-cef9c9de2178")
+		)
+		(pin "I3" input
+			(at 85.09 44.45 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "101491ac-41e5-48bf-995c-09e39136a3d9")
 		)
 		(instances
 			(project "ALU Carrier"

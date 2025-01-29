@@ -971,15 +971,6 @@
 		(uuid "3c90ed36-b6b8-4aee-b8b9-0099534d5701")
 	)
 	(bus_entry
-		(at 63.5 66.04)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b47dc685-8542-40a6-b74f-363a3cc0233c")
-	)
-	(bus_entry
 		(at 63.5 55.88)
 		(size 2.54 2.54)
 		(stroke
@@ -1169,16 +1160,6 @@
 	)
 	(bus
 		(pts
-			(xy 63.5 58.42) (xy 63.5 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c9065e4-85f4-492b-bb06-d7e775bab968")
-	)
-	(bus
-		(pts
 			(xy 25.4 25.4) (xy 63.5 25.4)
 		)
 		(stroke
@@ -1216,6 +1197,16 @@
 			(type default)
 		)
 		(uuid "68b04a56-0c7c-4e93-b108-82741e0e64e9")
+	)
+	(wire
+		(pts
+			(xy 63.5 68.58) (xy 72.39 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bbb37d6-99fb-49ab-8de2-8076332e4ea3")
 	)
 	(wire
 		(pts
@@ -1419,16 +1410,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 68.58) (xy 72.39 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c82773c1-c3af-423d-9537-057e0f768e2a")
-	)
-	(wire
-		(pts
 			(xy 92.71 71.12) (xy 177.8 71.12)
 		)
 		(stroke
@@ -1569,6 +1550,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 73.66) (xy 72.39 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1da265-f01a-4db8-8082-5c83257368f8")
+	)
+	(wire
+		(pts
 			(xy 177.8 83.82) (xy 177.8 86.36)
 		)
 		(stroke
@@ -1587,17 +1578,6 @@
 			(justify left bottom)
 		)
 		(uuid "43561be0-9037-4131-ae9c-aab1fe905537")
-	)
-	(label "I3"
-		(at 66.04 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9d6f6f40-1c23-4320-98ed-3368b9ebed31")
 	)
 	(label "I0"
 		(at 66.04 55.88 0)
@@ -2281,6 +2261,73 @@
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
 					(reference "D2008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 63.5 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e3039d3-0ccb-4f07-ab01-6223bd690cc6")
+		(property "Reference" "#PWR02005"
+			(at 67.31 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 59.69 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 63.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d6d49ca-736c-49cc-80da-cd887fb033cb")
+		)
+		(instances
+			(project ""
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
+					(reference "#PWR02005")
 					(unit 1)
 				)
 			)
@@ -3191,6 +3238,73 @@
 			(project "ALU Carrier"
 				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
 					(reference "R2008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 68.58 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd655d07-cd52-4c46-87ad-46b1fefbe38d")
+		(property "Reference" "#PWR02004"
+			(at 57.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9588cba2-1710-496f-98d0-5ce960ee2869")
+		)
+		(instances
+			(project ""
+				(path "/2be9e5f9-941e-4c29-a733-4c8d2e8b8610/76c82fde-9a27-48e2-82d2-e603579339ec"
+					(reference "#PWR02004")
 					(unit 1)
 				)
 			)
