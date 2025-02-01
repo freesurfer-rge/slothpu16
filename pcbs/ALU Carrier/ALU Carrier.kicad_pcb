@@ -5402,7 +5402,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R8017"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a86a3ff8-5337-4885-a0a2-b74f4cd12aa8")
@@ -5414,7 +5414,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "07ab0f2e-ea77-45ae-9f42-27096364c016")
 			(effects
@@ -5582,7 +5582,7 @@
 			(uuid "4e88716a-6f85-4e92-8c0d-bfca7551c5c2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "274bd69d-7f25-4d40-996d-e4815b96a472")
 			(effects
@@ -15864,7 +15864,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/6830a629-4379-4a8e-8ff8-51ceeb5f4e09/3639cca4-5c49-4ccd-92a2-4866b1662eea")
+		(path "/6830a629-4379-4a8e-8ff8-51ceeb5f4e09/55ccba46-baf4-4d78-b1ce-5e0918d6a1f3")
 		(sheetname "Enabler")
 		(sheetfile "enabler.kicad_sch")
 		(attr smd)
@@ -16466,7 +16466,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/6830a629-4379-4a8e-8ff8-51ceeb5f4e09/9e30dda1-69ce-4cc6-af6e-6987c8d9e41d")
+		(path "/6830a629-4379-4a8e-8ff8-51ceeb5f4e09/e994eb74-b53c-4637-81ae-218c03343bd7")
 		(sheetname "Enabler")
 		(sheetfile "enabler.kicad_sch")
 		(attr smd)
@@ -17224,7 +17224,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D8017"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3b1fdd41-9377-4cb2-a704-0a31ddd1a13a")
@@ -17236,7 +17236,7 @@
 			)
 		)
 		(property "Value" "Blue"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "d9f510a9-c33e-41a3-acf9-131b043b91a0")
 			(effects
@@ -17424,7 +17424,7 @@
 			(uuid "6d8de8a5-6d55-4a84-b02c-c0a021830c66")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5b0bcf82-6119-44f5-98b7-847f5630d612")
 			(effects
@@ -20964,6 +20964,18 @@
 				(size 1.2192 1.2192)
 				(thickness 0.2032)
 				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 242.57 259.08 0)
+		(layer "B.SilkS")
+		(uuid "7b52a905-7de2-4032-8c6f-07e699f130f2")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
 			)
 			(justify left mirror)
 		)
