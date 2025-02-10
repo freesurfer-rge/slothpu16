@@ -20,12 +20,21 @@ bus_vals = [
     65535,
 ]
 
+
+def cmp_result(A_val: int, B_val: int) -> int:
+    if A_val < B_val:
+        return 1
+    elif A_val > B_val:
+        return 4
+    else:
+        return 2
+
+
 instructions = {"compare": 4}
+result_fns = {"compare": cmp_result}
 
 
-@pytest.mark.parametrize("A", bus_vals)
-@pytest.mark.parametrize("B", bus_vals)
-def test_comparator(A, B):
+def run_test(A: int, B: int, instr: str):
     output = _Output()
     input = _Input()
 
@@ -36,7 +45,7 @@ def test_comparator(A, B):
 
     output.set_bus("A", A)
     output.set_bus("B", B)
-    output.set_bus("Instruction", instructions["compare"])
+    output.set_bus("Instruction", instructions[instr])
     output.send()
 
     active_cycles = [2, 3]
@@ -47,11 +56,12 @@ def test_comparator(A, B):
 
         c_val = input.read_bus("C")
         if cyc in active_cycles:
-            if A < B:
-                assert c_val == 1
-            elif A > B:
-                assert c_val == 4
-            else:
-                assert c_val == 2
+            assert c_val == result_fns[instr](A, B)
         else:
             assert c_val == 0
+
+
+@pytest.mark.parametrize("A", bus_vals)
+@pytest.mark.parametrize("B", bus_vals)
+def test_comparator(A, B):
+    run_test(A, B, "compare")
