@@ -20,6 +20,20 @@ bus_vals = [
     65535,
 ]
 
+N_BITS = 16
+
+
+def add_result(A_val: int, B_val: int) -> int:
+    sum = A_val + B_val
+    if sum >= 2**N_BITS:
+        sum -= 2**N_BITS
+    return sum
+
+def sub_result(A_val: int, B_val: int) -> int:
+    diff = A_val - B_val
+    if diff < 0:
+        diff += 2**N_BITS
+    return diff
 
 def cmp_result(A_val: int, B_val: int) -> int:
     if A_val < B_val:
@@ -30,8 +44,8 @@ def cmp_result(A_val: int, B_val: int) -> int:
         return 2
 
 
-instructions = {"compare": 4}
-result_fns = {"compare": cmp_result}
+instructions = {"add": 0, "sub": 1, "compare": 4}
+result_fns = {"add": add_result, "sub": sub_result, "compare": cmp_result}
 
 
 def run_test(A: int, B: int, instr: str):
@@ -60,6 +74,19 @@ def run_test(A: int, B: int, instr: str):
         else:
             assert c_val == 0
 
+
+
+    
+@pytest.mark.parametrize("A", bus_vals)
+@pytest.mark.parametrize("B", bus_vals)
+def test_adder(A, B):
+    run_test(A, B, "add")
+
+    
+@pytest.mark.parametrize("A", bus_vals)
+@pytest.mark.parametrize("B", bus_vals)
+def test_subtractor(A, B):
+    run_test(A, B, "sub")
 
 @pytest.mark.parametrize("A", bus_vals)
 @pytest.mark.parametrize("B", bus_vals)
