@@ -4,25 +4,35 @@ import bitarray.util
 
 from pi_backplane import _Input, _Output
 
-bus_vals = [
-    0,
-    1,
-    127,
-    128,
-    129,
-    1533,
-    2989,
-    32767,
-    32768,
-    32769,
-    45534,
-    60235,
-    61233,
-    65534,
-    65535,
-]
 
 N_BITS = 16
+
+# bus_vals = [0, 1]
+
+N_BITS = 16
+pwr_2 = [2 ** x for x in range(N_BITS)]
+pwr_2_off = [((2 ** N_BITS) - 1) - 2 ** x for x in range(N_BITS)]
+pwr_2_off_2 = [((2 ** N_BITS) - 2) - 2 ** x for x in range(N_BITS)]
+others = [
+    0,
+    23,
+    1065,
+    2999,
+    5132,
+    7111,
+    9147,
+    11298,
+    13221,
+    17984,
+    35632,
+    43211,
+    47231,
+    65321,
+]
+
+bus_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
+
+bus_vals = [0, 1]
 
 
 def add_result(A_val: int, B_val: int) -> int:
@@ -47,10 +57,12 @@ def cmp_result(A_val: int, B_val: int) -> int:
     else:
         return 2
 
+
 def nand_result(A_val: int, B_val: int) -> int:
     A = bitarray.util.int2ba(A_val, length=N_BITS, endian="little")
     B = bitarray.util.int2ba(B_val, length=N_BITS, endian="little")
     C = ~(A & B)
+    print(f"exp {C}")
     return bitarray.util.ba2int(C)
 
 
@@ -60,8 +72,15 @@ def xor_result(A_val: int, B_val: int) -> int:
     C = A ^ B
     return bitarray.util.ba2int(C)
 
-instructions = {"add": 0, "sub": 1, "compare": 4, "nand":5, "xor":6}
-result_fns = {"add": add_result, "sub": sub_result, "compare": cmp_result, "nand": nand_result, "xor":xor_result}
+
+instructions = {"add": 0, "sub": 1, "compare": 4, "nand": 5, "xor": 6}
+result_fns = {
+    "add": add_result,
+    "sub": sub_result,
+    "compare": cmp_result,
+    "nand": nand_result,
+    "xor": xor_result,
+}
 
 
 def run_test(A: int, B: int, instr: str):
@@ -86,6 +105,7 @@ def run_test(A: int, B: int, instr: str):
 
         c_val = input.read_bus("C")
         if cyc in active_cycles:
+            print(f"act {bitarray.util.int2ba(c_val, length=N_BITS, endian='little')}")
             assert c_val == result_fns[instr](A, B)
         else:
             assert c_val == 0
@@ -108,12 +128,13 @@ def test_subtractor(A, B):
 def test_comparator(A, B):
     run_test(A, B, "compare")
 
+
 @pytest.mark.parametrize("A", bus_vals)
 @pytest.mark.parametrize("B", bus_vals)
 def test_nand(A, B):
     run_test(A, B, "nand")
 
-    
+
 @pytest.mark.parametrize("A", bus_vals)
 @pytest.mark.parametrize("B", bus_vals)
 def test_xor(A, B):
