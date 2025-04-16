@@ -32,7 +32,7 @@ others = [
 
 bus_vals = pwr_2 + pwr_2_off + pwr_2_off_2 + others
 
-bus_vals = [0, 1]
+# bus_vals = [0, 1]
 
 
 def add_result(A_val: int, B_val: int) -> int:
@@ -73,13 +73,23 @@ def xor_result(A_val: int, B_val: int) -> int:
     return bitarray.util.ba2int(C)
 
 
-instructions = {"add": 0, "sub": 1, "compare": 4, "nand": 5, "xor": 6}
+def barrel_result(A_val: int, B_val: int) -> int:
+    A = bitarray.util.int2ba(A_val, length=N_BITS, endian="little")
+    expected = bitarray.util.zeros(N_BITS, endian="little")
+
+    for i in range(N_BITS):
+        expected[(i + B_val) % N_BITS] = A[i]
+    return bitarray.util.ba2int(expected)
+
+
+instructions = {"add": 0, "sub": 1, "compare": 4, "nand": 5, "xor": 6, "barrel": 7}
 result_fns = {
     "add": add_result,
     "sub": sub_result,
     "compare": cmp_result,
     "nand": nand_result,
     "xor": xor_result,
+    "barrel": barrel_result,
 }
 
 
@@ -139,3 +149,9 @@ def test_nand(A, B):
 @pytest.mark.parametrize("B", bus_vals)
 def test_xor(A, B):
     run_test(A, B, "xor")
+
+
+@pytest.mark.parametrize("A", bus_vals)
+@pytest.mark.parametrize("B", range(20))
+def test_barrel(A, B):
+    run_test(A, B, "barrel")
