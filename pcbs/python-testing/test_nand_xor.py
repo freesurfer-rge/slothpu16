@@ -20,11 +20,13 @@ class NandXorALUBoard:
         # Set all outputs low
         self._outputs = [0 for _ in range(self._tb.n_pins)]
         self.send()
-        self._tb.enable_outputs([True for _ in range(5)])
 
         # Except NAND and XOR
         self.NAND(True)
         self.XOR(True)
+
+        # Enable outputs
+        self._tb.enable_outputs([True for _ in range(5)])
 
         self.recv()
 
