@@ -2793,6 +2793,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 140.97) (xy 137.16 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462150bc-e0b2-44c1-b3bc-2da15f6ff976")
+	)
+	(wire
+		(pts
 			(xy 26.67 33.02) (xy 29.21 33.02)
 		)
 		(stroke
@@ -3781,6 +3791,16 @@
 		)
 		(uuid "e1db5d9e-f957-4e2d-8c2f-5d61d0e600b5")
 	)
+	(wire
+		(pts
+			(xy 121.92 138.43) (xy 137.16 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22e2bc0-cfe0-4032-9e06-34325420d67d")
+	)
 	(bus
 		(pts
 			(xy 127 120.65) (xy 137.16 120.65)
@@ -3993,6 +4013,7 @@
 	)
 	(label "Bo13"
 		(at 254 223.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4058,6 +4079,7 @@
 	)
 	(label "Bo15"
 		(at 254 228.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4090,6 +4112,7 @@
 	)
 	(label "Bo0"
 		(at 254 154.94 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4111,6 +4134,7 @@
 	)
 	(label "Ao13"
 		(at 254 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4121,6 +4145,7 @@
 	)
 	(label "Bo7"
 		(at 254 172.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4142,6 +4167,7 @@
 	)
 	(label "Bo9"
 		(at 254 213.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4163,6 +4189,7 @@
 	)
 	(label "Bo10"
 		(at 254 215.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4184,6 +4211,7 @@
 	)
 	(label "Bo4"
 		(at 254 165.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4238,6 +4266,7 @@
 	)
 	(label "Ao6"
 		(at 254 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4292,6 +4321,7 @@
 	)
 	(label "Ao10"
 		(at 254 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4313,6 +4343,7 @@
 	)
 	(label "Ao7"
 		(at 254 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4400,6 +4431,7 @@
 	)
 	(label "Ao8"
 		(at 254 83.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4443,6 +4475,7 @@
 	)
 	(label "Ao0"
 		(at 254 27.94 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4475,6 +4508,7 @@
 	)
 	(label "Ao12"
 		(at 254 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4496,6 +4530,7 @@
 	)
 	(label "Ao14"
 		(at 254 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4561,6 +4596,7 @@
 	)
 	(label "Ao1"
 		(at 254 30.48 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4571,6 +4607,7 @@
 	)
 	(label "Bo14"
 		(at 254 226.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4581,6 +4618,7 @@
 	)
 	(label "Ao3"
 		(at 254 35.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4602,6 +4640,7 @@
 	)
 	(label "Bo8"
 		(at 254 210.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4634,6 +4673,7 @@
 	)
 	(label "Ao2"
 		(at 254 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4666,6 +4706,7 @@
 	)
 	(label "Bo1"
 		(at 254 157.48 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4698,6 +4739,7 @@
 	)
 	(label "Bo6"
 		(at 254 170.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4840,6 +4882,7 @@
 	)
 	(label "Bo12"
 		(at 254 220.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4894,6 +4937,7 @@
 	)
 	(label "Bo2"
 		(at 254 160.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4915,6 +4959,7 @@
 	)
 	(label "Bo5"
 		(at 254 167.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4958,6 +5003,7 @@
 	)
 	(label "Bo3"
 		(at 254 162.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4979,6 +5025,7 @@
 	)
 	(label "Ao15"
 		(at 254 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5022,6 +5069,7 @@
 	)
 	(label "Bo11"
 		(at 254 218.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5032,6 +5080,7 @@
 	)
 	(label "Ao5"
 		(at 254 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5042,6 +5091,7 @@
 	)
 	(label "Ao11"
 		(at 254 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5085,6 +5135,7 @@
 	)
 	(label "Ao4"
 		(at 254 38.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5095,6 +5146,7 @@
 	)
 	(label "Ao9"
 		(at 254 86.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7065,8 +7117,8 @@
 		)
 	)
 	(sheet
-		(at 83.82 54.61)
-		(size 35.56 29.21)
+		(at 99.06 129.54)
+		(size 22.86 24.13)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -7077,7 +7129,7 @@
 		)
 		(uuid "b472a56c-acb8-4c9a-95e3-ff980670104d")
 		(property "Sheetname" "Enabler"
-			(at 83.82 53.8984 0)
+			(at 99.06 128.8284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7086,13 +7138,63 @@
 			)
 		)
 		(property "Sheetfile" "enabler.kicad_sch"
-			(at 83.82 84.4046 0)
+			(at 99.06 154.2546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "Cycle[2..4]" input
+			(at 99.06 133.35 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "647d0f51-6722-43e2-afdc-83f75b8013be")
+		)
+		(pin "~{Enable}" output
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6ceb3419-392c-4931-b72d-293417d6ad8a")
+		)
+		(pin "I[0..3]" input
+			(at 99.06 139.7 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cfbaf825-44e2-4e22-b922-4ae0b6fa0e8f")
+		)
+		(pin "~{AB_{Enable}}" output
+			(at 121.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4b42ed29-09b4-4cf4-828d-c144e96fd690")
+		)
+		(pin "RegCLK" output
+			(at 121.92 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "40e72c3d-58e8-445b-9543-cc6871633d89")
 		)
 		(instances
 			(project "Register File Carrier"
