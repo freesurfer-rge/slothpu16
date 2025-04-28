@@ -168,16 +168,18 @@ class TestRegisterFile:
 
     @pytest.mark.parametrize("value", all_vals)
     @pytest.mark.parametrize("reg", range(16))
-    def test_write_single(self, reg: int, value: int):
+    @pytest.mark.parametrize("base_val_offset", [0, 1, 127])
+    def test_write_single(self, reg: int, value: int, base_val_offset: int):
         rfcb = RegisterFileConnectorBoard()
 
         rfcb.Active(False)
         # Remember that we have the 'low' 8 of a 16 entry
         # register file
+        NUM_REGISTERS = 16
 
         # Set up
-        base_vals = [(2 ** i) % 256 for i in range(16)]
-        for i in range(16):
+        base_vals = [((2 ** i) + base_val_offset) % 256 for i in range(NUM_REGISTERS)]
+        for i in range(NUM_REGISTERS):
             rfcb.R_C(i)
             rfcb.write_C(base_vals[i])
             rfcb.Clock()
@@ -188,9 +190,9 @@ class TestRegisterFile:
         rfcb.write_C(value)
         rfcb.Clock()
 
-        for i_A in range(16):
+        for i_A in range(NUM_REGISTERS):
             rfcb.R_A(i_A)
-            for i_B in range(16):
+            for i_B in range(NUM_REGISTERS):
                 rfcb.R_B(i_B)
 
                 A_val = rfcb.read_A()
