@@ -178,7 +178,7 @@ class TestRegisterFile:
         NUM_REGISTERS = 16
 
         # Set up
-        base_vals = [((2 ** i)+base_val_offset) % 256 for i in range(NUM_REGISTERS)]
+        base_vals = [((2 ** i) + base_val_offset) % 256 for i in range(NUM_REGISTERS)]
         for i in range(NUM_REGISTERS):
             rfcb.R_C(i)
             rfcb.write_C(base_vals[i])
