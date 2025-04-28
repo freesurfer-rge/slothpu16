@@ -602,6 +602,10 @@
     [
       "6e99ae16-e240-45ed-8c3d-6829a63918a2",
       "Connector Block"
+    ],
+    [
+      "b472a56c-acb8-4c9a-95e3-ff980670104d",
+      "Enabler"
     ]
   ],
   "text_variables": {}
