@@ -67,4 +67,4 @@ Inputs will still be from A & B buses except for the Set instruction, but the ou
 - `0111` Halt. PC Update inhibited. Buses A, B and C ignored
 - `1111` Set constant. The low byte of bus C is set to the value of the 8 bits which usually identify the A and B buses. The A & B buses
 
-The instructions marked (*) have to suppress the update of the Register File.
+The instructions marked (*) have to suppress the update of the Register File. In a similar vein, the 'Set' instruction must suppress the output on buses A & B from the Register File
