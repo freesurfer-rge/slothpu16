@@ -606,6 +606,14 @@
     [
       "b472a56c-acb8-4c9a-95e3-ff980670104d",
       "Enabler"
+    ],
+    [
+      "0d5f3d4f-36a3-45de-b491-16cfbe0721cc",
+      "Output Buffer A"
+    ],
+    [
+      "17ce0966-f887-496c-87c5-a71274f25321",
+      "Output Buffer B"
     ]
   ],
   "text_variables": {}
