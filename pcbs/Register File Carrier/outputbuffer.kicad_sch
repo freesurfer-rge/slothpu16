@@ -1770,6 +1770,7 @@
 	)
 	(label "In10"
 		(at 193.04 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1780,6 +1781,7 @@
 	)
 	(label "In12"
 		(at 193.04 114.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1856,6 +1858,7 @@
 	)
 	(label "In15"
 		(at 193.04 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1888,6 +1891,7 @@
 	)
 	(label "In11"
 		(at 193.04 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1909,6 +1913,7 @@
 	)
 	(label "In9"
 		(at 193.04 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1930,6 +1935,7 @@
 	)
 	(label "In8"
 		(at 193.04 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1951,6 +1957,7 @@
 	)
 	(label "In7"
 		(at 193.04 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1961,6 +1968,7 @@
 	)
 	(label "In2"
 		(at 193.04 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1971,6 +1979,7 @@
 	)
 	(label "In4"
 		(at 193.04 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1981,6 +1990,7 @@
 	)
 	(label "In14"
 		(at 193.04 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2002,6 +2012,7 @@
 	)
 	(label "In6"
 		(at 193.04 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2012,6 +2023,7 @@
 	)
 	(label "In5"
 		(at 193.04 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2022,6 +2034,7 @@
 	)
 	(label "In3"
 		(at 193.04 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2054,6 +2067,7 @@
 	)
 	(label "In13"
 		(at 193.04 116.84 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2064,6 +2078,7 @@
 	)
 	(label "In1"
 		(at 193.04 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2074,6 +2089,7 @@
 	)
 	(label "In0"
 		(at 193.04 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

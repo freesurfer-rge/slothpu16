@@ -6007,7 +6007,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 152.4 162.56 0)
+		(at 83.82 147.32 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6016,7 +6016,7 @@
 		(fields_autoplaced yes)
 		(uuid "39e3c23d-9ca9-4037-9baa-bd41eb64a331")
 		(property "Reference" "U2001"
-			(at 152.4 153.67 0)
+			(at 83.82 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6024,7 +6024,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 152.4 156.21 0)
+			(at 83.82 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6032,7 +6032,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 152.4 162.56 0)
+			(at 83.82 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6041,7 +6041,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 152.4 162.56 0)
+			(at 83.82 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,7 +6050,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 152.4 162.56 0)
+			(at 83.82 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,7 +6059,7 @@
 			)
 		)
 		(property "LCSC" "C5590"
-			(at 152.4 162.56 0)
+			(at 83.82 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6516,7 +6516,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 83.82 147.32 0)
+		(at 152.4 162.56 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6525,7 +6525,7 @@
 		(fields_autoplaced yes)
 		(uuid "90555cec-7908-4ffa-bcd9-4a3a974f864f")
 		(property "Reference" "U2001"
-			(at 83.82 138.43 0)
+			(at 152.4 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6533,7 +6533,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 83.82 140.97 0)
+			(at 152.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6541,7 +6541,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 83.82 147.32 0)
+			(at 152.4 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6550,7 +6550,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 83.82 147.32 0)
+			(at 152.4 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6559,7 +6559,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 83.82 147.32 0)
+			(at 152.4 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6568,7 +6568,7 @@
 			)
 		)
 		(property "LCSC" "C5590"
-			(at 83.82 147.32 0)
+			(at 152.4 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
