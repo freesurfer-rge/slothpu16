@@ -1928,6 +1928,142 @@
 				)
 			)
 		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:LED"
 			(pin_numbers hide)
 			(pin_names
@@ -3259,6 +3395,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 179.07) (xy 163.83 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908ca086-8efc-4292-92e1-fbfb8d82f388")
+	)
+	(wire
+		(pts
 			(xy 87.63 40.64) (xy 87.63 50.8)
 		)
 		(stroke
@@ -3336,6 +3482,16 @@
 			(type default)
 		)
 		(uuid "98cc8a14-637f-4e3b-96b7-1435c0f27ab0")
+	)
+	(wire
+		(pts
+			(xy 101.6 134.62) (xy 110.49 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b5b7fa3-98a6-497e-bae6-f1fe0d1a2905")
 	)
 	(wire
 		(pts
@@ -3609,6 +3765,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 171.45) (xy 163.83 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc1e90c-aa02-4708-a8ea-e5d501f1fe49")
+	)
+	(wire
+		(pts
 			(xy 190.5 66.04) (xy 203.2 66.04)
 		)
 		(stroke
@@ -3707,10 +3873,10 @@
 		)
 		(uuid "fd8bf9ef-8ff1-4a2f-83cb-9bea888ee835")
 	)
-	(text_box "The clock signal is triggered by Cycle 3 (Commit), but should be inhibited for a memory write or a PC Update\n\nThe instructions which must inhibit the clock signal are Store Byte (0101), Store Word (1101) and branch if zero (1011).\n\nFurthermore, A & B buses must be disconnected for the SET instruction (1111)."
+	(text_box "The clock signal is triggered by Cycle 3 (Commit), but should be inhibited for a memory write or a PC Update\n\nThe instructions which must inhibit the clock signal are Store Byte (0101), Store Word (1101) and branch if zero (1011).\n\nThe SET instruction (1111) also disconnects the A&B buses, although this is probably not strictly necessary."
 		(exclude_from_sim no)
 		(at 99.06 160.02 0)
-		(size 50.8 22.86)
+		(size 50.8 25.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -4216,6 +4382,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 163.83 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "150bf5a6-61cb-4c27-9485-de2f9a0e8f84")
+		(property "Reference" "#PWR03009"
+			(at 163.83 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84885bcf-1305-4bcf-b0ad-a86d08e6962d")
+		)
+		(instances
+			(project "Register File Carrier"
+				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
+					(reference "#PWR03009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 266.7 58.42 270)
 		(unit 1)
@@ -4657,6 +4889,139 @@
 			(project ""
 				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
 					(reference "U3003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 163.83 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38e11b3f-028c-4eb0-9aa8-84afb97d6ceb")
+		(property "Reference" "#PWR03008"
+			(at 163.83 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 163.83 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 163.83 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e6640f7-4184-4b80-b661-89a1b216c96a")
+		)
+		(instances
+			(project "Register File Carrier"
+				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
+					(reference "#PWR03008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "399f2c65-db43-4a91-962b-a774a081e168")
+		(property "Reference" "#PWR03010"
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0f5e2b3-acbe-4dc7-ab14-f4f901c0a35b")
+		)
+		(instances
+			(project ""
+				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
+					(reference "#PWR03010")
 					(unit 1)
 				)
 			)
@@ -6927,6 +7292,85 @@
 				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
 					(reference "U3002")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 163.83 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef176995-978b-41cf-8a94-dd62a5882299")
+		(property "Reference" "C3001"
+			(at 167.64 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 167.64 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 164.7952 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1809301912_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 163.83 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 163.83 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9c7d8ae-d9c8-459a-bb69-f4514010c261")
+		)
+		(pin "2"
+			(uuid "68f63d1b-ef47-4236-b8cb-72292218d839")
+		)
+		(instances
+			(project "Register File Carrier"
+				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
+					(reference "C3001")
+					(unit 1)
 				)
 			)
 		)
