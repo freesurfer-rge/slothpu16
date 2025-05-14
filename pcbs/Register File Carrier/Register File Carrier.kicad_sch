@@ -1648,12 +1648,6 @@
 		(uuid "2a5421ed-9680-4a5e-8b27-0b9f0898fe44")
 	)
 	(junction
-		(at 170.18 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3accfa5-6b43-4ff2-b576-54fcef780f53")
-	)
-	(junction
 		(at 43.18 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1927,16 +1921,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 139.7) (xy 170.18 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4effd056-880f-4933-98aa-5db0ab45bb61")
-	)
-	(wire
-		(pts
 			(xy 41.91 133.35) (xy 44.45 133.35)
 		)
 		(stroke
@@ -1974,16 +1958,6 @@
 			(type default)
 		)
 		(uuid "53dc934e-8597-4ad0-9d36-c5fce02c5dce")
-	)
-	(bus
-		(pts
-			(xy 201.93 146.05) (xy 215.9 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5525fffd-7980-446d-adae-401ed5a9f838")
 	)
 	(wire
 		(pts
@@ -2157,26 +2131,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 139.7) (xy 170.18 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85904ed1-50c9-4bd4-a860-ad33294420a3")
-	)
-	(wire
-		(pts
-			(xy 170.18 116.84) (xy 177.8 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "888205dc-de9b-42f9-9647-32e055eab96b")
-	)
-	(wire
-		(pts
 			(xy 41.91 113.03) (xy 44.45 113.03)
 		)
 		(stroke
@@ -2264,16 +2218,6 @@
 			(type default)
 		)
 		(uuid "a31ca951-f3b6-46f4-8c11-88ecf2c0fb85")
-	)
-	(wire
-		(pts
-			(xy 121.92 151.13) (xy 170.18 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4fa577e-be90-4cf7-8784-99b9024bbd39")
 	)
 	(bus
 		(pts
@@ -2404,26 +2348,6 @@
 			(type default)
 		)
 		(uuid "c756990a-184d-4b6b-b603-92ff2da8842f")
-	)
-	(wire
-		(pts
-			(xy 170.18 151.13) (xy 170.18 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9327f8b-06d9-4b0d-8b6a-d1fdcaf06371")
-	)
-	(bus
-		(pts
-			(xy 201.93 123.19) (xy 215.9 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca72cddd-f125-4097-befb-5005f9c6c051")
 	)
 	(wire
 		(pts
@@ -3085,7 +3009,7 @@
 		(uuid "7f02c657-2747-4485-bb69-920b06989c35")
 	)
 	(label "Bo[0..15]"
-		(at 215.9 146.05 0)
+		(at 166.37 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3382,7 +3306,7 @@
 		(uuid "e25fa0bc-3761-427e-95e6-3771a81ff0bf")
 	)
 	(label "Ao[0..15]"
-		(at 215.9 123.19 0)
+		(at 163.83 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4551,26 +4475,6 @@
 			)
 			(uuid "6a5ab8d3-b5ef-4424-bb9a-802843215afe")
 		)
-		(pin "Out[0..15]" tri_state
-			(at 201.93 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "329e0ecc-e305-4ebe-82d7-e12b5fff6d60")
-		)
-		(pin "~{Enable}" input
-			(at 177.8 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "eb402ba7-38d2-438b-a8b7-ecc1398eef87")
-		)
 		(instances
 			(project "Register File Carrier"
 				(path "/65c451e4-a769-4416-8c85-372525d2bb28"
@@ -4618,26 +4522,6 @@
 				(justify left)
 			)
 			(uuid "23a06555-34ae-4a0b-a59b-c0095f0120ce")
-		)
-		(pin "Out[0..15]" tri_state
-			(at 201.93 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6533f91f-9801-48e6-9492-60db36fc1439")
-		)
-		(pin "~{Enable}" input
-			(at 177.8 139.7 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "caf731d9-9c7f-415b-8f36-73baefe50954")
 		)
 		(instances
 			(project "Register File Carrier"
@@ -4824,16 +4708,6 @@
 				(justify left)
 			)
 			(uuid "cfbaf825-44e2-4e22-b922-4ae0b6fa0e8f")
-		)
-		(pin "~{AB_{Enable}}" output
-			(at 121.92 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4b42ed29-09b4-4cf4-828d-c144e96fd690")
 		)
 		(pin "RegCLK" output
 			(at 121.92 138.43 0)

@@ -2632,6 +2632,12 @@
 		(uuid "6450a269-3096-4246-a04e-a8ad4e2e2ada")
 	)
 	(junction
+		(at 255.27 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65dbec97-623e-49d5-b364-e62cd5451026")
+	)
+	(junction
 		(at 190.5 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2680,6 +2686,10 @@
 	(no_connect
 		(at 275.59 153.67)
 		(uuid "9202cdd3-8bad-450a-8bf0-d18a6dc53240")
+	)
+	(no_connect
+		(at 275.59 137.16)
+		(uuid "d5ba21bd-58e6-4cb5-b93a-94e61486bd6e")
 	)
 	(no_connect
 		(at 40.64 143.51)
@@ -2845,16 +2855,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 137.16) (xy 149.86 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19ce78ab-c8de-4ed6-830b-33e17543d2b7")
-	)
-	(wire
-		(pts
 			(xy 22.86 128.27) (xy 25.4 128.27)
 		)
 		(stroke
@@ -2945,7 +2945,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 111.76) (xy 212.09 111.76)
+			(xy 243.84 96.52) (xy 247.65 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2995,7 +2995,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 99.06) (xy 187.96 99.06)
+			(xy 215.9 83.82) (xy 223.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3042,16 +3042,6 @@
 			(type default)
 		)
 		(uuid "48e9d123-c3ac-4b0d-8159-fd0f22b95c86")
-	)
-	(wire
-		(pts
-			(xy 165.1 137.16) (xy 186.69 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4912a168-c073-4fa3-bcfb-ead1496552d1")
 	)
 	(wire
 		(pts
@@ -3135,6 +3125,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 137.16) (xy 260.35 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59651e1e-74d4-4345-9ebe-472f32cc21b4")
+	)
+	(wire
+		(pts
 			(xy 25.4 146.05) (xy 22.86 146.05)
 		)
 		(stroke
@@ -3155,7 +3155,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 153.67) (xy 260.35 153.67)
+			(xy 251.46 153.67) (xy 255.27 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3275,7 +3275,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 129.54) (xy 187.96 129.54)
+			(xy 217.17 114.3) (xy 223.52 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3322,6 +3322,16 @@
 			(type default)
 		)
 		(uuid "7e5e94ee-a42a-4e2c-83ea-a144a7cc5612")
+	)
+	(wire
+		(pts
+			(xy 255.27 153.67) (xy 255.27 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8861bf8a-54b1-4c45-bb86-87608f7bc7c4")
 	)
 	(wire
 		(pts
@@ -3415,7 +3425,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 116.84) (xy 212.09 116.84)
+			(xy 243.84 101.6) (xy 247.65 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3475,7 +3485,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 127) (xy 208.28 127)
+			(xy 238.76 111.76) (xy 243.84 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3515,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 114.3) (xy 234.95 114.3)
+			(xy 262.89 99.06) (xy 270.51 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3605,7 +3615,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 101.6) (xy 208.28 111.76)
+			(xy 243.84 86.36) (xy 243.84 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3615,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 104.14) (xy 187.96 104.14)
+			(xy 215.9 88.9) (xy 223.52 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3632,6 +3642,16 @@
 			(type default)
 		)
 		(uuid "c75c0491-4e28-418a-a8e3-3250aaaaf4c5")
+	)
+	(wire
+		(pts
+			(xy 255.27 153.67) (xy 260.35 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb953704-c16a-494b-92ca-d3c407304337")
 	)
 	(wire
 		(pts
@@ -3695,6 +3715,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 137.16) (xy 133.35 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09bb6b0-ee64-41e9-9e2e-2bbfa6499ced")
+	)
+	(wire
+		(pts
 			(xy 254 52.07) (xy 254 54.61)
 		)
 		(stroke
@@ -3725,7 +3755,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 124.46) (xy 187.96 124.46)
+			(xy 217.17 109.22) (xy 223.52 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3815,7 +3845,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 127) (xy 208.28 116.84)
+			(xy 243.84 111.76) (xy 243.84 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3855,7 +3885,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 101.6) (xy 208.28 101.6)
+			(xy 238.76 86.36) (xy 243.84 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3873,7 +3903,7 @@
 		)
 		(uuid "fd8bf9ef-8ff1-4a2f-83cb-9bea888ee835")
 	)
-	(text_box "The clock signal is triggered by Cycle 3 (Commit), but should be inhibited for a memory write or a PC Update\n\nThe instructions which must inhibit the clock signal are Store Byte (0101), Store Word (1101) and branch if zero (1011).\n\nThe SET instruction (1111) also disconnects the A&B buses, although this is probably not strictly necessary."
+	(text_box "The clock signal is triggered by Cycle 3 (Commit), but should be inhibited for a memory write or a PC Update\n\nThe instructions which must inhibit the clock signal are Store Byte (0101), Store Word (1101) and branch if zero (1011)."
 		(exclude_from_sim no)
 		(at 99.06 160.02 0)
 		(size 50.8 25.4)
@@ -4000,7 +4030,7 @@
 		(uuid "5e206ee3-c382-4514-a9e0-72ecbcb312b0")
 	)
 	(label "Cycle3"
-		(at 180.34 104.14 180)
+		(at 215.9 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4088,7 +4118,7 @@
 		(uuid "aa817759-26f1-4dc7-8254-085542d04c24")
 	)
 	(label "~{StoreB}"
-		(at 181.61 129.54 180)
+		(at 217.17 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4110,7 +4140,7 @@
 		(uuid "bfa0b583-0800-44ad-bdf7-3cdb6b3dffca")
 	)
 	(label "~{StoreW}"
-		(at 181.61 124.46 180)
+		(at 217.17 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4187,7 +4217,7 @@
 		(uuid "e3cc2a05-a930-47d7-93ee-93eabacf9d0f")
 	)
 	(label "~{BranchZero}"
-		(at 180.34 99.06 180)
+		(at 215.9 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4234,7 +4264,7 @@
 	)
 	(hierarchical_label "RegCLK"
 		(shape output)
-		(at 234.95 114.3 0)
+		(at 270.51 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4256,21 +4286,9 @@
 		)
 		(uuid "cc386d05-8e9e-4150-87da-bacf1021a5a1")
 	)
-	(hierarchical_label "~{AB_{Enable}}"
-		(shape output)
-		(at 186.69 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e287ad2f-92bf-4608-abb5-0a8ffd19a829")
-	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 195.58 101.6 0)
+		(at 231.14 86.36 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4279,7 +4297,7 @@
 		(fields_autoplaced yes)
 		(uuid "046e8cc2-3c13-4bae-a8d8-f339dc94ffaa")
 		(property "Reference" "U3004"
-			(at 195.5717 92.71 0)
+			(at 231.1317 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4287,7 +4305,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 195.5717 95.25 0)
+			(at 231.1317 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4313,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 195.58 101.6 0)
+			(at 231.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4304,7 +4322,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 195.58 101.6 0)
+			(at 231.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4331,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 195.58 101.6 0)
+			(at 231.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4340,7 @@
 			)
 		)
 		(property "LCSC" "C5593"
-			(at 195.58 101.6 0)
+			(at 231.14 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6169,7 +6187,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 219.71 114.3 0)
+		(at 255.27 99.06 0)
 		(mirror x)
 		(unit 2)
 		(exclude_from_sim no)
@@ -6178,7 +6196,7 @@
 		(dnp no)
 		(uuid "adedc8c9-d9d4-47f6-b953-6095ccfcad9f")
 		(property "Reference" "U3004"
-			(at 219.7017 123.19 0)
+			(at 255.2617 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6186,7 +6204,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 219.7017 120.65 0)
+			(at 255.2617 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6212,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 219.71 114.3 0)
+			(at 255.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6221,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 219.71 114.3 0)
+			(at 255.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +6230,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 219.71 114.3 0)
+			(at 255.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6221,7 +6239,7 @@
 			)
 		)
 		(property "LCSC" "C5593"
-			(at 219.71 114.3 0)
+			(at 255.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6359,6 +6377,119 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
+		(at 267.97 137.16 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0a9018e-33cd-4a4c-8a20-f0d902e9274e")
+		(property "Reference" "U3001"
+			(at 267.97 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC14"
+			(at 267.97 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 267.97 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
+			(at 267.97 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter schmitt trigger"
+			(at 267.97 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5605"
+			(at 267.97 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "a675f17f-5f49-4a2b-8c15-f29c3a89db72")
+		)
+		(pin "1"
+			(uuid "84aadcfa-4c13-4ec8-9ceb-d24c9035e3e7")
+		)
+		(pin "4"
+			(uuid "d2e17d79-5191-4261-b8d7-fdc3e445752b")
+		)
+		(pin "3"
+			(uuid "c0c69ae9-8b5e-475f-92c7-d4abf5bac105")
+		)
+		(pin "2"
+			(uuid "2761beea-6b03-4bf9-bac2-c0ea13ee3b06")
+		)
+		(pin "13"
+			(uuid "e2f7c552-f101-4447-8d2e-11bae35a9d31")
+		)
+		(pin "8"
+			(uuid "038de045-ce13-417a-bbcb-912c6a6136ea")
+		)
+		(pin "9"
+			(uuid "853eca6d-dd98-4e3c-87be-d5fffd2476b2")
+		)
+		(pin "5"
+			(uuid "1e66e9d2-e97a-433a-8402-7f913f4d48d1")
+		)
+		(pin "10"
+			(uuid "d7c8f447-36d7-4b0f-aacb-cad27e616eac")
+		)
+		(pin "11"
+			(uuid "9d51d055-2569-4285-8e89-21575420b72f")
+		)
+		(pin "14"
+			(uuid "68a6069f-f3a6-4014-802a-e0d6d09b71bd")
+		)
+		(pin "12"
+			(uuid "2641a891-2c59-4b67-8bf0-63d961c52325")
+		)
+		(pin "7"
+			(uuid "e509e162-f146-4cb2-8890-bfb13f43d6dd")
+		)
+		(instances
+			(project "Register File Carrier"
+				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
+					(reference "U3001")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC14")
 		(at 74.93 40.64 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -6466,119 +6597,6 @@
 				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
 					(reference "U3001")
 					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74HC14")
-		(at 157.48 137.16 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c843d985-700b-476c-9a99-d138766796c5")
-		(property "Reference" "U3001"
-			(at 157.48 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC14"
-			(at 157.48 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex inverter schmitt trigger"
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5605"
-			(at 157.48 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "e25c0c01-4a5a-492d-b56e-2863f3a780b5")
-		)
-		(pin "1"
-			(uuid "84aadcfa-4c13-4ec8-9ceb-d24c9035e3ea")
-		)
-		(pin "4"
-			(uuid "d2e17d79-5191-4261-b8d7-fdc3e445752e")
-		)
-		(pin "3"
-			(uuid "c0c69ae9-8b5e-475f-92c7-d4abf5bac108")
-		)
-		(pin "2"
-			(uuid "2761beea-6b03-4bf9-bac2-c0ea13ee3b09")
-		)
-		(pin "13"
-			(uuid "e2f7c552-f101-4447-8d2e-11bae35a9d34")
-		)
-		(pin "8"
-			(uuid "038de045-ce13-417a-bbcb-912c6a6136ed")
-		)
-		(pin "9"
-			(uuid "853eca6d-dd98-4e3c-87be-d5fffd2476b5")
-		)
-		(pin "5"
-			(uuid "2ad28ba9-f10e-420a-949d-6b6d7fddac29")
-		)
-		(pin "10"
-			(uuid "d7c8f447-36d7-4b0f-aacb-cad27e616eaf")
-		)
-		(pin "11"
-			(uuid "9d51d055-2569-4285-8e89-21575420b732")
-		)
-		(pin "14"
-			(uuid "3bcfc394-26c2-4ce5-bfbc-4cd35f74d9b3")
-		)
-		(pin "12"
-			(uuid "2641a891-2c59-4b67-8bf0-63d961c52328")
-		)
-		(pin "7"
-			(uuid "be31cdfd-630d-4688-88d7-02d295497bdc")
-		)
-		(instances
-			(project "Register File Carrier"
-				(path "/65c451e4-a769-4416-8c85-372525d2bb28/b472a56c-acb8-4c9a-95e3-ff980670104d"
-					(reference "U3001")
-					(unit 3)
 				)
 			)
 		)
@@ -8030,7 +8048,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 195.58 127 0)
+		(at 231.14 111.76 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8039,7 +8057,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa96fa31-c2f1-423e-81f0-e4a729dbdaf0")
 		(property "Reference" "U3004"
-			(at 195.5717 118.11 0)
+			(at 231.1317 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8047,7 +8065,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 195.5717 120.65 0)
+			(at 231.1317 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8055,7 +8073,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 195.58 127 0)
+			(at 231.14 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8064,7 +8082,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 195.58 127 0)
+			(at 231.14 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,7 +8091,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 195.58 127 0)
+			(at 231.14 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8082,7 +8100,7 @@
 			)
 		)
 		(property "LCSC" "C5593"
-			(at 195.58 127 0)
+			(at 231.14 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
