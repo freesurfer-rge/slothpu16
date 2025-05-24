@@ -27,8 +27,9 @@ instructions = {
     "set": 15,
 }
 
+
 @pytest.mark.parametrize("r_C", range(N_REGISTERS))
-@pytest.mark.parametrize("target_val", [0, (2**N_BITS)-1])
+@pytest.mark.parametrize("target_val", [0, (2 ** N_BITS) - 1])
 def test_smoke(r_C, target_val):
     output = _Output()
     input = _Input()
@@ -43,7 +44,7 @@ def test_smoke(r_C, target_val):
     output.set_oe("C", False)
 
     # Anything except loadb, loadw or branchzero
-    op = "add"
+    op = "loadpc"
 
     instr_bus = bitarray.util.zeros(N_BITS, endian="little")
     # Actual instruction is the first four bits
@@ -60,7 +61,9 @@ def test_smoke(r_C, target_val):
     instr_bus[8:11] = reg_bits
 
     # r_C set by the final bits of the instruction
-    instr_bus[:-N_BITS] = reg_bits
+    instr_bus[12:15] = reg_bits
+
+    print("instr_bus=", instr_bus)
 
     # Set things up
     output.set_bus("C", target_val)
