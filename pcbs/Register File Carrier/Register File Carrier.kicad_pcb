@@ -16618,7 +16618,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74AHC14"
 			(at 0 5.28 0)
 			(layer "F.Fab")
 			(uuid "39f84f38-6011-4122-8f2d-523ad8a53ff8")
@@ -16641,7 +16641,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16665,7 +16665,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
