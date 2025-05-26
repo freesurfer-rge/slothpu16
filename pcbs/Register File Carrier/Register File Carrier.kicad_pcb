@@ -16618,7 +16618,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC14"
+		(property "Value" "74HC14"
 			(at 0 5.28 0)
 			(layer "F.Fab")
 			(uuid "39f84f38-6011-4122-8f2d-523ad8a53ff8")
@@ -21684,7 +21684,7 @@
 		(path "/b472a56c-acb8-4c9a-95e3-ff980670104d/3719c1c9-ecd9-478e-9895-83f519efa05f")
 		(sheetname "Enabler")
 		(sheetfile "enabler.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
