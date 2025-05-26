@@ -5910,7 +5910,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 83.82 158.75 0)
 			(effects
 				(font
@@ -5927,7 +5927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 83.82 165.1 0)
 			(effects
 				(font
@@ -5945,7 +5945,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 83.82 165.1 0)
 			(effects
 				(font
@@ -6023,7 +6023,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 83.82 140.97 0)
 			(effects
 				(font
@@ -6040,7 +6040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 83.82 147.32 0)
 			(effects
 				(font
@@ -6058,7 +6058,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 83.82 147.32 0)
 			(effects
 				(font
@@ -6532,7 +6532,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 152.4 156.21 0)
 			(effects
 				(font
@@ -6549,7 +6549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 152.4 162.56 0)
 			(effects
 				(font
@@ -6567,7 +6567,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 152.4 162.56 0)
 			(effects
 				(font
@@ -6645,7 +6645,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 152.4 140.97 0)
 			(effects
 				(font
@@ -6662,7 +6662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 152.4 147.32 0)
 			(effects
 				(font
@@ -6680,7 +6680,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 152.4 147.32 0)
 			(effects
 				(font
@@ -6759,7 +6759,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 39.37 161.2899 0)
 			(effects
 				(font
@@ -6777,7 +6777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 33.02 160.02 0)
 			(effects
 				(font
@@ -6795,7 +6795,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 33.02 160.02 0)
 			(effects
 				(font
@@ -7134,7 +7134,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 82.55 124.46 0)
 			(effects
 				(font
@@ -7151,7 +7151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 82.55 130.81 0)
 			(effects
 				(font
@@ -7169,7 +7169,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 82.55 130.81 0)
 			(effects
 				(font
@@ -7314,7 +7314,7 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
+		(property "Value" "74HC14"
 			(at 152.4 171.45 0)
 			(effects
 				(font
@@ -7331,7 +7331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579708675566587904"
 			(at 152.4 177.8 0)
 			(effects
 				(font
@@ -7349,7 +7349,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5590"
+		(property "LCSC" "C5605"
 			(at 152.4 177.8 0)
 			(effects
 				(font
