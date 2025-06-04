@@ -29,7 +29,7 @@ instructions = {
 
 
 @pytest.mark.parametrize("r_C", range(N_REGISTERS))
-@pytest.mark.parametrize("target_val", [0, (2 ** N_BITS) - 1])
+@pytest.mark.parametrize("target_val", [0, 16385, (2 ** N_BITS) - 1])
 def test_smoke(r_C, target_val):
     output = _Output()
     input = _Input()
