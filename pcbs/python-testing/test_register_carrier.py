@@ -6,7 +6,7 @@ from pi_backplane import _Input, _Output
 
 
 N_BITS = 16
-N_REGISTERS = 8 # NEED TO UPDATE
+N_REGISTERS = 8  # NEED TO UPDATE
 INSTR_BITS = 4
 REG_BITS = 4
 
@@ -89,7 +89,7 @@ def get_instruction(opcode: str, r_A: int, r_B: int, r_C: int) -> bitarray.bitar
 
     # Opcode is first four bits
     instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[opcode], endian="little", length=INSTR_BITS
+        instructions[opcode], endian="little", length=INSTR_BITS
     )
 
     # r_A set by next four bits
@@ -102,9 +102,12 @@ def get_instruction(opcode: str, r_A: int, r_B: int, r_C: int) -> bitarray.bitar
     instr_bus[12:15] = bitarray.util.int2ba(r_C, endian="little", length=INSTR_BITS)
 
     return instr_bus
-    
+
+
 @pytest.mark.parametrize("r_C", range(N_REGISTERS))
-@pytest.mark.parametrize("target_val", [0, 16385, (2 ** N_BITS) - 1])
+@pytest.mark.parametrize(
+    "target_val", [0, 144, 1037, 8195, 20125, 40008, (2 ** N_BITS) - 1]
+)
 @pytest.mark.parametrize("op", list(instructions.keys()))
 def test_compute_cycle(r_C, target_val, op):
     output = _Output()
@@ -119,25 +122,24 @@ def test_compute_cycle(r_C, target_val, op):
     output.set_oe("Cycle", False)
     output.set_oe("C", False)
 
-    
     # Set up the registers
     for r_i in range(N_REGISTERS):
         # Anything except loadb, loadw or branchzero
         setup_op = "loadpc"
 
         instr_bus = get_instruction(setup_op, r_i, r_i, r_i)
-        output.set_bus("C", 2**r_i)
+        output.set_bus("C", 2 ** r_i)
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
 
-        for cyc in [3,4]:
+        for cyc in [3, 4]:
             output.set_cycle(cyc)
             output.send()
 
     # Set C to be target_val
     output.set_bus("C", target_val)
     output.send()
-            
+
     # For IFETCH and ISTORE, bus A and B should be zero
     for cyc in [0, 1]:
         for r_i in range(N_REGISTERS):
@@ -145,7 +147,7 @@ def test_compute_cycle(r_C, target_val, op):
             output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
             output.set_cycle(cyc)
             output.send()
-        
+
             input.recv()
             assert input.read_bus("A") == 0
             assert input.read_bus("B") == 0
@@ -160,16 +162,16 @@ def test_compute_cycle(r_C, target_val, op):
             output.send()
 
             input.recv()
-            assert input.read_bus("A") == 2**r_A
-            assert input.read_bus("B") == 2**r_B
+            assert input.read_bus("A") == 2 ** r_A
+            assert input.read_bus("B") == 2 ** r_B
 
     # On COMMIT, A & B should start picking up target_value
     # except on  storeb, storew and branchzero
     # This should be maintained for PCUPDATE
     expected_C = target_val
     if op in ["storeb", "storew", "branchzero"]:
-        expected_C = 2**r_C
-    for cyc in [3,4]:
+        expected_C = 2 ** r_C
+    for cyc in [3, 4]:
         for r_A in range(N_REGISTERS):
             for r_B in range(N_REGISTERS):
                 instr_bus = get_instruction(op, r_A, r_B, r_C)
@@ -181,9 +183,9 @@ def test_compute_cycle(r_C, target_val, op):
                 if r_A == r_C:
                     assert input.read_bus("A") == expected_C
                 else:
-                    assert input.read_bus("A") == 2**r_A
+                    assert input.read_bus("A") == 2 ** r_A
                 if r_B == r_C:
                     assert input.read_bus("B") == expected_C
                 else:
-                    assert input.read_bus("B") == 2**r_B
+                    assert input.read_bus("B") == 2 ** r_B
     input.recv()
