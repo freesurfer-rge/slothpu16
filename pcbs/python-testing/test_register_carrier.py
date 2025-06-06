@@ -6,7 +6,7 @@ from pi_backplane import _Input, _Output
 
 
 N_BITS = 16
-N_REGISTERS = 8  # NEED TO UPDATE
+N_REGISTERS = 16
 INSTR_BITS = 4
 REG_BITS = 4
 
