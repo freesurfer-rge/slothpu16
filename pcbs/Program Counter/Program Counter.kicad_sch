@@ -3,7 +3,10 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "6d6da32b-3371-451c-a9b1-ca4368fb7dac")
-	(paper "A4")
+	(paper "A3")
+	(title_block
+		(title "Program Counter")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
 			(pin_names
