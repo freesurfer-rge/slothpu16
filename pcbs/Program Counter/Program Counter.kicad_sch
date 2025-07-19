@@ -2948,6 +2948,16 @@
 		)
 		(uuid "4c4a056c-4f30-4161-9ce5-e682981e3dd7")
 	)
+	(bus
+		(pts
+			(xy 76.2 175.26) (xy 86.36 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e53b1d1-f8af-4f66-aef2-9cb76f6c6dce")
+	)
 	(wire
 		(pts
 			(xy 41.91 39.37) (xy 43.18 39.37)
@@ -3807,6 +3817,16 @@
 			(type default)
 		)
 		(uuid "d62f2464-cee1-47c5-8442-23cd1713a1fc")
+	)
+	(bus
+		(pts
+			(xy 76.2 171.45) (xy 86.36 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d67dcc05-bccd-4bc4-b4f4-6195e9e3518b")
 	)
 	(wire
 		(pts
@@ -4722,6 +4742,17 @@
 		)
 		(uuid "4eee1a9c-d1a9-4d80-b7f9-137888e60337")
 	)
+	(label "Cycle[0..4]"
+		(at 76.2 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "51b5f0fc-fe3c-414d-9d38-0e32ae19e99d")
+	)
 	(label "A4"
 		(at 26.67 46.99 180)
 		(fields_autoplaced yes)
@@ -5546,6 +5577,17 @@
 			(justify right bottom)
 		)
 		(uuid "d6ba8629-19ab-489a-b8a1-a144f7dd419b")
+	)
+	(label "I[0..3]"
+		(at 76.2 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d86dbe88-9406-469a-8820-dee4e30a88db")
 	)
 	(label "PC.Out14"
 		(at 149.86 115.57 180)
@@ -7522,6 +7564,104 @@
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 167.64)
+		(size 39.37 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84a81039-3665-4cef-90c0-8ca0eaf12add")
+		(property "Sheetname" "Enabler"
+			(at 86.36 166.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enabler.kicad_sch"
+			(at 86.36 193.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{ExecCycle}" output
+			(at 125.73 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f5fc206b-b9f5-46f8-90bb-ca4ab169d4bc")
+		)
+		(pin "I[0..3]" input
+			(at 86.36 171.45 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "42faf5ad-a610-4188-8c0d-c00eb2cd6c96")
+		)
+		(pin "~{Halt}" output
+			(at 125.73 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "38294859-3a2d-4355-a37b-3b2715cd055e")
+		)
+		(pin "~{LoadPC}" output
+			(at 125.73 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "582403ca-9a31-4e0b-8321-c54f0d79841d")
+		)
+		(pin "Cycle[0..4]" input
+			(at 86.36 175.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d477080f-916b-4438-af5b-0ed1fc3c3de6")
+		)
+		(pin "~{InstrCycle}" output
+			(at 125.73 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ca9d3a1a-c40e-4e12-aee5-4149a026bf34")
+		)
+		(instances
+			(project "Program Counter"
+				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac"
+					(page "6")
 				)
 			)
 		)
