@@ -1760,6 +1760,7 @@
 	)
 	(label "Out10"
 		(at 213.36 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1770,6 +1771,7 @@
 	)
 	(label "In5"
 		(at 78.74 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1780,6 +1782,7 @@
 	)
 	(label "In1"
 		(at 78.74 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1790,6 +1793,7 @@
 	)
 	(label "In9"
 		(at 180.34 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1800,6 +1804,7 @@
 	)
 	(label "In12"
 		(at 180.34 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1810,6 +1815,7 @@
 	)
 	(label "Out13"
 		(at 213.36 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1820,6 +1826,7 @@
 	)
 	(label "In15"
 		(at 180.34 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1830,6 +1837,7 @@
 	)
 	(label "In7"
 		(at 78.74 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1840,6 +1848,7 @@
 	)
 	(label "In6"
 		(at 78.74 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1850,6 +1859,7 @@
 	)
 	(label "In14"
 		(at 180.34 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1860,6 +1870,7 @@
 	)
 	(label "Out9"
 		(at 213.36 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1870,6 +1881,7 @@
 	)
 	(label "Out5"
 		(at 124.46 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1880,6 +1892,7 @@
 	)
 	(label "In3"
 		(at 78.74 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1890,6 +1903,7 @@
 	)
 	(label "Out11"
 		(at 213.36 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1900,6 +1914,7 @@
 	)
 	(label "Out6"
 		(at 124.46 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1910,6 +1925,7 @@
 	)
 	(label "In8"
 		(at 180.34 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1920,6 +1936,7 @@
 	)
 	(label "Out0"
 		(at 124.46 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1930,6 +1947,7 @@
 	)
 	(label "In11"
 		(at 180.34 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1940,6 +1958,7 @@
 	)
 	(label "Out4"
 		(at 124.46 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1950,6 +1969,7 @@
 	)
 	(label "In13"
 		(at 180.34 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1960,6 +1980,7 @@
 	)
 	(label "Out8"
 		(at 213.36 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1970,6 +1991,7 @@
 	)
 	(label "In0"
 		(at 78.74 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1980,6 +2002,7 @@
 	)
 	(label "Out3"
 		(at 124.46 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1990,6 +2013,7 @@
 	)
 	(label "Out2"
 		(at 124.46 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2000,6 +2024,7 @@
 	)
 	(label "In10"
 		(at 180.34 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2010,6 +2035,7 @@
 	)
 	(label "In4"
 		(at 78.74 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2020,6 +2046,7 @@
 	)
 	(label "Out1"
 		(at 124.46 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2030,6 +2057,7 @@
 	)
 	(label "In2"
 		(at 78.74 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2040,6 +2068,7 @@
 	)
 	(label "Out15"
 		(at 213.36 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2050,6 +2079,7 @@
 	)
 	(label "Out12"
 		(at 213.36 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2060,6 +2090,7 @@
 	)
 	(label "Out7"
 		(at 124.46 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2070,6 +2101,7 @@
 	)
 	(label "Out14"
 		(at 213.36 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
