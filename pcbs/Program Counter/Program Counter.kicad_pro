@@ -618,6 +618,10 @@
     [
       "84a81039-3665-4cef-90c0-8ca0eaf12add",
       "Enabler"
+    ],
+    [
+      "6b9a54e9-86cd-4a9b-8744-65f3487e773e",
+      "B Bus Check"
     ]
   ],
   "text_variables": {}
