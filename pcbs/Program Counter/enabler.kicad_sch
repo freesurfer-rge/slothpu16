@@ -2578,28 +2578,22 @@
 		(uuid "00178363-e9ee-4be1-9000-aa1dd7dc6597")
 	)
 	(junction
-		(at 104.14 210.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01a42661-4555-4d87-8b98-8388ea8f4af3")
-	)
-	(junction
 		(at 340.36 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "035e750b-aab3-48be-b1a6-e0a91a8e1bc6")
 	)
 	(junction
-		(at 107.95 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10641967-8163-400f-a5e9-ae24d49fd69e")
-	)
-	(junction
 		(at 289.56 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "119e1e19-d946-4c91-a8dc-260079b4373f")
+	)
+	(junction
+		(at 146.05 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1442b6e6-eaee-4e79-9e89-6cda95a37ced")
 	)
 	(junction
 		(at 340.36 85.09)
@@ -2630,12 +2624,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30b7a8ad-9d9d-43a3-ad45-8ede81ed4fe2")
-	)
-	(junction
-		(at 101.6 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "365061b8-337e-4b41-bb80-b5d79cb59fe7")
 	)
 	(junction
 		(at 340.36 67.31)
@@ -2714,6 +2702,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "984af28d-43a1-4680-b6ab-b0f95ddd0afc")
+	)
+	(junction
+		(at 148.59 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cc5198b-8e81-434b-a763-5a87b2f6e38a")
 	)
 	(junction
 		(at 185.42 133.35)
@@ -2911,6 +2905,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 22.86) (xy 161.29 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aa0c22c-6f0a-410a-95aa-1decc9c8ab64")
+	)
+	(wire
+		(pts
 			(xy 92.71 63.5) (xy 102.87 63.5)
 		)
 		(stroke
@@ -3091,16 +3095,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 118.11) (xy 107.95 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f05f721-0711-4006-a18d-8ad6b9b598d9")
-	)
-	(wire
-		(pts
 			(xy 251.46 64.77) (xy 251.46 67.31)
 		)
 		(stroke
@@ -3111,7 +3105,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 120.65) (xy 132.08 120.65)
+			(xy 162.56 119.38) (xy 167.64 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3138,16 +3132,6 @@
 			(type default)
 		)
 		(uuid "2575ee1f-04a9-4ae5-94e9-bb9ef2ed9e3f")
-	)
-	(wire
-		(pts
-			(xy 101.6 106.68) (xy 102.87 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "299e7d61-7075-484f-a88a-2e3cf78ba089")
 	)
 	(wire
 		(pts
@@ -3208,16 +3192,6 @@
 			(type default)
 		)
 		(uuid "2dfed8a2-ab6b-4209-96db-58adb07f1940")
-	)
-	(wire
-		(pts
-			(xy 107.95 123.19) (xy 107.95 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ea7aece-ad3b-4afe-8264-6871b636b92e")
 	)
 	(wire
 		(pts
@@ -3551,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 210.82) (xy 104.14 210.82)
+			(xy 80.01 210.82) (xy 128.27 210.82)
 		)
 		(stroke
 			(width 0)
@@ -3561,7 +3535,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 35.56) (xy 152.4 35.56)
+			(xy 146.05 35.56) (xy 148.59 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3578,6 +3552,16 @@
 			(type default)
 		)
 		(uuid "765b5fe2-3ff0-4364-b163-5e4277c2a916")
+	)
+	(wire
+		(pts
+			(xy 148.59 35.56) (xy 148.59 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766405b4-cbc2-4c56-a275-94dfc17a42b1")
 	)
 	(wire
 		(pts
@@ -3631,6 +3615,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 22.86) (xy 179.07 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eca65cf-a0c5-41cb-9a76-6c9101a4d1ff")
+	)
+	(wire
+		(pts
 			(xy 279.4 243.84) (xy 279.4 228.6)
 		)
 		(stroke
@@ -3661,7 +3655,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 106.68) (xy 101.6 106.68)
+			(xy 92.71 106.68) (xy 102.87 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3731,16 +3725,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 106.68) (xy 101.6 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90b8c381-46d5-4ba4-b523-f6835eb0f5a6")
-	)
-	(wire
-		(pts
 			(xy 80.01 182.88) (xy 80.01 184.15)
 		)
 		(stroke
@@ -3748,6 +3732,16 @@
 			(type default)
 		)
 		(uuid "91ebaff9-98ce-4d13-b945-87ff38fb2b04")
+	)
+	(wire
+		(pts
+			(xy 148.59 35.56) (xy 152.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95aa541c-7514-4c7c-8068-73b8fc05dd95")
 	)
 	(wire
 		(pts
@@ -3891,16 +3885,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 118.11) (xy 107.95 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae9e436d-9018-48fb-a45d-bfd12135929f")
-	)
-	(wire
-		(pts
 			(xy 264.16 74.93) (xy 264.16 77.47)
 		)
 		(stroke
@@ -3991,6 +3975,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 119.38) (xy 147.32 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be14b01e-b560-4f20-926b-93c0bf9f6c27")
+	)
+	(wire
+		(pts
 			(xy 143.51 76.2) (xy 148.59 76.2)
 		)
 		(stroke
@@ -4051,6 +4045,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 106.68) (xy 146.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8deb813-012d-4e7e-be9d-72cc30baff9f")
+	)
+	(wire
+		(pts
 			(xy 340.36 80.01) (xy 340.36 73.66)
 		)
 		(stroke
@@ -4071,16 +4075,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 120.65) (xy 107.95 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caa0e182-7ce4-44ea-9dda-29c523836a6f")
-	)
-	(wire
-		(pts
 			(xy 289.56 85.09) (xy 289.56 88.9)
 		)
 		(stroke
@@ -4098,16 +4092,6 @@
 			(type default)
 		)
 		(uuid "d0e2a43d-2f01-452f-b521-4fe8af6ab43a")
-	)
-	(wire
-		(pts
-			(xy 104.14 210.82) (xy 128.27 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2ae1e73-ce77-4056-bd93-235207ca7330")
 	)
 	(wire
 		(pts
@@ -4138,6 +4122,16 @@
 			(type default)
 		)
 		(uuid "d765a673-1a23-4130-b1dc-b049dd1b8ff9")
+	)
+	(wire
+		(pts
+			(xy 148.59 22.86) (xy 153.67 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ee8312-1924-43ff-883c-a37f902b83f8")
 	)
 	(wire
 		(pts
@@ -4238,16 +4232,6 @@
 			(type default)
 		)
 		(uuid "ee7f791c-13ce-45ff-af8b-e541adb05876")
-	)
-	(wire
-		(pts
-			(xy 111.76 123.19) (xy 107.95 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef970c52-f31a-489d-a297-a900476270ba")
 	)
 	(wire
 		(pts
@@ -4762,7 +4746,7 @@
 	)
 	(hierarchical_label "CLK_{PC}"
 		(shape output)
-		(at 132.08 120.65 0)
+		(at 167.64 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4782,7 +4766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00fdc6b9-1d49-4b0a-a6d6-4c9471a2a2b6")
-		(property "Reference" "#PWR06003"
+		(property "Reference" "#PWR06011"
 			(at 334.01 73.66 0)
 			(effects
 				(font
@@ -4833,7 +4817,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06003")
+					(reference "#PWR06011")
 					(unit 1)
 				)
 			)
@@ -4986,119 +4970,6 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 350.52 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08ba7e60-d3b9-4269-baa6-3b54df61f6e5")
-		(property "Reference" "U6002"
-			(at 350.5117 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 350.5117 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 350.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 350.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 350.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5593"
-			(at 350.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8e55a768-204c-41ac-99c8-bfccd9579bda")
-		)
-		(pin "3"
-			(uuid "3ac6e0f0-3b0c-44e5-897e-0afb550cc609")
-		)
-		(pin "2"
-			(uuid "b6e9df6a-36c0-4a34-a4e8-5dd910e4d46c")
-		)
-		(pin "6"
-			(uuid "66cf6ab5-f7d3-4214-8991-318ac0af6033")
-		)
-		(pin "1"
-			(uuid "bb13796f-1b99-47a7-9cf8-5546bad71007")
-		)
-		(pin "5"
-			(uuid "057a5d09-1645-40ea-adb8-f9b69228f95c")
-		)
-		(pin "10"
-			(uuid "9d7dac43-cc68-431b-ade1-d424b37f317e")
-		)
-		(pin "8"
-			(uuid "d0593de5-ed59-49c5-9e1b-623fdf8c07dd")
-		)
-		(pin "9"
-			(uuid "1e4d0e81-945b-472d-bc7f-e81b2391af06")
-		)
-		(pin "11"
-			(uuid "4935797e-03b4-464a-8231-5a3fb8d590a7")
-		)
-		(pin "12"
-			(uuid "c452a5f3-8355-454b-8a6a-e6a46eb6db65")
-		)
-		(pin "13"
-			(uuid "f39c3b99-4f4a-40d0-9657-60a70c690b14")
-		)
-		(pin "14"
-			(uuid "13c74239-7481-4697-bb4a-7d9bfca78231")
-		)
-		(pin "7"
-			(uuid "369cde0c-c504-4ccb-8bec-aa9d127e8fa6")
-		)
-		(instances
-			(project "Program Counter"
-				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
 		(at 80.01 196.85 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -5107,7 +4978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "099a3ac0-995e-480d-9b4d-47af166337d0")
-		(property "Reference" "U6003"
+		(property "Reference" "U6002"
 			(at 86.36 195.5799 0)
 			(effects
 				(font
@@ -5206,15 +5077,92 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6003")
+					(reference "U6002")
 					(unit 5)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 167.64 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e161bc0-a34e-4544-a7b3-2af2e280ce5e")
+		(property "Reference" "D6010"
+			(at 166.0525 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Blue"
+			(at 166.0525 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C72041"
+			(at 167.64 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80422487-3fd2-4277-b095-8e826cd330e8")
+		)
+		(pin "2"
+			(uuid "18d9ebcb-9dd1-4151-b4d6-b376c9fcb8ce")
+		)
+		(instances
+			(project "Program Counter"
+				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
+					(reference "D6010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC14")
-		(at 110.49 106.68 0)
+		(at 110.49 88.9 0)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5223,7 +5171,7 @@
 		(fields_autoplaced yes)
 		(uuid "127f304b-a509-4397-a90c-63321bdfce47")
 		(property "Reference" "U6001"
-			(at 110.49 97.79 0)
+			(at 110.49 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5179,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 110.49 100.33 0)
+			(at 110.49 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5239,7 +5187,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 110.49 106.68 0)
+			(at 110.49 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5196,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 110.49 106.68 0)
+			(at 110.49 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5257,7 +5205,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 110.49 106.68 0)
+			(at 110.49 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5266,7 +5214,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 110.49 106.68 0)
+			(at 110.49 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5327,16 +5275,16 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 119.38 120.65 0)
+		(at 298.45 160.02 0)
+		(mirror x)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "16f20f52-9572-45f7-beae-3e175ed3284a")
-		(property "Reference" "U6003"
-			(at 119.3717 111.76 0)
+		(property "Reference" "U6002"
+			(at 298.4417 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5344,7 +5292,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 119.3717 114.3 0)
+			(at 298.4417 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5352,7 +5300,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 119.38 120.65 0)
+			(at 298.45 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5309,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 119.38 120.65 0)
+			(at 298.45 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5370,7 +5318,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 119.38 120.65 0)
+			(at 298.45 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5379,7 +5327,7 @@
 			)
 		)
 		(property "LCSC" "C5593"
-			(at 119.38 120.65 0)
+			(at 298.45 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5432,7 +5380,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6003")
+					(reference "U6002")
 					(unit 2)
 				)
 			)
@@ -5520,15 +5468,15 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 135.89 76.2 0)
+		(mirror x)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1c0ca5ea-004c-4726-81ea-f22fe73dc41a")
-		(property "Reference" "U6003"
-			(at 135.8817 67.31 0)
+		(property "Reference" "U6002"
+			(at 135.8817 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,7 +5484,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 135.8817 69.85 0)
+			(at 135.8817 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5624,7 +5572,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6003")
+					(reference "U6002")
 					(unit 4)
 				)
 			)
@@ -5640,7 +5588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20e0f82c-4798-4273-86f1-6460fdc05ea7")
-		(property "Reference" "#PWR06006"
+		(property "Reference" "#PWR06005"
 			(at 156.21 184.15 0)
 			(effects
 				(font
@@ -5690,7 +5638,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06006")
+					(reference "#PWR06005")
 					(unit 1)
 				)
 			)
@@ -5777,7 +5725,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 110.49 88.9 0)
+		(at 154.94 119.38 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5786,7 +5734,7 @@
 		(fields_autoplaced yes)
 		(uuid "26a2a472-ac09-4cf5-8e7f-e7ed49c035c1")
 		(property "Reference" "U6001"
-			(at 110.49 80.01 0)
+			(at 154.94 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,7 +5742,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 110.49 82.55 0)
+			(at 154.94 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5802,7 +5750,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 110.49 88.9 0)
+			(at 154.94 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5759,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 110.49 88.9 0)
+			(at 154.94 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,7 +5768,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 110.49 88.9 0)
+			(at 154.94 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5829,7 +5777,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 110.49 88.9 0)
+			(at 154.94 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,8 +6147,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 157.48 22.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a3f6fcb-a5b0-441d-9d57-271ada5a2ec6")
+		(property "Reference" "R6010"
+			(at 157.48 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4k7"
+			(at 157.48 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 157.48 24.638 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf"
+			(at 157.48 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 157.48 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "151d39f6-d7c0-46ba-b04f-81685e1535e9")
+		)
+		(pin "2"
+			(uuid "08617735-4c53-44f3-a220-c7187230f312")
+		)
+		(instances
+			(project "Program Counter"
+				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
+					(reference "R6010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC14")
-		(at 110.49 26.67 0)
+		(at 110.49 63.5 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6209,7 +6234,7 @@
 		(fields_autoplaced yes)
 		(uuid "5435ed8b-84e3-4fbb-bc4f-aea6708073f8")
 		(property "Reference" "U6001"
-			(at 110.49 17.78 0)
+			(at 110.49 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6242,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 110.49 20.32 0)
+			(at 110.49 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6225,7 +6250,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 110.49 26.67 0)
+			(at 110.49 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6234,7 +6259,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 110.49 26.67 0)
+			(at 110.49 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,7 +6268,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 110.49 26.67 0)
+			(at 110.49 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,7 +6277,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 110.49 26.67 0)
+			(at 110.49 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6313,6 +6338,73 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 179.07 22.86 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "640edbb9-2fcc-491d-bf46-b8e119789dc8")
+		(property "Reference" "#PWR06012"
+			(at 175.26 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 182.88 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 179.07 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f516e8de-2102-4887-a5d6-0165715f88a4")
+		)
+		(instances
+			(project "Program Counter"
+				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
+					(reference "#PWR06012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 156.21 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6321,7 +6413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ad7f55e-9d21-4a41-b602-dd6553a714bc")
-		(property "Reference" "#PWR06005"
+		(property "Reference" "#PWR06004"
 			(at 156.21 148.59 0)
 			(effects
 				(font
@@ -6371,7 +6463,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06005")
+					(reference "#PWR06004")
 					(unit 1)
 				)
 			)
@@ -6379,7 +6471,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 110.49 44.45 0)
+		(at 110.49 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6388,7 +6480,7 @@
 		(fields_autoplaced yes)
 		(uuid "70b2e54d-cf3b-486a-8a97-80bcfac56808")
 		(property "Reference" "U6001"
-			(at 110.49 35.56 0)
+			(at 110.49 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6396,7 +6488,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 110.49 38.1 0)
+			(at 110.49 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6404,7 +6496,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 110.49 44.45 0)
+			(at 110.49 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,7 +6505,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 110.49 44.45 0)
+			(at 110.49 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6422,7 +6514,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 110.49 44.45 0)
+			(at 110.49 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6523,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 110.49 44.45 0)
+			(at 110.49 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "740317ee-32ae-4f91-9032-a190e8e15c8a")
-		(property "Reference" "#PWR06007"
+		(property "Reference" "#PWR06006"
 			(at 199.39 196.85 0)
 			(effects
 				(font
@@ -6550,7 +6642,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06007")
+					(reference "#PWR06006")
 					(unit 1)
 				)
 			)
@@ -6566,7 +6658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7db46779-48f5-4355-83dd-21a726ff2145")
-		(property "Reference" "#PWR06010"
+		(property "Reference" "#PWR06009"
 			(at 213.36 133.35 0)
 			(effects
 				(font
@@ -6617,7 +6709,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06010")
+					(reference "#PWR06009")
 					(unit 1)
 				)
 			)
@@ -6625,7 +6717,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 110.49 63.5 0)
+		(at 110.49 106.68 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6634,7 +6726,7 @@
 		(fields_autoplaced yes)
 		(uuid "7dca3c4a-3e1f-471c-974a-2c5ea14b0d8f")
 		(property "Reference" "U6001"
-			(at 110.49 54.61 0)
+			(at 110.49 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6642,7 +6734,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 110.49 57.15 0)
+			(at 110.49 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6650,7 +6742,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 110.49 63.5 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6659,7 +6751,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 110.49 63.5 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6668,7 +6760,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 110.49 63.5 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6677,7 +6769,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 110.49 63.5 0)
+			(at 110.49 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6902,7 +6994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88261b05-f282-4629-9fb3-f267e2324ab5")
-		(property "Reference" "#PWR06008"
+		(property "Reference" "#PWR06007"
 			(at 199.39 212.09 0)
 			(effects
 				(font
@@ -6952,7 +7044,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06008")
+					(reference "#PWR06007")
 					(unit 1)
 				)
 			)
@@ -7033,119 +7125,6 @@
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
 					(reference "D6007")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
-		(at 350.52 64.77 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b6b35b5-ca9d-4361-b9e3-83c9d3c8da77")
-		(property "Reference" "U6002"
-			(at 350.5117 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 350.5117 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 350.52 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 350.52 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 350.52 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5593"
-			(at 350.52 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8e55a768-204c-41ac-99c8-bfccd9579bd9")
-		)
-		(pin "3"
-			(uuid "69c5686f-c8bc-4ccb-80cf-c701eaa6d03d")
-		)
-		(pin "2"
-			(uuid "6a23bb01-a64e-4d29-bd9e-42073f86a9a5")
-		)
-		(pin "6"
-			(uuid "66cf6ab5-f7d3-4214-8991-318ac0af6032")
-		)
-		(pin "1"
-			(uuid "c0d334dc-abdb-4702-ab0e-386a8920edd6")
-		)
-		(pin "5"
-			(uuid "057a5d09-1645-40ea-adb8-f9b69228f95b")
-		)
-		(pin "10"
-			(uuid "0bf4d2e2-d046-4c3b-a269-0042dcdd70ad")
-		)
-		(pin "8"
-			(uuid "eb113314-7e11-495c-99c1-102a0c9a9048")
-		)
-		(pin "9"
-			(uuid "8466bb85-3767-4c22-a5da-79ad514b7e19")
-		)
-		(pin "11"
-			(uuid "4935797e-03b4-464a-8231-5a3fb8d590a6")
-		)
-		(pin "12"
-			(uuid "c452a5f3-8355-454b-8a6a-e6a46eb6db64")
-		)
-		(pin "13"
-			(uuid "f39c3b99-4f4a-40d0-9657-60a70c690b13")
-		)
-		(pin "14"
-			(uuid "13c74239-7481-4697-bb4a-7d9bfca78230")
-		)
-		(pin "7"
-			(uuid "369cde0c-c504-4ccb-8bec-aa9d127e8fa5")
-		)
-		(instances
-			(project "Program Counter"
-				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6002")
-					(unit 3)
 				)
 			)
 		)
@@ -7239,7 +7218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8efcb449-9ab8-4c9c-89f6-af6845e6b4f3")
-		(property "Reference" "U6005"
+		(property "Reference" "U6003"
 			(at 292.1 185.42 0)
 			(effects
 				(font
@@ -7336,7 +7315,7 @@
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 6)
 				)
 			)
@@ -7431,7 +7410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94fb23d5-b425-4a41-b025-8e6499388fad")
-		(property "Reference" "U6005"
+		(property "Reference" "U6003"
 			(at 293.37 201.93 0)
 			(effects
 				(font
@@ -7484,51 +7463,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd5")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3961")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205a")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdc")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba958")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c443")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd2")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af53703c")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e722")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a98789")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9a")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb154")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778412")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df34")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 5)
 				)
 			)
@@ -7544,7 +7523,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a06e72af-f37a-43f8-94f2-24eced320658")
-		(property "Reference" "U6005"
+		(property "Reference" "U6003"
 			(at 271.78 143.51 0)
 			(effects
 				(font
@@ -7597,51 +7576,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd6")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3962")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205b")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdd")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba959")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c444")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd3")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af53703d")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e723")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a9878a")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9b")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb155")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778413")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df35")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 2)
 				)
 			)
@@ -7755,119 +7734,6 @@
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
 					(reference "U6004")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
-		(at 350.52 99.06 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a31bebd8-4afe-4dff-98f3-1e6fe3fe3e7b")
-		(property "Reference" "U6002"
-			(at 350.5117 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 350.5117 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 350.52 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 350.52 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 350.52 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5593"
-			(at 350.52 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "6caf7274-fd35-4f49-9442-ee523df2d411")
-		)
-		(pin "3"
-			(uuid "69c5686f-c8bc-4ccb-80cf-c701eaa6d039")
-		)
-		(pin "2"
-			(uuid "6a23bb01-a64e-4d29-bd9e-42073f86a9a1")
-		)
-		(pin "6"
-			(uuid "a26d001a-cbee-4729-a464-9593225914c4")
-		)
-		(pin "1"
-			(uuid "c0d334dc-abdb-4702-ab0e-386a8920edd2")
-		)
-		(pin "5"
-			(uuid "ef14a627-6aa3-4455-a236-1d867ece6f7a")
-		)
-		(pin "10"
-			(uuid "9d7dac43-cc68-431b-ade1-d424b37f317a")
-		)
-		(pin "8"
-			(uuid "d0593de5-ed59-49c5-9e1b-623fdf8c07d9")
-		)
-		(pin "9"
-			(uuid "1e4d0e81-945b-472d-bc7f-e81b2391af02")
-		)
-		(pin "11"
-			(uuid "4935797e-03b4-464a-8231-5a3fb8d590a2")
-		)
-		(pin "12"
-			(uuid "c452a5f3-8355-454b-8a6a-e6a46eb6db60")
-		)
-		(pin "13"
-			(uuid "f39c3b99-4f4a-40d0-9657-60a70c690b0f")
-		)
-		(pin "14"
-			(uuid "13c74239-7481-4697-bb4a-7d9bfca7822c")
-		)
-		(pin "7"
-			(uuid "369cde0c-c504-4ccb-8bec-aa9d127e8fa1")
-		)
-		(instances
-			(project "Program Counter"
-				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6002")
-					(unit 2)
 				)
 			)
 		)
@@ -8017,121 +7883,6 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 104.14 198.12 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6624beb-f881-4487-94eb-5ae46b45209a")
-		(property "Reference" "U6002"
-			(at 110.49 196.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 110.49 199.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 104.14 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 104.14 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 104.14 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5593"
-			(at 104.14 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8e55a768-204c-41ac-99c8-bfccd9579bd6")
-		)
-		(pin "3"
-			(uuid "69c5686f-c8bc-4ccb-80cf-c701eaa6d03a")
-		)
-		(pin "2"
-			(uuid "6a23bb01-a64e-4d29-bd9e-42073f86a9a2")
-		)
-		(pin "6"
-			(uuid "66cf6ab5-f7d3-4214-8991-318ac0af602f")
-		)
-		(pin "1"
-			(uuid "c0d334dc-abdb-4702-ab0e-386a8920edd3")
-		)
-		(pin "5"
-			(uuid "057a5d09-1645-40ea-adb8-f9b69228f958")
-		)
-		(pin "10"
-			(uuid "9d7dac43-cc68-431b-ade1-d424b37f317b")
-		)
-		(pin "8"
-			(uuid "d0593de5-ed59-49c5-9e1b-623fdf8c07da")
-		)
-		(pin "9"
-			(uuid "1e4d0e81-945b-472d-bc7f-e81b2391af03")
-		)
-		(pin "11"
-			(uuid "4935797e-03b4-464a-8231-5a3fb8d590a3")
-		)
-		(pin "12"
-			(uuid "c452a5f3-8355-454b-8a6a-e6a46eb6db61")
-		)
-		(pin "13"
-			(uuid "f39c3b99-4f4a-40d0-9657-60a70c690b10")
-		)
-		(pin "14"
-			(uuid "b0334f70-df0f-4418-a067-7e7e39106459")
-		)
-		(pin "7"
-			(uuid "b848971b-eb60-411d-8984-7be8049967c7")
-		)
-		(instances
-			(project "Program Counter"
-				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6002")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
 		(at 156.21 78.74 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -8140,7 +7891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba0733ff-180a-4827-a678-896d906f5e32")
-		(property "Reference" "U6003"
+		(property "Reference" "U6002"
 			(at 156.2017 69.85 0)
 			(effects
 				(font
@@ -8237,7 +7988,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6003")
+					(reference "U6002")
 					(unit 3)
 				)
 			)
@@ -8409,7 +8160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c53773c4-65df-4b51-ab6a-bfd8b301d459")
-		(property "Reference" "#PWR06004"
+		(property "Reference" "#PWR06003"
 			(at 130.81 167.64 0)
 			(effects
 				(font
@@ -8460,7 +8211,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06004")
+					(reference "#PWR06003")
 					(unit 1)
 				)
 			)
@@ -8468,7 +8219,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 293.37 228.6 0)
+		(at 332.74 143.51 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8476,8 +8227,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8731430-9ab5-44ad-a1b9-1117faf9922c")
-		(property "Reference" "U6005"
-			(at 293.37 219.71 0)
+		(property "Reference" "U6003"
+			(at 332.74 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8485,7 +8236,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 293.37 222.25 0)
+			(at 332.74 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8493,7 +8244,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 293.37 228.6 0)
+			(at 332.74 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8502,7 +8253,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 293.37 228.6 0)
+			(at 332.74 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8511,7 +8262,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 293.37 228.6 0)
+			(at 332.74 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,7 +8271,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 293.37 228.6 0)
+			(at 332.74 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8529,51 +8280,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd7")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3963")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205c")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbde")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba95a")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c445")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd4")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af53703e")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e724")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a9878b")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9c")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb156")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778414")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df36")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 4)
 				)
 			)
@@ -8666,7 +8417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb313a07-4fc4-4800-870c-b61c26eabab1")
-		(property "Reference" "#PWR06011"
+		(property "Reference" "#PWR06010"
 			(at 270.51 243.84 0)
 			(effects
 				(font
@@ -8717,7 +8468,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06011")
+					(reference "#PWR06010")
 					(unit 1)
 				)
 			)
@@ -8725,7 +8476,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 332.74 143.51 0)
+		(at 293.37 228.6 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8733,8 +8484,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d558ea39-ab32-4fa3-9e3c-bc87ea7cd3cd")
-		(property "Reference" "U6005"
-			(at 332.74 134.62 0)
+		(property "Reference" "U6003"
+			(at 293.37 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8742,7 +8493,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 332.74 137.16 0)
+			(at 293.37 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8750,7 +8501,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 332.74 143.51 0)
+			(at 293.37 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,7 +8510,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 332.74 143.51 0)
+			(at 293.37 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8768,7 +8519,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 332.74 143.51 0)
+			(at 293.37 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8777,7 +8528,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 332.74 143.51 0)
+			(at 293.37 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8786,51 +8537,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd8")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3964")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205d")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdf")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba95b")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c446")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd5")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af53703f")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e725")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a9878c")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9d")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb157")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778415")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df37")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 3)
 				)
 			)
@@ -8846,7 +8597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d929e63b-696e-4e90-986e-e2dba7ac0ddc")
-		(property "Reference" "#PWR06009"
+		(property "Reference" "#PWR06008"
 			(at 213.36 88.9 0)
 			(effects
 				(font
@@ -8896,7 +8647,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "#PWR06009")
+					(reference "#PWR06008")
 					(unit 1)
 				)
 			)
@@ -9058,7 +8809,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 293.37 243.84 0)
+		(at 110.49 44.45 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9067,7 +8818,7 @@
 		(fields_autoplaced yes)
 		(uuid "df505e95-7618-41c0-bb9f-3a2e0418f3ac")
 		(property "Reference" "U6001"
-			(at 293.37 234.95 0)
+			(at 110.49 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9075,7 +8826,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 293.37 237.49 0)
+			(at 110.49 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9083,7 +8834,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 293.37 243.84 0)
+			(at 110.49 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9092,7 +8843,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC14D-653_C5605.pdf"
-			(at 293.37 243.84 0)
+			(at 110.49 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9101,7 +8852,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 293.37 243.84 0)
+			(at 110.49 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9110,7 +8861,7 @@
 			)
 		)
 		(property "LCSC" "C5605"
-			(at 293.37 243.84 0)
+			(at 110.49 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9165,119 +8916,6 @@
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
 					(reference "U6001")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
-		(at 298.45 160.02 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0df9d57-8738-497e-b4f9-cdae4c3085d9")
-		(property "Reference" "U6002"
-			(at 298.4417 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 298.4417 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 298.45 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC08D-653_C5593.pdf"
-			(at 298.45 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 298.45 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5593"
-			(at 298.45 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8e55a768-204c-41ac-99c8-bfccd9579bdd")
-		)
-		(pin "3"
-			(uuid "69c5686f-c8bc-4ccb-80cf-c701eaa6d040")
-		)
-		(pin "2"
-			(uuid "6a23bb01-a64e-4d29-bd9e-42073f86a9a8")
-		)
-		(pin "6"
-			(uuid "66cf6ab5-f7d3-4214-8991-318ac0af6036")
-		)
-		(pin "1"
-			(uuid "c0d334dc-abdb-4702-ab0e-386a8920edd9")
-		)
-		(pin "5"
-			(uuid "057a5d09-1645-40ea-adb8-f9b69228f95f")
-		)
-		(pin "10"
-			(uuid "9d7dac43-cc68-431b-ade1-d424b37f3181")
-		)
-		(pin "8"
-			(uuid "d0593de5-ed59-49c5-9e1b-623fdf8c07e0")
-		)
-		(pin "9"
-			(uuid "1e4d0e81-945b-472d-bc7f-e81b2391af09")
-		)
-		(pin "11"
-			(uuid "f5f19057-0a1b-400c-baa6-ab997b56dba1")
-		)
-		(pin "12"
-			(uuid "b283b2b6-055e-4014-a705-6533d13c9880")
-		)
-		(pin "13"
-			(uuid "1cf375e2-cb79-4fcc-b566-36fd3e17b285")
-		)
-		(pin "14"
-			(uuid "13c74239-7481-4697-bb4a-7d9bfca78233")
-		)
-		(pin "7"
-			(uuid "369cde0c-c504-4ccb-8bec-aa9d127e8fa8")
-		)
-		(instances
-			(project "Program Counter"
-				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6002")
-					(unit 4)
 				)
 			)
 		)
@@ -9400,15 +9038,15 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 138.43 35.56 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ec6f0154-0077-4328-954b-7cad1c817d50")
-		(property "Reference" "U6003"
-			(at 138.4217 26.67 0)
+		(property "Reference" "U6002"
+			(at 138.4217 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9417,7 +9055,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 138.4217 29.21 0)
+			(at 138.4217 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9505,7 +9143,7 @@
 		(instances
 			(project "Program Counter"
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6003")
+					(reference "U6002")
 					(unit 1)
 				)
 			)
@@ -9521,7 +9159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee592eb1-8e14-4e74-ae06-f78305a4a396")
-		(property "Reference" "U6005"
+		(property "Reference" "U6003"
 			(at 134.62 196.8499 0)
 			(effects
 				(font
@@ -9576,51 +9214,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd9")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3965")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205e")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbe0")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba95c")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c447")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd6")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af537040")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e726")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a9878d")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9e")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb158")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778416")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df38")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 7)
 				)
 			)
@@ -9636,7 +9274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1281c43-408f-46ec-9b53-3a1c3ae1c82b")
-		(property "Reference" "U6005"
+		(property "Reference" "U6003"
 			(at 271.78 158.75 0)
 			(effects
 				(font
@@ -9689,51 +9327,51 @@
 			)
 		)
 		(pin "8"
-			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbd4")
+			(uuid "2b3fc8b7-3669-4834-b2d7-8611e799dbda")
 		)
 		(pin "11"
-			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3960")
+			(uuid "dda2aa52-6b9a-49bf-be89-e37c6efa3966")
 		)
 		(pin "6"
-			(uuid "ca22f630-09ff-412a-b2f8-d43ffb982059")
+			(uuid "ca22f630-09ff-412a-b2f8-d43ffb98205f")
 		)
 		(pin "10"
-			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbdb")
+			(uuid "9942fa0d-2295-4856-8441-4ea5f92ccbe1")
 		)
 		(pin "12"
-			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba957")
+			(uuid "45a84771-e450-4e70-b889-c4ef2b4ba95d")
 		)
 		(pin "5"
-			(uuid "4404f746-b880-4c54-b87d-e44a6415c442")
+			(uuid "4404f746-b880-4c54-b87d-e44a6415c448")
 		)
 		(pin "9"
-			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd1")
+			(uuid "d792f718-61fc-4d84-a012-5bf2873a3fd7")
 		)
 		(pin "2"
-			(uuid "f708740e-07ac-49ca-86c6-b531af53703b")
+			(uuid "f708740e-07ac-49ca-86c6-b531af537041")
 		)
 		(pin "13"
-			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e721")
+			(uuid "d410826f-9e21-4e2b-91ce-dfd3a667e727")
 		)
 		(pin "14"
-			(uuid "32aa7583-831a-45e7-a75c-eeb774a98788")
+			(uuid "32aa7583-831a-45e7-a75c-eeb774a9878e")
 		)
 		(pin "7"
-			(uuid "ca763a79-6dcc-490d-babc-649d2245ff99")
+			(uuid "ca763a79-6dcc-490d-babc-649d2245ff9f")
 		)
 		(pin "4"
-			(uuid "7822d611-1f7f-4084-8b64-a788160bb153")
+			(uuid "7822d611-1f7f-4084-8b64-a788160bb159")
 		)
 		(pin "1"
-			(uuid "3988b7e0-4c9f-408d-96fc-369727778411")
+			(uuid "3988b7e0-4c9f-408d-96fc-369727778417")
 		)
 		(pin "3"
-			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df33")
+			(uuid "b0364c77-895e-4e8a-8f25-3cc8a765df39")
 		)
 		(instances
 			(project ""
 				(path "/6d6da32b-3371-451c-a9b1-ca4368fb7dac/84a81039-3665-4cef-90c0-8ca0eaf12add"
-					(reference "U6005")
+					(reference "U6003")
 					(unit 1)
 				)
 			)

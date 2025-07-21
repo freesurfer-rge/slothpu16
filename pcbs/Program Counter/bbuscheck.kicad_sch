@@ -1297,6 +1297,7 @@
 	)
 	(label "B10"
 		(at 53.34 177.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1307,6 +1308,7 @@
 	)
 	(label "B2"
 		(at 53.34 76.2 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1317,6 +1319,7 @@
 	)
 	(label "B0"
 		(at 53.34 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1327,6 +1330,7 @@
 	)
 	(label "B8"
 		(at 53.34 152.4 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1337,6 +1341,7 @@
 	)
 	(label "B11"
 		(at 53.34 190.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1347,6 +1352,7 @@
 	)
 	(label "B14"
 		(at 53.34 228.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1357,6 +1363,7 @@
 	)
 	(label "B3"
 		(at 53.34 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1367,6 +1374,7 @@
 	)
 	(label "B1"
 		(at 53.34 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1377,6 +1385,7 @@
 	)
 	(label "B5"
 		(at 53.34 114.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1387,6 +1396,7 @@
 	)
 	(label "B15"
 		(at 53.34 241.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1397,6 +1407,7 @@
 	)
 	(label "B13"
 		(at 53.34 215.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1407,6 +1418,7 @@
 	)
 	(label "B6"
 		(at 53.34 127 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1417,6 +1429,7 @@
 	)
 	(label "B9"
 		(at 53.34 165.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1427,6 +1440,7 @@
 	)
 	(label "B7"
 		(at 53.34 139.7 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1437,6 +1451,7 @@
 	)
 	(label "B12"
 		(at 53.34 203.2 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1447,6 +1462,7 @@
 	)
 	(label "B4"
 		(at 53.34 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
