@@ -4182,7 +4182,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C6001"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "0243295c-e305-4e52-af9d-050a745daced")
 			(effects
@@ -4193,7 +4193,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "dc0aae7f-7a5f-49b4-a8e4-30f75a05cd3d")
 			(effects
@@ -4361,7 +4361,7 @@
 			(uuid "b7148248-d47f-4d9d-8f03-b176f5397ec4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "dd8aa054-e5f9-473d-adf7-5c123144bf54")
 			(effects
@@ -18856,6 +18856,18 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "331cc2a7-d756-437d-9d31-3024d04247e7")
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 35.56 93.98 90)
+		(layer "B.SilkS")
+		(uuid "0f441b5e-c537-4216-a2f1-dfb35e864eec")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1016)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "Incrementer"
 		(at 172.72 137.16 0)
