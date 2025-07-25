@@ -2431,8 +2431,24 @@
 		(uuid "e8ddae58-9cce-47e3-a6aa-98daf4b51e97")
 	)
 	(no_connect
+		(at 26.67 139.7)
+		(uuid "02e5cbdb-45d3-41d3-b007-63f01f67cf6a")
+	)
+	(no_connect
 		(at 41.91 85.09)
 		(uuid "0acc30c1-1972-405b-bd7b-16e246ad26fb")
+	)
+	(no_connect
+		(at 26.67 137.16)
+		(uuid "0e47c5d2-6b25-45b6-9aaa-b67ed016ba49")
+	)
+	(no_connect
+		(at 260.35 93.98)
+		(uuid "0fa7c136-bea7-4a49-a47a-0a459d1e035e")
+	)
+	(no_connect
+		(at 44.45 132.08)
+		(uuid "14121871-597d-4d02-9a00-5ab67cb4df75")
 	)
 	(no_connect
 		(at 29.21 85.09)
@@ -2455,8 +2471,20 @@
 		(uuid "3a6e13aa-02dd-4b02-a99b-74334717fa48")
 	)
 	(no_connect
+		(at 44.45 137.16)
+		(uuid "4875016b-6631-4a89-ba3a-0735eee7402a")
+	)
+	(no_connect
+		(at 44.45 142.24)
+		(uuid "49e13552-3ebc-49c9-bd65-b0f2dfcdcba1")
+	)
+	(no_connect
 		(at 153.67 69.85)
 		(uuid "53db18a2-82f5-4e2b-8e59-294d78d16559")
+	)
+	(no_connect
+		(at 44.45 139.7)
+		(uuid "5cd214c3-73a0-4f57-b34a-f1cc0bf7848b")
 	)
 	(no_connect
 		(at 264.16 71.12)
@@ -2479,16 +2507,52 @@
 		(uuid "8ba1399d-c125-4e3a-8f1b-385ab5ce0e9d")
 	)
 	(no_connect
+		(at 26.67 129.54)
+		(uuid "9bd56e16-c124-49ca-ad69-c579de90282d")
+	)
+	(no_connect
 		(at 264.16 119.38)
 		(uuid "a40ee906-3464-4ab8-89a3-65dd2a22da71")
+	)
+	(no_connect
+		(at 44.45 87.63)
+		(uuid "a8d9efde-270b-4720-9834-2e1f560c6a75")
 	)
 	(no_connect
 		(at 153.67 118.11)
 		(uuid "a8da3fff-df8d-4e4d-a717-ec891402299d")
 	)
 	(no_connect
+		(at 260.35 96.52)
+		(uuid "bc428765-7a9e-408c-86e0-abb5a6cfeadc")
+	)
+	(no_connect
+		(at 26.67 134.62)
+		(uuid "c8cce88d-1358-4756-a1a3-3af37df9c513")
+	)
+	(no_connect
+		(at 289.56 96.52)
+		(uuid "d04bf1c2-84fc-4b22-b683-30b5aa7a9f29")
+	)
+	(no_connect
 		(at 173.99 123.19)
 		(uuid "d1b8863c-ef17-46d8-976d-ffd9a7cc35b1")
+	)
+	(no_connect
+		(at 44.45 134.62)
+		(uuid "de8b555e-9831-4198-9a91-34763eb95a7d")
+	)
+	(no_connect
+		(at 44.45 129.54)
+		(uuid "e351d5cb-b7de-4be4-8ce8-2dfade866c00")
+	)
+	(no_connect
+		(at 26.67 142.24)
+		(uuid "e5a2accf-4e95-4fd2-af1a-bb9fcc8cb33b")
+	)
+	(no_connect
+		(at 26.67 132.08)
+		(uuid "f27a6423-1241-412c-874c-4ac9840b3a3d")
 	)
 	(no_connect
 		(at 153.67 120.65)
@@ -4907,7 +4971,7 @@
 		)
 		(uuid "4e8c7db4-e1f9-4590-83a1-0e6066915fee")
 	)
-	(label "RESET"
+	(label "~{RESET}"
 		(at 26.67 87.63 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7828,16 +7892,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "~{ExecCycle}" output
-			(at 125.73 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f5fc206b-b9f5-46f8-90bb-ca4ab169d4bc")
 		)
 		(pin "I[0..3]" input
 			(at 86.36 171.45 180)
