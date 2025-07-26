@@ -2626,12 +2626,6 @@
 		(uuid "63179a4b-a7cd-4200-a8ae-2350af9a4964")
 	)
 	(junction
-		(at 104.14 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6492bdd9-af74-4b29-b942-f3b084ed3837")
-	)
-	(junction
 		(at 226.06 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3343,16 +3337,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 182.88) (xy 128.27 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e7a4481-3c19-46bd-bca2-43986e31aa1c")
-	)
-	(wire
-		(pts
 			(xy 57.15 209.55) (xy 57.15 210.82)
 		)
 		(stroke
@@ -3843,7 +3827,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 182.88) (xy 104.14 182.88)
+			(xy 80.01 182.88) (xy 128.27 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3870,16 +3854,6 @@
 			(type default)
 		)
 		(uuid "c62dd0ae-8125-40eb-88b8-b479cd34daa7")
-	)
-	(wire
-		(pts
-			(xy 104.14 182.88) (xy 104.14 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6572348-0f10-4269-9fa2-e09acfe5f04a")
 	)
 	(wire
 		(pts
@@ -4470,7 +4444,7 @@
 	)
 	(hierarchical_label "~{NormalUpdate}"
 		(shape output)
-		(at 350.52 143.51 0)
+		(at 350.52 160.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4542,7 +4516,7 @@
 	)
 	(hierarchical_label "~{DoBranch}"
 		(shape output)
-		(at 350.52 160.02 0)
+		(at 350.52 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
