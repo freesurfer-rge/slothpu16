@@ -14826,7 +14826,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/84a81039-3665-4cef-90c0-8ca0eaf12add/26a2a472-ac09-4cf5-8e7f-e7ed49c035c1")
+		(path "/84a81039-3665-4cef-90c0-8ca0eaf12add/e8512286-1736-48c7-9582-a696547b565c")
 		(sheetname "Enabler")
 		(sheetfile "enabler.kicad_sch")
 		(attr smd)
@@ -21695,7 +21695,7 @@
 		(uuid "331cc2a7-d756-437d-9d31-3024d04247e7")
 	)
 	(gr_text "JLCJLCJLCJLC"
-		(at 35.56 93.98 90)
+		(at 177.8 198.755 0)
 		(layer "B.SilkS")
 		(uuid "0f441b5e-c537-4216-a2f1-dfb35e864eec")
 		(effects
