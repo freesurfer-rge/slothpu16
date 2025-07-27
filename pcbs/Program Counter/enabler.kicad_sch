@@ -4125,10 +4125,10 @@
 		)
 		(uuid "fffaf681-b819-4464-b883-13dd94b75e51")
 	)
-	(text_box ""
+	(text_box "This is the core logic for the Program Counter, controlling what gets connected where.\n\nMost of the time, this happens via buffers which have active-low controls.\n\nThe major places where this is not the case are:\n\n- The 'increment' line, which is controlled by the ~{Halt} instruction. If Halt is active, there will be no PC increment\n- The clock output, which is a doubly inverted Cycle4 (PCUpdate) signal"
 		(exclude_from_sim no)
 		(at 135.89 232.41 0)
-		(size 50.8 25.4)
+		(size 50.8 29.21)
 		(stroke
 			(width 0)
 			(type default)
