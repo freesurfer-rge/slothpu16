@@ -41,18 +41,17 @@ def test_smoke():
     output.set_oe("Instruction", False)
     output.set_oe("Cycle", False)
 
-    output.set_cycle(4)
-    output.send()
+    output.set_cycle(1)
 
     instr_bus = bitarray.util.zeros(N_BITS, endian="little")
     # Actual instruction is the first four bits
 
-    op = "halt"
+    op = "branchzero"
     
     instr_bus[0:3] = bitarray.util.int2ba(
         instructions[op], endian="little", length=INSTR_BITS
     )
 
-    
+    output.set_bus("B", 32768)
     output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
     output.send()
