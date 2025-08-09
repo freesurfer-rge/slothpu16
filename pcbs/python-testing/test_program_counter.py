@@ -426,9 +426,36 @@ def test_branchzero_dobranch():
     output.send()
 
     expected_pc = 0
-    C_vals = [10, 48, 8196, 20096]
+    A_vals = [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        20,
+        88,
+        378,
+        1582,
+        6892,
+        12222,
+        18936,
+        22008,
+        36732,
+        46194,
+        55912,
+    ]
     op = "branchzero"
-    for C_val in C_vals:
+    for A_val in A_vals:
         # Instruction Fetch -------------------
         output.set_cycle(0)
         output.send()
@@ -461,17 +488,17 @@ def test_branchzero_dobranch():
 
         # Decode/Execute -------------------------
         output.set_cycle(2)
-        output.set_bus("C", C_val)
-        output.set_oe("C", False)
+        output.set_bus("A", A_val)
+        output.set_oe("A", False)
         output.send()
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == A_val
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
-        assert C_bus == C_val
+        assert C_bus == 0  # Never enabled
 
         # Commit ----------------------------------
         output.set_cycle(3)
@@ -479,11 +506,11 @@ def test_branchzero_dobranch():
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == A_val
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
-        assert C_bus == C_val
+        assert C_bus == 0  # Never enabled
 
         # PC Update -------------------------
         output.set_cycle(4)
@@ -491,14 +518,14 @@ def test_branchzero_dobranch():
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == A_val
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
-        assert C_bus == C_val
+        assert C_bus == 0  # Never enabled
 
         output.set_oe("C", True)
 
         # We should have branched
-        expected_pc = C_val
+        expected_pc = A_val
     input.recv()
