@@ -328,7 +328,7 @@ def test_loadpc():
 @pytest.mark.parametrize("b_bit", range(N_BITS))
 def test_branchzero_nobranch(b_bit: int):
     assert b_bit < N_BITS
-    bus_vals = dict(A=189, B=2 ** b_bit, C=40181)
+    bus_vals = dict(A=180, B=2 ** b_bit, C=40181)
 
     output = _Output()
     input = _Input()
@@ -374,11 +374,12 @@ def test_branchzero_nobranch(b_bit: int):
 
         # Decode/Execute -------------------------
         output.set_cycle(2)
+        output.set_oe("A", False)
         output.send()
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == bus_vals["A"]
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
@@ -390,7 +391,7 @@ def test_branchzero_nobranch(b_bit: int):
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == bus_vals["A"]
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
@@ -402,11 +403,13 @@ def test_branchzero_nobranch(b_bit: int):
 
         input.recv()
         A_bus = input.read_bus("A")
-        assert A_bus == 0  # Now disconnected
+        assert A_bus == bus_vals["A"]
         B_bus = input.read_bus("B")
         assert B_bus == bus_vals["B"]
         C_bus = input.read_bus("C")
         assert C_bus == 0
+
+        output.set_oe("A", True)
 
         # We should not have branched
         expected_pc += 2
@@ -524,7 +527,7 @@ def test_branchzero_dobranch():
         C_bus = input.read_bus("C")
         assert C_bus == 0  # Never enabled
 
-        output.set_oe("C", True)
+        output.set_oe("A", True)
 
         # We should have branched
         expected_pc = A_val
