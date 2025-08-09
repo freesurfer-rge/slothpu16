@@ -27,6 +27,7 @@ instructions = {
     "set": 15,
 }
 
+
 def test_smoke():
     output = _Output()
     input = _Input()
@@ -47,7 +48,7 @@ def test_smoke():
     # Actual instruction is the first four bits
 
     op = "branchzero"
-    
+
     instr_bus[0:3] = bitarray.util.int2ba(
         instructions[op], endian="little", length=INSTR_BITS
     )
