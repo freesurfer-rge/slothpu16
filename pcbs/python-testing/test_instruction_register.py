@@ -10,13 +10,14 @@ from utils import get_instruction
 
 SLEEP_SECS = 0.1
 
+
 def prepare_instruction_register(input: _Input, output: _Output):
     # Set Pi outputs to high impedance on
     # Instruction and C buses (since that's where IR writes results)
     # Also A bus, which should be disconnected from IR
     output.set_oe("Instruction", True)
-    output.set_oe("C", True )
-    output.set_oe("A", True )
+    output.set_oe("C", True)
+    output.set_oe("A", True)
 
     # IR reads from other buses
     output.set_oe("B", False)
@@ -33,23 +34,21 @@ def prepare_instruction_register(input: _Input, output: _Output):
     time.sleep(SLEEP_SECS)
     output.set_reset(True)
     output.send()
-    
-    
 
-    
+
 def test_instruction_write():
     op = "loadpc"
     rA = 15
     rB = 15
     rC = 15
-    
+
     output = _Output()
     input = _Input()
 
     prepare_instruction_register(input, output)
-    
+
     instr = get_instruction(op, rA, rB, rC)
-    
+
     # Set the cycle and instruction
     output.set_cycle(0)
     output.set_bus("B", bitarray.util.ba2int(instr))
@@ -70,4 +69,3 @@ def test_instruction_write():
     assert input.read_bus("A") == 0
     assert input.read_bus("Instruction") == bitarray.util.ba2int(instr)
     assert input.read_bus("C") == 0
-    
