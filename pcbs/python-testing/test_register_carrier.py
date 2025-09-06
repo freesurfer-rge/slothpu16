@@ -2,30 +2,11 @@ import pytest
 
 import bitarray.util
 
+from constants import N_BITS, INSTR_BITS, REG_BITS, INSTRUCTIONS
 from pi_backplane import _Input, _Output
 
 
-N_BITS = 16
 N_REGISTERS = 16
-INSTR_BITS = 4
-REG_BITS = 4
-
-instructions = {
-    "add": 0,
-    "sub": 1,
-    "compare": 4,
-    "nand": 5,
-    "xor": 6,
-    "barrel": 7,
-    "loadb": 8,
-    "loadw": 9,
-    "storeb": 10,
-    "storew": 11,
-    "loadpc": 12,
-    "branchzero": 13,
-    "halt": 14,
-    "set": 15,
-}
 
 
 @pytest.mark.parametrize("r_C", range(N_REGISTERS))
@@ -50,7 +31,7 @@ def test_smoke(r_C, target_val):
     # Actual instruction is the first four bits
 
     instr_bus[0:3] = bitarray.util.int2ba(
-        instructions[op], endian="little", length=INSTR_BITS
+        INSTRUCTIONS[op], endian="little", length=INSTR_BITS
     )
     reg_bits = bitarray.util.int2ba(r_C, endian="little", length=INSTR_BITS)
 
@@ -89,7 +70,7 @@ def get_instruction(opcode: str, r_A: int, r_B: int, r_C: int) -> bitarray.bitar
 
     # Opcode is first four bits
     instr_bus[0:3] = bitarray.util.int2ba(
-        instructions[opcode], endian="little", length=INSTR_BITS
+        INSTRUCTIONS[opcode], endian="little", length=INSTR_BITS
     )
 
     # r_A set by next four bits
@@ -108,7 +89,7 @@ def get_instruction(opcode: str, r_A: int, r_B: int, r_C: int) -> bitarray.bitar
 @pytest.mark.parametrize(
     "target_val", [0, 144, 1037, 8195, 20125, 40008, (2 ** N_BITS) - 1]
 )
-@pytest.mark.parametrize("op", list(instructions.keys()))
+@pytest.mark.parametrize("op", list(INSTRUCTIONS.keys()))
 def test_compute_cycle(r_C, target_val, op):
     output = _Output()
     input = _Input()
