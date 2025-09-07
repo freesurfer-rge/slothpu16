@@ -47,6 +47,10 @@ def prepare_program_counter(input: _Input, output: _Output):
     time.sleep(SLEEP_SECS)
     output.set_reset(True)
     output.send()
+    # This last is important, since it allows the
+    # RC networks in the RwR reset logic to return
+    # to 'base' state
+    time.sleep(SLEEP_SECS)
 
 
 def test_non_pc():

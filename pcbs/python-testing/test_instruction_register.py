@@ -4,11 +4,11 @@ import pytest
 
 import bitarray.util
 
-from constants import N_BITS, INSTR_BITS, INSTRUCTIONS
+from constants import N_BITS, INSTR_BITS, INSTRUCTIONS, REG_BITS
 from pi_backplane import _Input, _Output
 from utils import get_instruction
 
-SLEEP_SECS = 0.1
+SLEEP_SECS = 0.03
 
 
 def prepare_instruction_register(input: _Input, output: _Output):
@@ -34,14 +34,17 @@ def prepare_instruction_register(input: _Input, output: _Output):
     time.sleep(SLEEP_SECS)
     output.set_reset(True)
     output.send()
+    # This last is important, since it allows the
+    # RC networks in the RwR reset logic to return
+    # to 'base' state
+    time.sleep(SLEEP_SECS)
 
 
-def test_instruction_write():
-    op = "loadpc"
-    rA = 15
-    rB = 15
-    rC = 15
-
+@pytest.mark.parametrize("op", INSTRUCTIONS.keys())
+@pytest.mark.parametrize("rA", range(2 ** REG_BITS))
+@pytest.mark.parametrize("rB", [0, 7, 9, 15])
+@pytest.mark.parametrize("rC", [0, 11])
+def test_instruction_write(op: str, rA: int, rB: int, rC: int):
     output = _Output()
     input = _Input()
 
@@ -69,3 +72,15 @@ def test_instruction_write():
     assert input.read_bus("A") == 0
     assert input.read_bus("Instruction") == bitarray.util.ba2int(instr)
     assert input.read_bus("C") == 0
+
+    # Advance through remaining cycles
+    for cyc in range(2, 5):
+        output.set_cycle(cyc)
+        output.send()
+        input.recv()
+        assert input.read_bus("A") == 0
+        assert input.read_bus("Instruction") == bitarray.util.ba2int(instr)
+        expected_C = 0
+        if op == "set":
+            expected_C = rA + (rB * 2 ** REG_BITS)
+        assert input.read_bus("C") == expected_C
