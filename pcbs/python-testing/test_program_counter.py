@@ -4,30 +4,11 @@ import pytest
 
 import bitarray.util
 
+from constants import N_BITS, INSTR_BITS, INSTRUCTIONS
 from pi_backplane import _Input, _Output
 
 SLEEP_SECS = 0.1
 
-N_BITS = 16
-INSTR_BITS = 4
-
-
-instructions = {
-    "add": 0,
-    "sub": 1,
-    "compare": 4,
-    "nand": 5,
-    "xor": 6,
-    "barrel": 7,
-    "loadb": 8,
-    "loadw": 9,
-    "storeb": 10,
-    "storew": 11,
-    "loadpc": 12,
-    "branchzero": 13,
-    "halt": 14,
-    "set": 15,
-}
 
 instr_non_pc = [
     "add",
@@ -66,6 +47,10 @@ def prepare_program_counter(input: _Input, output: _Output):
     time.sleep(SLEEP_SECS)
     output.set_reset(True)
     output.send()
+    # This last is important, since it allows the
+    # RC networks in the RwR reset logic to return
+    # to 'base' state
+    time.sleep(SLEEP_SECS)
 
 
 def test_non_pc():
@@ -101,7 +86,7 @@ def test_non_pc():
 
         instr_bus = bitarray.util.zeros(N_BITS, endian="little")
         instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[op], endian="little", length=INSTR_BITS
+            INSTRUCTIONS[op], endian="little", length=INSTR_BITS
         )
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
@@ -186,7 +171,7 @@ def test_halt():
 
         instr_bus = bitarray.util.zeros(N_BITS, endian="little")
         instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[op], endian="little", length=INSTR_BITS
+            INSTRUCTIONS[op], endian="little", length=INSTR_BITS
         )
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
@@ -271,7 +256,7 @@ def test_loadpc():
 
         instr_bus = bitarray.util.zeros(N_BITS, endian="little")
         instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[op], endian="little", length=INSTR_BITS
+            INSTRUCTIONS[op], endian="little", length=INSTR_BITS
         )
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
@@ -359,7 +344,7 @@ def test_branchzero_nobranch(b_bit: int):
 
         instr_bus = bitarray.util.zeros(N_BITS, endian="little")
         instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[op], endian="little", length=INSTR_BITS
+            INSTRUCTIONS[op], endian="little", length=INSTR_BITS
         )
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
@@ -476,7 +461,7 @@ def test_branchzero_dobranch():
 
         instr_bus = bitarray.util.zeros(N_BITS, endian="little")
         instr_bus[0:3] = bitarray.util.int2ba(
-            instructions[op], endian="little", length=INSTR_BITS
+            INSTRUCTIONS[op], endian="little", length=INSTR_BITS
         )
         output.set_bus("Instruction", bitarray.util.ba2int(instr_bus))
         output.send()
