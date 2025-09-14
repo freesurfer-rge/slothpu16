@@ -4568,7 +4568,7 @@
 		(descr "DC Barrel Jack")
 		(tags "Power Jack")
 		(property "Reference" "J1010"
-			(at -8.45 5.75 360)
+			(at -8.45 5.75 0)
 			(layer "F.SilkS")
 			(uuid "50c150d7-c6cc-4a9d-9a16-5282e6e95c99")
 			(effects
@@ -4579,7 +4579,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at -6.2 -5.5 360)
+			(at -6.2 -5.5 0)
 			(layer "F.Fab")
 			(uuid "7ddcff5c-7f56-4514-ae0a-348d69ea301a")
 			(effects
@@ -4904,7 +4904,7 @@
 			(uuid "697cc807-8f5a-47c0-876c-4f7e4e80d84c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -3 -2.95 360)
+			(at -3 -2.95 0)
 			(layer "F.Fab")
 			(uuid "e13e462f-43a5-4210-946b-366c5ead867a")
 			(effects
@@ -7117,6 +7117,210 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "a554a372-cc42-4259-b069-1a001f894592")
+	)
+	(gr_text "+5V"
+		(at 190.5 48.895 -90)
+		(layer "F.SilkS")
+		(uuid "1e2bbfe6-e4c6-4bb2-824f-c8e0b3ad0ba1")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "+5V"
+		(at 55.245 76.2 0)
+		(layer "F.SilkS")
+		(uuid "2251533b-463e-4e1b-988e-b8106eefc437")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+5V"
+		(at 191.77 226.695 -90)
+		(layer "F.SilkS")
+		(uuid "2d94a779-9f7b-456c-bdab-7b05695c9bd9")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "+5V"
+		(at 213.995 74.93 0)
+		(layer "F.SilkS")
+		(uuid "3f35eaec-62c2-4b73-b21b-fc9e891979ec")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "+5V"
+		(at 220.345 74.93 0)
+		(layer "F.SilkS")
+		(uuid "499cd8a6-9cc3-4831-b934-290d619d718d")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "SlothPU16 Backplane"
+		(at 107.315 121.92 0)
+		(layer "F.SilkS")
+		(uuid "4ec6bd9a-e148-4ac5-af18-ac87799cffc7")
+		(effects
+			(font
+				(size 3.2512 3.2512)
+				(thickness 0.4064)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+5V"
+		(at 190.5 55.245 -90)
+		(layer "F.SilkS")
+		(uuid "5879626b-338c-4c70-adb7-af29960198a4")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 55.245 200.66 0)
+		(layer "F.SilkS")
+		(uuid "67972c5d-d3a6-464a-a09b-446778cfe3e7")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 66.04 55.245 -90)
+		(layer "F.SilkS")
+		(uuid "67ce69ed-be1b-40e9-8e5a-c73b796663a4")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 67.31 233.045 -90)
+		(layer "F.SilkS")
+		(uuid "95bf6fc8-8d42-4e49-b32e-68194fd395b5")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 220.345 199.39 0)
+		(layer "F.SilkS")
+		(uuid "9716a4a4-673f-463f-9f77-20c5b2340361")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 213.995 199.39 0)
+		(layer "F.SilkS")
+		(uuid "a60db670-5862-4490-bd2f-cf4ecdaa07a7")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "GND"
+		(at 66.04 48.895 -90)
+		(layer "F.SilkS")
+		(uuid "a96f3766-0acc-4278-abc1-502a0c79d0d8")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "+5V"
+		(at 191.77 233.045 -90)
+		(layer "F.SilkS")
+		(uuid "b7f126b3-c8a9-482d-a76b-e17af0707d95")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+5V"
+		(at 48.895 76.2 0)
+		(layer "F.SilkS")
+		(uuid "bca7518c-edcb-4992-8edb-db6e02161dbe")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "GND"
+		(at 48.895 200.66 0)
+		(layer "F.SilkS")
+		(uuid "ca29e486-7be3-4302-a0c3-f9ee572bf6dc")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "GND"
+		(at 67.31 226.695 -90)
+		(layer "F.SilkS")
+		(uuid "df64d6fb-2099-4d80-b15f-73d055224cb4")
+		(effects
+			(font
+				(size 1.2192 1.2192)
+				(thickness 0.1524)
+			)
+			(justify right)
+		)
 	)
 	(segment
 		(start 218.44 97.79)
