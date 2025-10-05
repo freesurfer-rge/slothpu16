@@ -5,6 +5,7 @@
 
 from pi_backplane import _Output
 
+
 def main():
     output = _Output()
 
