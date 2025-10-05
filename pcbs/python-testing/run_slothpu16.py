@@ -23,7 +23,7 @@ def get_register(reg_part: str) -> int:
     assert reg_part[0]=='R', f"Unrecognised register identifier: {reg_part}"
 
     reg = int(reg_part[1:])
-    assert reg>=0 && reg<2**constants.REG_BITS, f"Bad register value: {reg_part}"
+    assert reg>=0 and reg<2**constants.REG_BITS, f"Bad register value: {reg_part}"
     return reg
 
 
@@ -37,16 +37,19 @@ def convert_machinecode(line: str) -> List[int]:
     if instr=='set':
         assert len(parts)==3,f"Bad instruction: {line}"
         value = int(parts[1])
-        assert value>=0 && value<256,f"Bad set value: {value}"
+        assert value>=0 and value<256,f"Bad set value: {value}"
+        r_B, r_A = divmod(value, 2**constants.REG_BITS)
         r_C = get_register(parts[2])
     else:
         raise NotImplementedException(f"Unrecognised: {line}")
 
     instr_bits = utils.get_instruction(instr, r_A, r_B, r_C)
-
-    low_byte = bitarray.utils.ba2int(instr_bits[0:8])
+    print(f"instr={instr_bits}")
+    assert len(instr_bits) == constants.N_BITS,f"{len(instr_bits)}"
+    
+    low_byte = bitarray.util.ba2int(instr_bits[0:8])
     assert low_byte<256,"Sanity check"
-    high_byte = bitarray.utils.ba2int(instr_bits[8:16])
+    high_byte = bitarray.util.ba2int(instr_bits[8:16])
     assert high_byte<256,"Sanity check"
 
     return [low_byte, high_byte]
