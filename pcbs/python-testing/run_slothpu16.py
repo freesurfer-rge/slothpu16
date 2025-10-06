@@ -2,6 +2,7 @@
 
 import argparse
 import pathlib
+import time
 
 from typing import List
 
@@ -10,6 +11,9 @@ import bitarray
 import constants
 import utils
 
+from pi_backplane import _Input, _Output
+
+STAGE_DELAY = 0.1
 
 def parse_arguments():
     parser = argparse.ArgumentParser(add_help=True)
@@ -83,6 +87,78 @@ def process_assembler(lines: List[str]) -> List[int]:
     return result
 
 
+def run_processor(memory: List[int]):
+    output = _Output()
+    input = _Input()
+
+    output.set_oe("Instruction", True)
+    output.set_oe("Cycle", False)
+
+    while True:
+        # =====================
+        # Instruction Fetch
+        print("Instruction Fetch")
+        output.set_cycle(0)
+        output.send()
+
+        input.recv()
+        a_val = input.read_bus("A")
+        assert a_val % 2 == 0, f"Instruction Fetch: {a_val}"
+
+        instruction = memory[a_val] + (256*memory[a_val+1])
+        output.set_oe("B", False)
+        output.set_bus("B", instruction)
+        output.send()
+        time.sleep(STAGE_DELAY)
+
+        # =====================
+        # Instruction store
+        print("Instruction store")
+        output.set_cycle(1)
+        output.send()
+
+        output.set_oe("B", True)
+        time.sleep(STAGE_DELAY)
+
+        # =====================
+        # Decode/Execute
+        print("Decode/Execute")
+        output.set_cycle(2)
+        output.send()
+
+        input.recv()
+        instr_val = input.read_bus("Instruction")
+        instr = constants.INSTR_DECODE[instr_val % (2**constants.INSTR_BITS)]
+        print(f"instr = {instr}")
+        assert len(instr)>0, f"Failed to decode {instr_val}"
+        if instr in ["loadb", "loadw", "storeb", "storew"]:
+            raise NotImplementedException(instr)
+
+        time.sleep(STAGE_DELAY)
+
+        # ====================
+        # Commit
+        print("Commit")
+        output.set_cycle(3)
+        output.send()
+
+        # In case we wrote from memory....
+        output.set_oe("C", True)
+        time.sleep(STAGE_DELAY)
+
+        # ====================
+        # PC Update
+        print("PC Update")
+        output.set_cycle(4)
+        output.send()
+
+        output.set_oe("A", True)
+        output.set_oe("B", True)
+        output.set_oe("C", True)
+        time.sleep(STAGE_DELAY)
+        
+
+
 def main():
     args = parse_arguments()
 
@@ -97,6 +173,8 @@ def main():
     for _ in range(len(memory), 2 ** constants.N_BITS):
         memory.append(0)
     print(f"Mem Size: {len(memory)}")
+
+    run_processor(memory)
 
 
 if __name__ == "__main__":
