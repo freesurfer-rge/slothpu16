@@ -38,17 +38,22 @@ def convert_machinecode(line: str) -> List[int]:
     parts = line.split()
     instr = parts[0]
 
-    r_A = 0
-    r_B = 0
-    r_C = 0
     if instr == "set":
         assert len(parts) == 3, f"Bad instruction: {line}"
         value = int(parts[1])
         assert value >= 0 and value < 256, f"Bad set value: {value}"
         r_B, r_A = divmod(value, 2 ** constants.REG_BITS)
         r_C = get_register(parts[2])
+    elif instr == "branchzero":
+        assert len(parts) == 3, f"Bad instruction: {line}"
+        r_A = get_register(parts[1])
+        r_B = get_register(parts[2])
+        r_C = 0
     else:
-        raise NotImplementedException(f"Unrecognised: {line}")
+        assert len(parts) == 4, f"Bad instruction: {line}"
+        r_A = get_register(parts[1])
+        r_B = get_register(parts[2])
+        r_C = get_register(parts[3])
 
     instr_bits = utils.get_instruction(instr, r_A, r_B, r_C)
     print(f"instr={instr_bits}")
