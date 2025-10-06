@@ -78,7 +78,6 @@ def process_assembler(lines: List[str]) -> List[int]:
             print(f"'{pruned_line}'")
             bytes = convert_machinecode(pruned_line)
             assert len(bytes) == 2
-            print(bytes)
             result += bytes
 
     return result
@@ -91,7 +90,13 @@ def main():
         assembler_lines = af.readlines()
     print(f"Read {len(assembler_lines)} lines")
 
-    start_memory = process_assembler(assembler_lines)
+    memory = process_assembler(assembler_lines)
+    print("Assembly complete")
+
+    # Zero initialise the remainder of the memory
+    for _ in range(len(memory), 2 ** constants.N_BITS):
+        memory.append(0)
+    print(f"Mem Size: {len(memory)}")
 
 
 if __name__ == "__main__":
