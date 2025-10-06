@@ -20,5 +20,21 @@ INSTRUCTIONS = {
 }
 
 INSTR_DECODE = [
-    "add", "sub", "", "", "compare", "nand", "xor", "barrel", "loadb", "loadw", "storeb", "storew", "loadpc", "branchzero", "halt", "set"]
-assert len(INSTR_DECODE)==2**INSTR_BITS
+    "add",
+    "sub",
+    "",
+    "",
+    "compare",
+    "nand",
+    "xor",
+    "barrel",
+    "loadb",
+    "loadw",
+    "storeb",
+    "storew",
+    "loadpc",
+    "branchzero",
+    "halt",
+    "set",
+]
+assert len(INSTR_DECODE) == 2 ** INSTR_BITS

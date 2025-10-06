@@ -13,7 +13,9 @@ import utils
 
 from pi_backplane import _Input, _Output
 
-STAGE_DELAY = 0.1
+STAGE_DELAY = 0.5
+RESET_DELAY = 0.1
+
 
 def parse_arguments():
     parser = argparse.ArgumentParser(add_help=True)
@@ -93,6 +95,17 @@ def run_processor(memory: List[int]):
 
     output.set_oe("Instruction", True)
     output.set_oe("Cycle", False)
+    output.set_oe("Reset", False)
+
+    output.set_reset(True)
+    output.send()
+    time.sleep(RESET_DELAY)
+    output.set_reset(False)
+    output.send()
+    time.sleep(RESET_DELAY)
+    output.set_reset(True)
+    output.send()
+    time.sleep(RESET_DELAY)
 
     while True:
         # =====================
@@ -104,8 +117,9 @@ def run_processor(memory: List[int]):
         input.recv()
         a_val = input.read_bus("A")
         assert a_val % 2 == 0, f"Instruction Fetch: {a_val}"
+        print(f"Instr location: {a_val}")
 
-        instruction = memory[a_val] + (256*memory[a_val+1])
+        instruction = memory[a_val] + (256 * memory[a_val + 1])
         output.set_oe("B", False)
         output.set_bus("B", instruction)
         output.send()
@@ -128,9 +142,9 @@ def run_processor(memory: List[int]):
 
         input.recv()
         instr_val = input.read_bus("Instruction")
-        instr = constants.INSTR_DECODE[instr_val % (2**constants.INSTR_BITS)]
+        instr = constants.INSTR_DECODE[instr_val % (2 ** constants.INSTR_BITS)]
         print(f"instr = {instr}")
-        assert len(instr)>0, f"Failed to decode {instr_val}"
+        assert len(instr) > 0, f"Failed to decode {instr_val}"
         if instr in ["loadb", "loadw", "storeb", "storew"]:
             raise NotImplementedException(instr)
 
@@ -156,7 +170,6 @@ def run_processor(memory: List[int]):
         output.set_oe("B", True)
         output.set_oe("C", True)
         time.sleep(STAGE_DELAY)
-        
 
 
 def main():
