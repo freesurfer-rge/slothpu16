@@ -13,7 +13,7 @@ import utils
 
 from pi_backplane import _Input, _Output
 
-STAGE_DELAY = 0.5
+STAGE_DELAY = 0.1
 RESET_DELAY = 0.1
 
 
@@ -55,6 +55,11 @@ def convert_machinecode(line: str) -> List[int]:
         r_A = get_register(parts[1])
         r_B = get_register(parts[2])
         r_C = 0
+    elif instr == "halt":
+        assert len(parts) == 1, f"Bad instruction: {line}"
+        r_A = 0
+        r_B = 0
+        r_C = 0
     else:
         assert len(parts) == 4, f"Bad instruction: {line}"
         r_A = get_register(parts[1])
@@ -88,6 +93,21 @@ def process_assembler(lines: List[str]) -> List[int]:
 
     return result
 
+def show_buses(input: _Input):
+    time.sleep(0.01)
+    input.recv()
+    print(f"A={input.read_bus('A')}")
+    print(f"B={input.read_bus('B')}")
+    print(f"C={input.read_bus('C')}")
+    instr = input.read_bus("Instruction")
+    print(f"instr={instr}")
+    instr_bits = bitarray.util.int2ba(instr, length=constants.N_BITS, endian="little")
+    print(f"Instr= {instr_bits[0:4]} r_A={instr_bits[4:8]} r_B={instr_bits[8:12]} r_C={instr_bits[12:16]}")
+
+def advance_stage():
+    #_ = input()
+    time.sleep(STAGE_DELAY)
+
 
 def run_processor(memory: List[int]):
     output = _Output()
@@ -110,7 +130,7 @@ def run_processor(memory: List[int]):
     while True:
         # =====================
         # Instruction Fetch
-        print("Instruction Fetch")
+        print("Instruction Fetch ========")
         output.set_cycle(0)
         output.send()
 
@@ -120,23 +140,26 @@ def run_processor(memory: List[int]):
         print(f"Instr location: {a_val}")
 
         instruction = memory[a_val] + (256 * memory[a_val + 1])
+        print(f"Instruction={instruction}")
         output.set_oe("B", False)
         output.set_bus("B", instruction)
         output.send()
-        time.sleep(STAGE_DELAY)
+        show_buses(input)
+        advance_stage()
 
         # =====================
         # Instruction store
-        print("Instruction store")
+        print("Instruction store ========")
         output.set_cycle(1)
         output.send()
+        show_buses(input)
 
         output.set_oe("B", True)
-        time.sleep(STAGE_DELAY)
+        advance_stage()
 
         # =====================
         # Decode/Execute
-        print("Decode/Execute")
+        print("Decode/Execute ========")
         output.set_cycle(2)
         output.send()
 
@@ -147,29 +170,32 @@ def run_processor(memory: List[int]):
         assert len(instr) > 0, f"Failed to decode {instr_val}"
         if instr in ["loadb", "loadw", "storeb", "storew"]:
             raise NotImplementedException(instr)
-
-        time.sleep(STAGE_DELAY)
+        show_buses(input)
+        
+        advance_stage()
 
         # ====================
         # Commit
-        print("Commit")
+        print("Commit =========")
         output.set_cycle(3)
         output.send()
+        show_buses(input)
 
         # In case we wrote from memory....
         output.set_oe("C", True)
-        time.sleep(STAGE_DELAY)
+        advance_stage()
 
         # ====================
         # PC Update
-        print("PC Update")
+        print("PC Update =======")
         output.set_cycle(4)
         output.send()
+        show_buses(input)
 
         output.set_oe("A", True)
         output.set_oe("B", True)
         output.set_oe("C", True)
-        time.sleep(STAGE_DELAY)
+        advance_stage()
 
 
 def main():
