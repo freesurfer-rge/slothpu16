@@ -93,6 +93,7 @@ def process_assembler(lines: List[str]) -> List[int]:
 
     return result
 
+
 def show_buses(input: _Input):
     time.sleep(0.01)
     input.recv()
@@ -102,10 +103,13 @@ def show_buses(input: _Input):
     instr = input.read_bus("Instruction")
     print(f"instr={instr}")
     instr_bits = bitarray.util.int2ba(instr, length=constants.N_BITS, endian="little")
-    print(f"Instr= {instr_bits[0:4]} r_A={instr_bits[4:8]} r_B={instr_bits[8:12]} r_C={instr_bits[12:16]}")
+    print(
+        f"Instr= {instr_bits[0:4]} r_A={instr_bits[4:8]} r_B={instr_bits[8:12]} r_C={instr_bits[12:16]}"
+    )
+
 
 def advance_stage():
-    #_ = input()
+    # _ = input()
     time.sleep(STAGE_DELAY)
 
 
@@ -171,7 +175,7 @@ def run_processor(memory: List[int]):
         if instr in ["loadb", "loadw", "storeb", "storew"]:
             raise NotImplementedException(instr)
         show_buses(input)
-        
+
         advance_stage()
 
         # ====================
