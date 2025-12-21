@@ -13,7 +13,7 @@ import utils
 
 from pi_backplane import _Input, _Output
 
-STAGE_DELAY = 0.1
+STAGE_DELAY = 1.0
 RESET_DELAY = 0.1
 
 
@@ -130,7 +130,8 @@ def run_processor(memory: List[int]):
     output.set_reset(True)
     output.send()
     time.sleep(RESET_DELAY)
-
+    print("Reset complete")
+    
     while True:
         # =====================
         # Instruction Fetch
@@ -145,6 +146,8 @@ def run_processor(memory: List[int]):
 
         instruction = memory[a_val] + (256 * memory[a_val + 1])
         print(f"Instruction={instruction}")
+        instr_bits = bitarray.util.int2ba(instruction, endian="little", length=constants.N_BITS)
+        print(f"instr_bits={instr_bits}")
         output.set_oe("B", False)
         output.set_bus("B", instruction)
         output.send()
