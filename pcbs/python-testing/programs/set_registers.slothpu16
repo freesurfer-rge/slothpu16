@@ -1,0 +1,27 @@
+# Set the registers to their corresponding power of two
+
+set 1 R0
+set 2 R1
+set 4 R2
+set 8 R3
+set 16 R4
+set 32 R5
+set 64 R6
+set 128 R7
+set 1 R8
+set 2 R9
+set 4 R10
+set 8 R11
+set 16 R12
+set 32 R13
+set 64 R14
+set 128 R15
+barrel R8 R3 R8
+barrel R9 R3 R9
+barrel R10 R3 R10
+barrel R11 R3 R11
+barrel R12 R3 R12
+barrel R13 R3 R13
+barrel R14 R3 R14
+barrel R15 R3 R15
+halt

@@ -18,3 +18,23 @@ INSTRUCTIONS = {
     "halt": 14,
     "set": 15,
 }
+
+INSTR_DECODE = [
+    "add",
+    "sub",
+    "",
+    "",
+    "compare",
+    "nand",
+    "xor",
+    "barrel",
+    "loadb",
+    "loadw",
+    "storeb",
+    "storew",
+    "loadpc",
+    "branchzero",
+    "halt",
+    "set",
+]
+assert len(INSTR_DECODE) == 2 ** INSTR_BITS
