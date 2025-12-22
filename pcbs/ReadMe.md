@@ -48,3 +48,14 @@ Each Register file contains eight 8-bit registers, with one write port (from the
 A [connector](./Register%20File%20Connector/) allows the individual Register Files to be tested.
 
 ## The Instruction Register
+
+The [Instruction Register](./Instruction%20Register/) accepts a single daughter card, the 16-bit [Register with Reset](./Register%20with%20Reset/).
+In addition to containing the instruction register itself, this module implements the 'SET' instruction.
+This Register is supposed to be set to zero when power is connected, but for some reason it doesn't.
+However, the Reset line does work correctly.
+A [connector](./RwR%20Connector/) is provided for testing the register itself.
+
+## Program Counter
+
+The [Program Counter](./Program%20Counter/) has two daughter cards - a second Register With Reset (which is the PC register) and an [incrementer](./Incrementer/).
+The latter takes care of incrementing the program counter by two (unless a branch is taken), and has its own [test connector board](./Incrementer%20Connector/).
