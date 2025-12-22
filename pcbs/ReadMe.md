@@ -41,12 +41,13 @@ The ALU consists of its [carrier board](./ALU%20Carrier/) and the following daug
 With the exception of the comparator, two of each of these cards are required.
 For testing purposes, the barrel shifter has its [own connector](./Barrel%20Shifter%20Connector/), while the other three share a [common connector](./ALU%20Test%20Connector/).
 Note that *only one* of the daughter cards should plugged into the common ALU test connector at a time - no effort is made to prevent outputs from different daughter cards being connected.
+Remember that **neither connector** uses the common bus.
 
 ## The Register File
 
 The [Register File Carrier](./Register%20File%20Carrier/) accepts four identical copies of the [Register File](./Register%20File/).
 Each Register file contains eight 8-bit registers, with one write port (from the C bus) and two read ports (the A & B buses).
-A [connector](./Register%20File%20Connector/) allows the individual Register Files to be tested.
+A [connector](./Register%20File%20Connector/) allows the individual Register Files to be tested (remember that the connector board does **not** use the common bus).
 
 ## The Instruction Register
 
@@ -54,12 +55,12 @@ The [Instruction Register](./Instruction%20Register/) accepts a single daughter 
 In addition to containing the instruction register itself, this module implements the 'SET' instruction.
 This Register is supposed to be set to zero when power is connected, but for some reason it doesn't.
 However, the Reset line does work correctly.
-A [connector](./RwR%20Connector/) is provided for testing the register itself.
+A [connector](./RwR%20Connector/) is provided for testing the register itself (remember that the connector board does **not** use the common bus).
 
 ## Program Counter
 
 The [Program Counter](./Program%20Counter/) has two daughter cards - a second Register With Reset (which is the PC register) and an [incrementer](./Incrementer/).
-The latter takes care of incrementing the program counter by two (unless a branch is taken), and has its own [test connector board](./Incrementer%20Connector/).
+The latter takes care of incrementing the program counter by two (unless a branch is taken), and has its own [test connector board](./Incrementer%20Connector/) (remember that the connector board does **not** use the common bus).
 
 ## Pi Backplane Connector
 
