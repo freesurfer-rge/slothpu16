@@ -16,6 +16,7 @@ SlothPU16 consists of five modules connected via a backplane:
 The modules connect to the backplane (and backplane units connect to each other) with a common bus made from two 2x20 pin headers.
 With the exception of the Pi Backplane Connector, each of these modules consists of a *carrier* board, which accepts daughter boards via 44-contact edge connectors.
 For testing the daughter boards, *connector* PCBs are provided, which allow each to be tested via the [tester board from the original SlothPU](https://github.com/freesurfer-rge/slothpu/tree/main/pcbs/Tester).
+While these connector boards also have twin 2x20 pin headers, these **do not** correspond to the Common Bus, and can **only** be used with the Tester board.
 The carrier boards which constitute an entire functional module can also be tested in isolation by use of the Pi Backplane connector.
 
 ## The Common Bus
@@ -59,3 +60,10 @@ A [connector](./RwR%20Connector/) is provided for testing the register itself.
 
 The [Program Counter](./Program%20Counter/) has two daughter cards - a second Register With Reset (which is the PC register) and an [incrementer](./Incrementer/).
 The latter takes care of incrementing the program counter by two (unless a branch is taken), and has its own [test connector board](./Incrementer%20Connector/).
+
+## Pi Backplane Connector
+
+As the name suggests, [this board](./SlothPU%20Backplane/) connects a the standard 2x20 Raspberry Pi header to the Common Bus.
+To this end, twin banks of input and output shift registers are used.
+The output shift registers can have their outputs set to high impedance for when a connected module wishes to write to a bus.
+However, the resolution of this impedance switch is at the bus level, not individual lines.
