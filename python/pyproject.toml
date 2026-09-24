@@ -12,6 +12,9 @@ requires-python = ">=3.13"
 [tool.uv.workspace]
 members = ["packages/*"]
 
+[tool.uv.sources]
+pyslothpu16-core = { workspace = true }
+
 [dependency-groups]
 dev = [
     "pytest>=8",
