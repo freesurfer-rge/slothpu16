@@ -1,0 +1,98 @@
+[project]
+name = "pyslothpu16-workspace"
+version = "0.0.1.dev0"
+description = "PySlothPU16 contains an emulator and compiler for `slothpu16`."
+authors = [
+    { name = "Richard Edgar", email = "freesurfer.rge@gmail.com" },
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff==0.15.2",
+    "ty",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+preview = true
+fixable = [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F",
+    "G",
+    "I",
+    "N",
+    "Q",
+    "S",
+    "T",
+    "W",
+    "ANN",
+    "ARG",
+    "BLE",
+    "COM",
+    "DJ",
+    "DTZ",
+    "EM",
+    "ERA",
+    "EXE",
+    "FBT",
+    "ICN",
+    "INP",
+    "ISC",
+    "NPY",
+    "PD",
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT",
+]
+select = [
+    "A",
+    "B",
+    "C",
+    "E",
+    "F",
+    "G",
+    "F401",  # unused-import
+    "I", # unsorted-import
+    "RUF022", # unsorted-dunderall
+]
+ignore = [
+    "DOC502",  # Raised exception is not explicitly raised
+]
+extend-select = [
+    "D204",  # 1 blank line required after class docstring
+    "D213",  # Multi-line docstring summary should start at the second line
+    "D401",  # First line of docstring should be in imperative mood
+    "D404",  # First word of the docstring should not be "This"
+]
+
+
+[tool.ty]
