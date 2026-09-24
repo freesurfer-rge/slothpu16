@@ -19,7 +19,7 @@ INSTRUCTIONS: dict[str, int] = {
     "set": 15,
 }
 
-INSTR_DECODE = [
+INSTR_DECODE: list[str] = [
     "add",
     "sub",
     "",
