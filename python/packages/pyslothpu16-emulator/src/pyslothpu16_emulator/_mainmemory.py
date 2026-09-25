@@ -1,5 +1,6 @@
 from pyslothpu16_core import N_BITS
 
+
 class MainMemory:
     def __init__(self):
         self._locs: list[int] = [0] * (2**N_BITS)
