@@ -14,11 +14,12 @@ members = ["packages/*"]
 
 [tool.uv.sources]
 pyslothpu16-core = { workspace = true }
+pyslothpu16-emulator = { workspace = true }
 
 [dependency-groups]
 dev = [
     "pytest>=8",
-    "ruff==0.15.2",
+    "ruff==0.16.8",
     "ty",
 ]
 

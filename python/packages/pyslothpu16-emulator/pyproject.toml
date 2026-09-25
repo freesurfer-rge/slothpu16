@@ -1,0 +1,12 @@
+[project]
+name = "pyslothpu16-emulator"
+version = "0.1.0"
+description = "Emulator for SlothPU16"
+requires-python = ">=3.13"
+dependencies = [
+    "pyslothpu16-core",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
