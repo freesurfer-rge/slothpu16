@@ -1,40 +1,30 @@
+from enum import IntEnum, unique
+
 N_BITS = 16
 INSTR_BITS = 4
 REG_BITS = 4
 
-INSTRUCTIONS: dict[str, int] = {
-    "add": 0,
-    "sub": 1,
-    "compare": 4,
-    "nand": 5,
-    "xor": 6,
-    "barrel": 7,
-    "loadb": 8,
-    "loadw": 9,
-    "storeb": 10,
-    "storew": 11,
-    "loadpc": 12,
-    "branchzero": 13,
-    "halt": 14,
-    "set": 15,
-}
 
-INSTR_DECODE: list[str] = [
-    "add",
-    "sub",
-    "",
-    "",
-    "compare",
-    "nand",
-    "xor",
-    "barrel",
-    "loadb",
-    "loadw",
-    "storeb",
-    "storew",
-    "loadpc",
-    "branchzero",
-    "halt",
-    "set",
-]
-assert len(INSTR_DECODE) == 2**INSTR_BITS
+@unique
+class OpCode(IntEnum):
+    ADD = 0
+    SUB = 1
+    COMPARE = 4
+    NAND = 5
+    XOR = 6
+    BARREL = 7
+    LOADB = 8
+    LOADW = 9
+    STOREB = 10
+    STOREW = 11
+    LOADPC = 12
+    BRANCHZERO = 13
+    HALT = 14
+    SET = 15
+
+    @classmethod
+    def from_str(cls, value: str) -> "OpCode":
+        for oc in OpCode:
+            if value.lower() == oc.name.lower():
+                return oc
+        raise ValueError(f"Invalid opcode: {value}")

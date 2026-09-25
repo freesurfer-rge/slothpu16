@@ -1,3 +1,3 @@
-from ._constants import INSTR_BITS, INSTR_DECODE, INSTRUCTIONS, N_BITS, REG_BITS
+from ._constants import INSTR_BITS, N_BITS, REG_BITS, OpCode
 
-__all__ = ["INSTRUCTIONS", "INSTR_BITS", "INSTR_DECODE", "N_BITS", "REG_BITS"]
+__all__ = ["INSTR_BITS", "N_BITS", "REG_BITS", "OpCode"]
