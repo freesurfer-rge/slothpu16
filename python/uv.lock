@@ -77,6 +77,8 @@ source = { virtual = "." }
 
 [package.dev-dependencies]
 dev = [
+    { name = "pyslothpu16-core" },
+    { name = "pyslothpu16-emulator" },
     { name = "pytest" },
     { name = "ruff" },
     { name = "ty" },
@@ -86,6 +88,8 @@ dev = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "pyslothpu16-core", editable = "packages/pyslothpu16-core" },
+    { name = "pyslothpu16-emulator", editable = "packages/pyslothpu16-emulator" },
     { name = "pytest", specifier = ">=8" },
     { name = "ruff", specifier = "==0.16.8" },
     { name = "ty" },

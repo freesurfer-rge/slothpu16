@@ -33,4 +33,3 @@ fp-info-cache
 # From fabrication toolkit
 pcbs/*/production/*
 pcbs/*/fabrication-toolkit-options.json
-python/**/__pycache__/**
