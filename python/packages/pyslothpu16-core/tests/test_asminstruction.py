@@ -144,6 +144,12 @@ class TestTwoRegisterInstructions:
         assert ve.value.args[0] == f"Invalid Instruction: {oc.name} {rA} None 1"
 
     @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    def test_rB_present(self, oc: OpCode):
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=2, r_B=1, r_C=3)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} 2 1 3"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
     def test_rC_missing(self, oc: OpCode):
         with pytest.raises(ValueError) as ve:
             _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=None)
@@ -155,3 +161,31 @@ class TestTwoRegisterInstructions:
         with pytest.raises(ValueError) as ve:
             _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=rC)
         assert ve.value.args[0] == f"Invalid Instruction: {oc.name} 0 None {rC}"
+
+
+class TestLoadPC:
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_smoke(self, rC: int):
+        instr = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+        assert str(instr) == f"LOADPC None None {rC}"
+
+    def test_rA_present(self):
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=1, r_B=None, r_C=2)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC 1 None 2"
+
+    def test_rB_present(self):
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=1, r_C=2)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC None 1 2"
+
+    def test_rC_missing(self):
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=None)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC None None None"
+
+    @pytest.mark.parametrize("rC", [-1, 16])
+    def test_rC_invalid(self, rC: int):
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+        assert ve.value.args[0] == f"Invalid Instruction: LOADPC None None {rC}"
