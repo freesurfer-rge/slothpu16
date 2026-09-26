@@ -58,5 +58,13 @@ class AsmInstruction:
         if reg_value is None or reg_value < 0 or reg_value >= 2**REG_BITS:
             raise ValueError(f"Invalid Instruction: {self}")
 
+    def get_reg_string(self, reg_value: int | None):
+        if reg_value is None:
+            return "None"
+        return f"R{reg_value}"
+
     def __str__(self):
-        return f"{self.opcode.name} {self.r_A} {self.r_B} {self.r_C}"
+        a_str = self.get_reg_string(self.r_A)
+        b_str = self.get_reg_string(self.r_B)
+        c_str = self.get_reg_string(self.r_C)
+        return f"{self.opcode.name} {a_str} {b_str} {c_str}"
