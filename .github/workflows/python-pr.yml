@@ -14,9 +14,6 @@ jobs:
       runs-on: ubuntu-latest
       permissions:
           contents: read
-      defaults:
-        run:
-          working-directory: python
       
       steps:
           - uses: actions/checkout@v6
@@ -28,20 +25,25 @@ jobs:
               python-version: "3.13"
 
           - name: Sync dependencies
+            working-directory: python
             run: uv sync --all-groups
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Check format with ruff
+            src: python
             with:
               args: format --check .
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Run ruff linting
+            src: python
             with:
               args: check .
 
           - name: Run ty
+            working-directory: python
             run: uv run ty check
 
           - name: Run tests
+            working-directory: python
             run: uv run pytest .
