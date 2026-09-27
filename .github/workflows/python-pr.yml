@@ -27,25 +27,25 @@ jobs:
               python-version: "3.13"
 
           - name: Sync dependencies
-            working-directory: ${{ SRC_DIR }}
+            working-directory: ${{ env.SRC_DIR }}
             run: uv sync --all-groups
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Check format with ruff
             with:
-              src: ${{ SRC_DIR }}
+              src: ${{ env.SRC_DIR }}
               args: format --check .
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Run ruff linting
             with:
-              src: ${{ SRC_DIR }}
+              src: ${{ env.SRC_DIR }}
               args: check .
 
           - name: Run ty
-            working-directory: ${{ SRC_DIR }}
+            working-directory: ${{ env.SRC_DIR }}
             run: uv run ty check
 
           - name: Run tests
-            working-directory: ${{ SRC_DIR }}
+            working-directory: ${{ env.SRC_DIR }}
             run: uv run pytest .
