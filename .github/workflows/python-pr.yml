@@ -30,13 +30,13 @@ jobs:
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Check format with ruff
-            working_directory: python
+            src: python
             with:
               args: format --check .
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Run ruff linting
-            working_directory: python
+            src: python
             with:
               args: check .
 
