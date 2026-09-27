@@ -1,0 +1,51 @@
+name: Python Pull Request
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  build-check-test:
+      runs-on: ubuntu-latest
+      permissions:
+          contents: read
+      env:
+        SRC_DIR: "python"
+      
+      steps:
+          - uses: actions/checkout@v6
+
+          - uses: astral-sh/setup-uv@v10.2.0
+
+          - uses: actions/setup-python@v6
+            with:
+              python-version: "3.13"
+
+          - name: Sync dependencies
+            working-directory: ${{ env.SRC_DIR }}
+            run: uv sync --all-groups
+
+          - uses: astral-sh/ruff-action@v4.1.0
+            name: Check format with ruff
+            with:
+              src: ${{ env.SRC_DIR }}
+              args: format --check
+
+          - uses: astral-sh/ruff-action@v4.1.0
+            name: Run ruff linting
+            with:
+              src: ${{ env.SRC_DIR }}
+              args: check
+
+          - name: Run ty
+            working-directory: ${{ env.SRC_DIR }}
+            run: uv run ty check
+
+          - name: Run tests
+            working-directory: ${{ env.SRC_DIR }}
+            run: uv run pytest .
