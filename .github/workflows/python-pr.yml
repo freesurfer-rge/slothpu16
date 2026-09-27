@@ -34,13 +34,13 @@ jobs:
             name: Check format with ruff
             with:
               src: ${{ env.SRC_DIR }}
-              args: format --check .
+              args: format --check
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Run ruff linting
             with:
               src: ${{ env.SRC_DIR }}
-              args: check .
+              args: check
 
           - name: Run ty
             working-directory: ${{ env.SRC_DIR }}
