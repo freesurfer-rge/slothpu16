@@ -48,7 +48,7 @@ class AsmInstruction:
             return self.r_A + ((2**REG_BITS) * self.r_B)
         return None
 
-    def validate(self):
+    def validate(self) -> None:
         match self.opcode:
             case OpCode.HALT:
                 if self.r_A is not None or self.r_B is not None or self.r_C is not None:
@@ -67,11 +67,11 @@ class AsmInstruction:
                 self.validate_reg_in_range(self.r_B)
                 self.validate_reg_in_range(self.r_C)
 
-    def validate_reg_in_range(self, reg_value: int | None):
+    def validate_reg_in_range(self, reg_value: int | None) -> None:
         if reg_value is None or reg_value < 0 or reg_value >= 2**REG_BITS:
             raise ValueError(f"Invalid Instruction: {self}")
 
-    def __str__(self):
+    def __str__(self) -> str:
         a_str = _get_reg_string(self.r_A)
         b_str = _get_reg_string(self.r_B)
         c_str = _get_reg_string(self.r_C)

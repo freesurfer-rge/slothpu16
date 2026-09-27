@@ -5,7 +5,7 @@ from pyslothpu16_emulator import MainMemory
 
 @pytest.mark.parametrize("loc", [0, 1, 65535])
 @pytest.mark.parametrize("value", [0, 1, 255])
-def test_set_retrieve(loc: int, value: int):
+def test_set_retrieve(loc: int, value: int) -> None:
     mm = MainMemory()
     for i in range(2**N_BITS):
         assert mm[i] == 0
@@ -21,7 +21,7 @@ def test_set_retrieve(loc: int, value: int):
 
 @pytest.mark.parametrize("loc", [0, 2, 256, 32768, 65534])
 @pytest.mark.parametrize("value", [0, 1, 255, 256, 1023, 1024, 65535])
-def test_set_retrieve_word(loc: int, value: int):
+def test_set_retrieve_word(loc: int, value: int) -> None:
     mm = MainMemory()
     for i in range(2**N_BITS):
         assert mm[i] == 0
@@ -38,7 +38,7 @@ def test_set_retrieve_word(loc: int, value: int):
 
 
 @pytest.mark.parametrize("bad_value", [-1, 256])
-def test_badvalue(bad_value: int):
+def test_badvalue(bad_value: int) -> None:
     mm = MainMemory()
     expected_msg = f"Value out of range: {bad_value}"
     with pytest.raises(ValueError) as ve:
@@ -47,7 +47,7 @@ def test_badvalue(bad_value: int):
 
 
 @pytest.mark.parametrize("bad_loc", [-1, 1, 65535])
-def test_word_bad_loc_set(bad_loc: int):
+def test_word_bad_loc_set(bad_loc: int) -> None:
     mm = MainMemory()
     expected_msg = f"Non-alighted write: {bad_loc}"
     with pytest.raises(ValueError) as ve:
@@ -56,7 +56,7 @@ def test_word_bad_loc_set(bad_loc: int):
 
 
 @pytest.mark.parametrize("bad_loc", [-1, 1, 65535])
-def test_word_bad_loc_get(bad_loc: int):
+def test_word_bad_loc_get(bad_loc: int) -> None:
     mm = MainMemory()
     expected_msg = f"Non-alighted read: {bad_loc}"
     with pytest.raises(ValueError) as ve:
@@ -65,7 +65,7 @@ def test_word_bad_loc_get(bad_loc: int):
 
 
 @pytest.mark.parametrize("bad_value", [-1, 65536])
-def test_word_badvalue(bad_value: int):
+def test_word_badvalue(bad_value: int) -> None:
     mm = MainMemory()
     expected_msg = f"Value out of range: {bad_value}"
     with pytest.raises(ValueError) as ve:

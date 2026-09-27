@@ -8,7 +8,7 @@ class MainMemory:
     def __getitem__(self, key: int) -> int:
         return self._locs[key]
 
-    def __setitem__(self, key: int, value: int):
+    def __setitem__(self, key: int, value: int) -> None:
         if value < 0 or value > 255:
             raise ValueError(f"Value out of range: {value}")
         self._locs[key] = value
