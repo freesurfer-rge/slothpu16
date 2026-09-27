@@ -1,4 +1,4 @@
-from ._constants import REG_BITS
+from ._constants import N_BITS, REG_BITS
 from ._opcode import OpCode
 
 
@@ -76,6 +76,41 @@ class AsmInstruction:
         b_str = _get_reg_string(self.r_B)
         c_str = _get_reg_string(self.r_C)
         return f"{self.opcode.name} {a_str} {b_str} {c_str}"
+
+    def to_int(self) -> int:
+        instr_val = int(self.opcode)
+        rA_val = (2**REG_BITS) * (self.r_A if self.r_A else 0)
+        rB_val = (2 ** (2 * REG_BITS)) * (self.r_B if self.r_B else 0)
+        rC_val = (2 ** (3 * REG_BITS)) * (self.r_C if self.r_C else 0)
+        return instr_val + rA_val + rB_val + rC_val
+
+    @classmethod
+    def from_int(cls, source: int) -> "AsmInstruction":
+        if source < 0 or source >= 2**N_BITS:
+            raise ValueError(f"Int out of range: {source}")
+
+        reg_block, op_val = divmod(source, 2**REG_BITS)
+        oc = OpCode(op_val)
+
+        reg_block, rA = divmod(reg_block, 2**REG_BITS)
+        rC, rB = divmod(reg_block, 2**REG_BITS)
+
+        match oc:
+            case OpCode.HALT:
+                if reg_block != 0:
+                    raise ValueError(f"Bad regblock: {oc} {rA} {rB} {rC}")
+                return AsmInstruction(oc, r_A=None, r_B=None, r_C=None)
+            case OpCode.LOADPC:
+                if rA != 0 or rB != 0:
+                    raise ValueError(f"Bad regblock: {oc} {rA} {rB} {rC}")
+                return AsmInstruction(oc, r_A=None, r_B=None, r_C=rC)
+            case OpCode.LOADB | OpCode.LOADW:
+                if rB != 0:
+                    raise ValueError(f"Bad regblock: {oc} {rA} {rB} {rC}")
+                return AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+            case _:
+                # No need to special case set here
+                return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
 
     @classmethod
     def from_str(cls, source: str) -> "AsmInstruction":  # noqa: C901

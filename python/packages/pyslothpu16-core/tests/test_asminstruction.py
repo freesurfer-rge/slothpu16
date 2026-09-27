@@ -1,5 +1,5 @@
 import pytest
-from pyslothpu16_core import AsmInstruction, OpCode
+from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
 
 # Note that we skip 'set' here
 _THREE_REG_INSTRS = [
@@ -76,6 +76,23 @@ class TestThreeRegisterInstructions:
         assert actual.r_B == rB
         assert actual.r_C == rC
 
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, oc: OpCode, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == oc
+        assert retrived.r_A == rA
+        assert retrived.r_B == rB
+        assert retrived.r_C == rC
+
 
 class TestSetInstruction:
     @pytest.mark.parametrize("rA", [0, 1, 15])
@@ -97,6 +114,22 @@ class TestSetInstruction:
         assert actual.r_A == rA
         assert actual.r_B == rB
         assert actual.r_C == rC
+
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(OpCode.SET, r_A=rA, r_B=rB, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.SET
+        assert retrived.r_A == rA
+        assert retrived.r_B == rB
+        assert retrived.r_C == rC
 
 
 _TWO_REG_INSTRS = [OpCode.LOADB, OpCode.LOADW]
@@ -160,6 +193,22 @@ class TestTwoRegisterInstructions:
         assert actual.r_B is None
         assert actual.r_C == rC
 
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, oc: OpCode, rA: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == oc
+        assert retrived.r_A == rA
+        assert retrived.r_B is None
+        assert retrived.r_C == rC
+
 
 class TestLoadPC:
     @pytest.mark.parametrize("rC", [0, 1, 15])
@@ -198,6 +247,20 @@ class TestLoadPC:
         assert actual.r_B is None
         assert actual.r_C == rC
 
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, rC: int) -> None:
+        instr = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.LOADPC
+        assert retrived.r_A is None
+        assert retrived.r_B is None
+        assert retrived.r_C == rC
+
 
 class TestHalt:
     def test_smoke(self) -> None:
@@ -234,3 +297,16 @@ class TestHalt:
         with pytest.raises(ValueError) as ve:
             _ = AsmInstruction.from_str(target)
         assert ve.value.args[0] == "Parse error:  halt R0"
+
+    def test_int_roundtrip(self) -> None:
+        instr = AsmInstruction(OpCode.HALT, r_A=None, r_B=None, r_C=None)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.HALT
+        assert retrived.r_A is None
+        assert retrived.r_B is None
+        assert retrived.r_C is None
