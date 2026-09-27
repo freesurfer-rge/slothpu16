@@ -1,0 +1,3 @@
+N_BITS = 16
+INSTR_BITS = 4
+REG_BITS = 4

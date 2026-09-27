@@ -1,0 +1,312 @@
+import pytest
+from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
+
+# Note that we skip 'set' here
+_THREE_REG_INSTRS = [
+    OpCode.ADD,
+    OpCode.SUB,
+    OpCode.COMPARE,
+    OpCode.NAND,
+    OpCode.XOR,
+    OpCode.NAND,
+    OpCode.BARREL,
+    OpCode.STOREB,
+    OpCode.STOREW,
+]
+
+
+class TestThreeRegisterInstructions:
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_smoke(self, oc: OpCode, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
+        assert str(instr) == f"{oc.name} R{rA} R{rB} R{rC}"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    def test_rA_missing(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=None, r_B=0, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} None R0 R1"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [-1, 16])
+    def test_rA_invalid(self, oc: OpCode, rA: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=rA, r_B=0, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R{rA} R0 R1"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    def test_rB_missing(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 None R1"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rB", [-1, 16])
+    def test_rB_invalid(self, oc: OpCode, rB: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=rB, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 R{rB} R1"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    def test_rC_missing(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=1, r_C=None)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 R1 None"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rC", [-1, 16])
+    def test_rC_invalid(self, oc: OpCode, rC: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=1, r_C=rC)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 R1 R{rC}"
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, oc: OpCode, rA: int, rB: int, rC: int) -> None:
+        target = f"  {oc.name.lower()} R{rA} R{rB} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == oc
+        assert actual.r_A == rA
+        assert actual.r_B == rB
+        assert actual.r_C == rC
+
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, oc: OpCode, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == oc
+        assert retrived.r_A == rA
+        assert retrived.r_B == rB
+        assert retrived.r_C == rC
+
+
+class TestSetInstruction:
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_smoke(self, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(OpCode.SET, r_A=rA, r_B=rB, r_C=rC)
+        assert str(instr) == f"SET R{rA} R{rB} R{rC}"
+        assert instr.value_to_set == rA + (16 * rB)
+
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, rA: int, rB: int, rC: int) -> None:
+        target = f" set {rA + (16 * rB)} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.SET
+        assert actual.r_A == rA
+        assert actual.r_B == rB
+        assert actual.r_C == rC
+
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, rA: int, rB: int, rC: int) -> None:
+        instr = AsmInstruction(OpCode.SET, r_A=rA, r_B=rB, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.SET
+        assert retrived.r_A == rA
+        assert retrived.r_B == rB
+        assert retrived.r_C == rC
+
+
+_TWO_REG_INSTRS = [OpCode.LOADB, OpCode.LOADW]
+
+
+class TestTwoRegisterInstructions:
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_smoke(self, oc: OpCode, rA: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+        assert str(instr) == f"{oc.name} R{rA} None R{rC}"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    def test_rB_not_none(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=1, r_C=2)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 R1 R2"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    def test_rA_missing(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=None, r_B=None, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} None None R1"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [-1, 16])
+    def test_rA_invalid(self, oc: OpCode, rA: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=rA, r_B=None, r_C=1)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R{rA} None R1"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    def test_rB_present(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=2, r_B=1, r_C=3)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R2 R1 R3"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    def test_rC_missing(self, oc: OpCode) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=None)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 None None"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rC", [-1, 16])
+    def test_rC_invalid(self, oc: OpCode, rC: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=rC)
+        assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 None R{rC}"
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, oc: OpCode, rA: int, rC: int) -> None:
+        target = f"  {oc.name.lower()} R{rA} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == oc
+        assert actual.r_A == rA
+        assert actual.r_B is None
+        assert actual.r_C == rC
+
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, oc: OpCode, rA: int, rC: int) -> None:
+        instr = AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == oc
+        assert retrived.r_A == rA
+        assert retrived.r_B is None
+        assert retrived.r_C == rC
+
+
+class TestLoadPC:
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_smoke(self, rC: int) -> None:
+        instr = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+        assert str(instr) == f"LOADPC None None R{rC}"
+
+    def test_rA_present(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=1, r_B=None, r_C=2)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC R1 None R2"
+
+    def test_rB_present(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=1, r_C=2)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC None R1 R2"
+
+    def test_rC_missing(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=None)
+        assert ve.value.args[0] == "Invalid Instruction: LOADPC None None None"
+
+    @pytest.mark.parametrize("rC", [-1, 16])
+    def test_rC_invalid(self, rC: int) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+        assert ve.value.args[0] == f"Invalid Instruction: LOADPC None None R{rC}"
+
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, rC: int) -> None:
+        target = f"  loadpc R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.LOADPC
+        assert actual.r_A is None
+        assert actual.r_B is None
+        assert actual.r_C == rC
+
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_int_roundtrip(self, rC: int) -> None:
+        instr = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.LOADPC
+        assert retrived.r_A is None
+        assert retrived.r_B is None
+        assert retrived.r_C == rC
+
+
+class TestHalt:
+    def test_smoke(self) -> None:
+        instr = AsmInstruction(OpCode.HALT, r_A=None, r_B=None, r_C=None)
+        assert str(instr) == "HALT None None None"
+
+    def test_rA_present(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.HALT, r_A=1, r_B=None, r_C=None)
+        assert ve.value.args[0] == "Invalid Instruction: HALT R1 None None"
+
+    def test_rB_present(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.HALT, r_A=None, r_B=1, r_C=None)
+        assert ve.value.args[0] == "Invalid Instruction: HALT None R1 None"
+
+    def test_rC_present(self) -> None:
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction(OpCode.HALT, r_A=None, r_B=None, r_C=2)
+        assert ve.value.args[0] == "Invalid Instruction: HALT None None R2"
+
+    def test_parse(self) -> None:
+        target = "  halt "
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.HALT
+        assert actual.r_A is None
+        assert actual.r_B is None
+        assert actual.r_C is None
+
+    def test_bad_parse(self) -> None:
+        target = " halt R0"
+
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction.from_str(target)
+        assert ve.value.args[0] == "Parse error:  halt R0"
+
+    def test_int_roundtrip(self) -> None:
+        instr = AsmInstruction(OpCode.HALT, r_A=None, r_B=None, r_C=None)
+
+        int_val = instr.to_int()
+        assert int_val < 2**N_BITS
+
+        retrived = AsmInstruction.from_int(int_val)
+
+        assert retrived.opcode == OpCode.HALT
+        assert retrived.r_A is None
+        assert retrived.r_B is None
+        assert retrived.r_C is None
