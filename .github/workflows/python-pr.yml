@@ -32,14 +32,15 @@ jobs:
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Check format with ruff
-            src: $SRC_DIR
             with:
+              src: $SRC_DIR
               args: format --check .
 
           - uses: astral-sh/ruff-action@v4.1.0
             name: Run ruff linting
             src: $SRC_DIR
             with:
+              src: $SRC_DIR
               args: check .
 
           - name: Run ty
