@@ -24,7 +24,7 @@ class MainMemory:
 
     def set_word(self, key: int, value: int) -> None:
         if key % 2 != 0:
-            raise ValueError(f"Non-alighted read: {key}")
+            raise ValueError(f"Non-alighted write: {key}")
         if value < 0 or value >= 2**N_BITS:
             raise ValueError(f"Value out of range: {value}")
 

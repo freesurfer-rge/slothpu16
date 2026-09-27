@@ -44,3 +44,30 @@ def test_badvalue(bad_value: int):
     with pytest.raises(ValueError) as ve:
         mm[0] = bad_value
     assert ve.value.args[0] == expected_msg
+
+
+@pytest.mark.parametrize("bad_loc", [-1, 1, 65535])
+def test_word_bad_loc_set(bad_loc: int):
+    mm = MainMemory()
+    expected_msg = f"Non-alighted write: {bad_loc}"
+    with pytest.raises(ValueError) as ve:
+        mm.set_word(bad_loc, 65535)
+    assert ve.value.args[0] == expected_msg
+
+
+@pytest.mark.parametrize("bad_loc", [-1, 1, 65535])
+def test_word_bad_loc_get(bad_loc: int):
+    mm = MainMemory()
+    expected_msg = f"Non-alighted read: {bad_loc}"
+    with pytest.raises(ValueError) as ve:
+        mm.get_word(bad_loc)
+    assert ve.value.args[0] == expected_msg
+
+
+@pytest.mark.parametrize("bad_value", [-1, 65536])
+def test_word_badvalue(bad_value: int):
+    mm = MainMemory()
+    expected_msg = f"Value out of range: {bad_value}"
+    with pytest.raises(ValueError) as ve:
+        mm.set_word(12, bad_value)
+    assert ve.value.args[0] == expected_msg
