@@ -63,6 +63,19 @@ class TestThreeRegisterInstructions:
             _ = AsmInstruction(oc, r_A=0, r_B=1, r_C=rC)
         assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 R1 R{rC}"
 
+    @pytest.mark.parametrize("oc", _THREE_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, oc: OpCode, rA: int, rB: int, rC: int):
+        target = f"  {oc.name.lower()} R{rA} R{rB} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == oc
+        assert actual.r_A == rA
+        assert actual.r_B == rB
+        assert actual.r_C == rC
+
 
 class TestSetInstruction:
     @pytest.mark.parametrize("rA", [0, 1, 15])
@@ -72,6 +85,18 @@ class TestSetInstruction:
         instr = AsmInstruction(OpCode.SET, r_A=rA, r_B=rB, r_C=rC)
         assert str(instr) == f"SET R{rA} R{rB} R{rC}"
         assert instr.value_to_set == rA + (16 * rB)
+
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, rA: int, rB: int, rC: int):
+        target = f" set {rA + (16 * rB)} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.SET
+        assert actual.r_A == rA
+        assert actual.r_B == rB
+        assert actual.r_C == rC
 
 
 _TWO_REG_INSTRS = [OpCode.LOADB, OpCode.LOADW]
@@ -123,6 +148,18 @@ class TestTwoRegisterInstructions:
             _ = AsmInstruction(oc, r_A=0, r_B=None, r_C=rC)
         assert ve.value.args[0] == f"Invalid Instruction: {oc.name} R0 None R{rC}"
 
+    @pytest.mark.parametrize("oc", _TWO_REG_INSTRS)
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, oc: OpCode, rA: int, rC: int):
+        target = f"  {oc.name.lower()} R{rA} R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == oc
+        assert actual.r_A == rA
+        assert actual.r_B is None
+        assert actual.r_C == rC
+
 
 class TestLoadPC:
     @pytest.mark.parametrize("rC", [0, 1, 15])
@@ -151,6 +188,16 @@ class TestLoadPC:
             _ = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=rC)
         assert ve.value.args[0] == f"Invalid Instruction: LOADPC None None R{rC}"
 
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    def test_parse(self, rC: int):
+        target = f"  loadpc R{rC}"
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.LOADPC
+        assert actual.r_A is None
+        assert actual.r_B is None
+        assert actual.r_C == rC
+
 
 class TestHalt:
     def test_smoke(self):
@@ -171,3 +218,19 @@ class TestHalt:
         with pytest.raises(ValueError) as ve:
             _ = AsmInstruction(OpCode.HALT, r_A=None, r_B=None, r_C=2)
         assert ve.value.args[0] == "Invalid Instruction: HALT None None R2"
+
+    def test_parse(self):
+        target = "  halt "
+
+        actual = AsmInstruction.from_str(target)
+        assert actual.opcode == OpCode.HALT
+        assert actual.r_A is None
+        assert actual.r_B is None
+        assert actual.r_C is None
+
+    def test_bad_parse(self):
+        target = " halt R0"
+
+        with pytest.raises(ValueError) as ve:
+            _ = AsmInstruction.from_str(target)
+        assert ve.value.args[0] == "Parse error:  halt R0"

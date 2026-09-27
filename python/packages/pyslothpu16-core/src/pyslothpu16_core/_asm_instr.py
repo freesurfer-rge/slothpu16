@@ -2,6 +2,19 @@ from ._constants import REG_BITS
 from ._opcode import OpCode
 
 
+def _get_reg_string(reg_value: int | None) -> str:
+    if reg_value is None:
+        return "None"
+    return f"R{reg_value}"
+
+
+def _parse_reg_string(target: str) -> int:
+    if target[0] != "R":
+        raise ValueError(f"Parse error: {target}")
+    reg_id = int(target[1:])
+    return reg_id
+
+
 class AsmInstruction:
     def __init__(self, op: OpCode, *, r_A: int | None, r_B: int | None, r_C: int | None):
         self._op = op
@@ -58,13 +71,47 @@ class AsmInstruction:
         if reg_value is None or reg_value < 0 or reg_value >= 2**REG_BITS:
             raise ValueError(f"Invalid Instruction: {self}")
 
-    def get_reg_string(self, reg_value: int | None):
-        if reg_value is None:
-            return "None"
-        return f"R{reg_value}"
-
     def __str__(self):
-        a_str = self.get_reg_string(self.r_A)
-        b_str = self.get_reg_string(self.r_B)
-        c_str = self.get_reg_string(self.r_C)
+        a_str = _get_reg_string(self.r_A)
+        b_str = _get_reg_string(self.r_B)
+        c_str = _get_reg_string(self.r_C)
         return f"{self.opcode.name} {a_str} {b_str} {c_str}"
+
+    @classmethod
+    def from_str(cls, source: str) -> "AsmInstruction":  # noqa: C901
+        trimmed = source.strip()
+        items = trimmed.split()
+
+        oc = OpCode[items[0].upper()]
+        match oc:
+            case OpCode.HALT:
+                if len(items) > 1:
+                    raise ValueError(f"Parse error: {source}")
+                return AsmInstruction(oc, r_A=None, r_B=None, r_C=None)
+            case OpCode.LOADPC:
+                if len(items) > 2:
+                    raise ValueError(f"Parse error: {source}")
+                rC = _parse_reg_string(items[1])
+                return AsmInstruction(oc, r_A=None, r_B=None, r_C=rC)
+            case OpCode.LOADB | OpCode.LOADW:
+                if len(items) > 3:
+                    raise ValueError(f"Parse error: {source}")
+                rA = _parse_reg_string(items[1])
+                rC = _parse_reg_string(items[2])
+                return AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+            case OpCode.SET:
+                if len(items) > 3:
+                    raise ValueError(f"Parse error: {source}")
+                val = int(items[1])
+                if val < 0 or val > 255:
+                    raise ValueError(f"Parse error: {source}")
+                rB, rA = divmod(val, 2**REG_BITS)
+                rC = _parse_reg_string(items[2])
+                return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
+            case _:
+                if len(items) > 4:
+                    raise ValueError(f"Parse error: {source}")
+                rA = _parse_reg_string(items[1])
+                rB = _parse_reg_string(items[2])
+                rC = _parse_reg_string(items[3])
+                return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
