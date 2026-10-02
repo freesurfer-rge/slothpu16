@@ -1,0 +1,55 @@
+from pathlib import Path
+
+from pyslothpu16_core import N_BITS
+
+from ._mainmemory import MainMemory, mainmemory_from_file
+from ._registerfile import RegisterFile
+
+
+class SlothPU16:
+    def __init__(self, *, asm_file: Path | None):
+        self._rf = RegisterFile()
+
+        if asm_file:
+            self._memory = mainmemory_from_file(asm_file)
+        else:
+            self._memory = MainMemory()
+
+        self.instruction_register = 0
+        self.program_counter = 0
+
+        self.load_instruction()
+
+    @property
+    def memory(self) -> MainMemory:
+        return self._memory
+
+    @property
+    def registers(self) -> RegisterFile:
+        return self._rf
+
+    @property
+    def instruction_register(self) -> int:
+        return self._ir
+
+    @instruction_register.setter
+    def instruction_register(self, value: int) -> None:
+        if value < 0 or value >= 2**N_BITS:
+            raise ValueError(f"IR value out of range: {value}")
+        self._ir = value
+
+    @property
+    def program_counter(self) -> int:
+        return self._pc
+
+    @program_counter.setter
+    def program_counter(self, value: int) -> None:
+        if value < 0 or value >= 2**N_BITS:
+            raise ValueError(f"PC value out of range: {value}")
+        if value % 2 != 0:
+            raise ValueError(f"PC value not aligned {value}")
+        self._pc = value
+
+    def load_instruction(self) -> None:
+        instr = self.memory.get_word(self.program_counter)
+        self.instruction_register = instr

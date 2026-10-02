@@ -3,11 +3,9 @@ from pathlib import Path
 from pyslothpu16_core import AsmInstruction, OpCode
 from pyslothpu16_emulator import mainmemory_from_file
 
-SAMPLE_PROGRAM_DIR = Path(__file__).parent / "sample_programs"
 
-
-def test_set_one_register():
-    target = SAMPLE_PROGRAM_DIR / "set_one_register.slothpu16"
+def test_set_one_register(sample_program_dir: Path):
+    target = sample_program_dir / "set_one_register.slothpu16"
     assert target.exists(), f"Not found: {target}"
 
     result = mainmemory_from_file(target)
