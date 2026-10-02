@@ -1,4 +1,4 @@
-from ._mainmemory import MainMemory
+from ._mainmemory import MainMemory, mainmemory_from_file
 from ._registerfile import RegisterFile
 
-__all__ = ["MainMemory", "RegisterFile"]
+__all__ = ["MainMemory", "RegisterFile", "mainmemory_from_file"]

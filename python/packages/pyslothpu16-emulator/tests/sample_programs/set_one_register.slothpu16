@@ -1,0 +1,3 @@
+# Set R0 to a value of 1
+set 1 R0
+halt
