@@ -86,6 +86,12 @@ class SlothPU16:
                     c += 2**N_BITS
                 self.registers[instr.r_C] = c
 
+            case OpCode.LOADB:
+                assert instr.r_A is not None
+                assert instr.r_C is not None
+                val = self.memory[self.registers[instr.r_A]]
+                self.registers[instr.r_C] = val
+
             case OpCode.SET:
                 assert instr.r_C is not None
                 assert instr.value_to_set is not None

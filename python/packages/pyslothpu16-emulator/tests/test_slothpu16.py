@@ -83,3 +83,22 @@ class TestSub:
         assert target.registers[rA] == a
         assert target.registers[rB] == b
         assert target.registers[rC] == c
+
+
+class TestLoadB:
+    def test_smoke(self) -> None:
+        target = SlothPU16()
+
+        mem_offset = 16384
+        for i in range(3):
+            target.memory[mem_offset + i] = i + 1
+
+        rC = 15
+        rA = 12
+
+        for i in range(3):
+            instr = AsmInstruction(OpCode.LOADB, r_A=rA, r_B=None, r_C=rC)
+            target.instruction_register = instr.to_int()
+            target.registers[rA] = mem_offset + i
+            target.execute_instruction()
+            assert target.registers[rC] == i + 1
