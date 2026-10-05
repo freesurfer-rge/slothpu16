@@ -7,7 +7,28 @@ def test_smoke(sample_program_dir) -> None:
     assert smoke_program.exists(), f"Not found: {smoke_program}"
     target = SlothPU16(asm_file=smoke_program)
 
+    assert not target.halted
+
     nxt_instr = AsmInstruction.from_int(target.instruction_register)
     assert nxt_instr.opcode == OpCode.SET
     assert nxt_instr.value_to_set == 1
     assert nxt_instr.r_C == 0
+
+    target.execute_instruction()
+
+    assert not target.halted
+    assert target.registers[0] == 1
+    assert target.program_counter == 2
+
+    target.load_instruction()
+    target.execute_instruction()
+    assert target.halted
+    assert target.program_counter == 2
+
+    target.load_instruction()
+    assert target.halted
+    assert target.program_counter == 2
+
+    target.execute_instruction()
+    assert target.halted
+    assert target.program_counter == 2

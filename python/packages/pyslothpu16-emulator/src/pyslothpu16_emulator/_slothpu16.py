@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from pyslothpu16_core import N_BITS
+from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
 
 from ._mainmemory import MainMemory, mainmemory_from_file
 from ._registerfile import RegisterFile
@@ -17,8 +17,13 @@ class SlothPU16:
 
         self.instruction_register = 0
         self.program_counter = 0
+        self._halted = False
 
         self.load_instruction()
+
+    @property
+    def halted(self) -> bool:
+        return self._halted
 
     @property
     def memory(self) -> MainMemory:
@@ -51,5 +56,32 @@ class SlothPU16:
         self._pc = value
 
     def load_instruction(self) -> None:
+        if self.halted:
+            return
         instr = self.memory.get_word(self.program_counter)
         self.instruction_register = instr
+
+    def execute_instruction(self) -> None:
+        if self.halted:
+            return
+
+        instr = AsmInstruction.from_int(self.instruction_register)
+
+        inhibit_pc_update = False
+        match instr.opcode:
+            case OpCode.SET:
+                assert instr.r_C is not None
+                assert instr.value_to_set is not None
+                self.registers[instr.r_C] = instr.value_to_set
+
+            case OpCode.HALT:
+                self._halted = True
+                inhibit_pc_update = True
+
+            case _:
+                raise NotImplementedError(f"{instr}")
+
+        if inhibit_pc_update:
+            return
+
+        self.program_counter += 2
