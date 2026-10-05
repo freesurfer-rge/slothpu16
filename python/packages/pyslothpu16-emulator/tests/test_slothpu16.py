@@ -108,6 +108,74 @@ class TestNAND:
         assert target.registers[rB] == b
         assert target.registers[rC] == c
 
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [10, 11, 12])
+    @pytest.mark.parametrize("rC", [2, 3, 14])
+    def test_one_match(self, rA: int, rB: int, rC: int):
+        a = 2
+        b = 3
+        c = 65533
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.NAND, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == c
+
+
+class TestXOR:
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [10, 11, 12])
+    @pytest.mark.parametrize("rC", [2, 3, 14])
+    def test_smoke(self, rA: int, rB: int, rC: int):
+        a = 2
+        b = 65533
+        c = 65535
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.XOR, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == c
+
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [10, 11, 12])
+    @pytest.mark.parametrize("rC", [2, 3, 14])
+    def test_one_match(self, rA: int, rB: int, rC: int):
+        a = 2
+        b = 3
+        c = 1
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.XOR, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == c
+
 
 class TestLoadB:
     def test_smoke(self) -> None:

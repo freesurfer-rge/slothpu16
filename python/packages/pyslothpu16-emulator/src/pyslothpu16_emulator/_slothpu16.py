@@ -96,6 +96,15 @@ class SlothPU16:
                 c = ~(a & b)
                 self.registers[instr.r_C] = ba2int(c)
 
+            case OpCode.XOR:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                assert instr.r_C is not None
+                a = int2ba(self.registers[instr.r_A], length=N_BITS, endian="little")
+                b = int2ba(self.registers[instr.r_B], length=N_BITS, endian="little")
+                c = a ^ b
+                self.registers[instr.r_C] = ba2int(c)
+
             case OpCode.LOADB:
                 assert instr.r_A is not None
                 assert instr.r_C is not None
