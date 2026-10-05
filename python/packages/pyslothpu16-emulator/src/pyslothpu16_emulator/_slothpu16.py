@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from bitarray.util import ba2int, int2ba
 from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
 
 from ._mainmemory import MainMemory, mainmemory_from_file
@@ -61,7 +62,7 @@ class SlothPU16:
         instr = self.memory.get_word(self.program_counter)
         self.instruction_register = instr
 
-    def execute_instruction(self) -> None:
+    def execute_instruction(self) -> None:  # noqa: C901
         if self.halted:
             return
 
@@ -85,6 +86,15 @@ class SlothPU16:
                 if c < 0:
                     c += 2**N_BITS
                 self.registers[instr.r_C] = c
+
+            case OpCode.NAND:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                assert instr.r_C is not None
+                a = int2ba(self.registers[instr.r_A], length=N_BITS, endian="little")
+                b = int2ba(self.registers[instr.r_B], length=N_BITS, endian="little")
+                c = ~(a & b)
+                self.registers[instr.r_C] = ba2int(c)
 
             case OpCode.LOADB:
                 assert instr.r_A is not None
