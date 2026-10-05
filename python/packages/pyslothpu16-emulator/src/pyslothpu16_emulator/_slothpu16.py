@@ -7,7 +7,7 @@ from ._registerfile import RegisterFile
 
 
 class SlothPU16:
-    def __init__(self, *, asm_file: Path | None):
+    def __init__(self, *, asm_file: Path | None = None):
         self._rf = RegisterFile()
 
         if asm_file:
@@ -69,6 +69,14 @@ class SlothPU16:
 
         inhibit_pc_update = False
         match instr.opcode:
+            case OpCode.ADD:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                assert instr.r_C is not None
+                c = self.registers[instr.r_A] + self.registers[instr.r_B]
+                c = c % (2**N_BITS)
+                self.registers[instr.r_C] = c
+
             case OpCode.SET:
                 assert instr.r_C is not None
                 assert instr.value_to_set is not None

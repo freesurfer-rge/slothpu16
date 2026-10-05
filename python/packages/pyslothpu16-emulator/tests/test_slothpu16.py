@@ -1,4 +1,5 @@
-from pyslothpu16_core import AsmInstruction, OpCode
+import pytest
+from pyslothpu16_core import N_BITS, REG_BITS, AsmInstruction, OpCode
 from pyslothpu16_emulator import SlothPU16
 
 
@@ -32,3 +33,27 @@ def test_smoke(sample_program_dir) -> None:
     target.execute_instruction()
     assert target.halted
     assert target.program_counter == 2
+
+
+class TestAdd:
+    @pytest.mark.parametrize("rA", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [2, 3, 14])
+    @pytest.mark.parametrize("rC", [10, 11, 12])
+    @pytest.mark.parametrize("a", [0, 1, 255, 65535])
+    @pytest.mark.parametrize("b", [0, 1, 255, 65535])
+    def test_smoke(self, rA: int, rB: int, rC: int, a: int, b: int) -> None:
+        c = (a + b) % 2**N_BITS
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.ADD, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == c
