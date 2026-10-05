@@ -102,3 +102,27 @@ class TestLoadB:
             target.registers[rA] = mem_offset + i
             target.execute_instruction()
             assert target.registers[rC] == i + 1
+
+
+class TestLoadW:
+    def test_smoke(self) -> None:
+        target = SlothPU16()
+
+        mem_offset = 16384
+        for i in range(3):
+            target.memory[mem_offset + i] = i + 11
+
+        rC = 14
+        rA = 5
+
+        instr = AsmInstruction(OpCode.LOADW, r_A=rA, r_B=None, r_C=rC)
+
+        target.instruction_register = instr.to_int()
+        target.registers[rA] = mem_offset
+        target.execute_instruction()
+        assert target.registers[rC] == 11 + (256 * 12)
+
+        target.instruction_register = instr.to_int()
+        target.registers[rA] = mem_offset + 2
+        target.execute_instruction()
+        assert target.registers[rC] == 13

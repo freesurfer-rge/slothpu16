@@ -92,6 +92,12 @@ class SlothPU16:
                 val = self.memory[self.registers[instr.r_A]]
                 self.registers[instr.r_C] = val
 
+            case OpCode.LOADW:
+                assert instr.r_A is not None
+                assert instr.r_C is not None
+                val = self.memory.get_word(self.registers[instr.r_A])
+                self.registers[instr.r_C] = val
+
             case OpCode.SET:
                 assert instr.r_C is not None
                 assert instr.value_to_set is not None
