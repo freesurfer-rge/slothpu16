@@ -57,3 +57,29 @@ class TestAdd:
         assert target.registers[rA] == a
         assert target.registers[rB] == b
         assert target.registers[rC] == c
+
+
+class TestSub:
+    @pytest.mark.parametrize("rC", [0, 1, 15])
+    @pytest.mark.parametrize("rB", [2, 3, 14])
+    @pytest.mark.parametrize("rA", [10, 11, 12])
+    @pytest.mark.parametrize("a", [0, 1, 255, 65535])
+    @pytest.mark.parametrize("b", [0, 1, 255, 65535])
+    def test_smoke(self, rA: int, rB: int, rC: int, a: int, b: int) -> None:
+        c = a - b
+        if c < 0:
+            c += 2**N_BITS
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.SUB, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == c
