@@ -296,3 +296,22 @@ class TestLoadW:
         target.registers[rA] = mem_offset + 2
         target.execute_instruction()
         assert target.registers[rC] == 13
+
+
+class TestStoreB:
+    @pytest.mark.parametrize("rB", [7, 8, 14])
+    @pytest.mark.parametrize("rA", [9, 11, 12])
+    @pytest.mark.parametrize("a", [0, 1, 254, 255, 256, 65535])
+    @pytest.mark.parametrize("b", [0, 1, 254, 255, 256, 517, 65535])
+    def test_smoke(self, rA: int, rB: int, a: int, b: int) -> None:
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.STOREB, r_A=rA, r_B=rB, r_C=None)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.memory[a] == b % 256
