@@ -24,3 +24,10 @@ class OpCode(IntEnum):
             if value.lower() == oc.name.lower():
                 return oc
         raise ValueError(f"Invalid opcode: {value}")
+
+
+@unique
+class Compare(IntEnum):
+    EQUAL = 2
+    LESSTHAN = 1
+    GREATERTHAN = 4

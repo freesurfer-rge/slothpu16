@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from bitarray.util import ba2int, int2ba
-from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
+from pyslothpu16_core import N_BITS, AsmInstruction, Compare, OpCode
 
 from ._mainmemory import MainMemory, mainmemory_from_file
 from ._registerfile import RegisterFile
@@ -85,6 +85,17 @@ class SlothPU16:
                 c = self.registers[instr.r_A] - self.registers[instr.r_B]
                 if c < 0:
                     c += 2**N_BITS
+                self.registers[instr.r_C] = c
+
+            case OpCode.COMPARE:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                assert instr.r_C is not None
+                c = Compare.EQUAL
+                if self.registers[instr.r_A] < self.registers[instr.r_B]:
+                    c = Compare.LESSTHAN
+                elif self.registers[instr.r_A] > self.registers[instr.r_B]:
+                    c = Compare.GREATERTHAN
                 self.registers[instr.r_C] = c
 
             case OpCode.NAND:
