@@ -148,6 +148,12 @@ class SlothPU16:
                 store_value = self.registers[instr.r_B] % 256
                 self.memory[self.registers[instr.r_A]] = store_value
 
+            case OpCode.STOREW:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                store_value = self.registers[instr.r_B]
+                self.memory.set_word(self.registers[instr.r_A], store_value)
+
             case OpCode.SET:
                 assert instr.r_C is not None
                 assert instr.value_to_set is not None
