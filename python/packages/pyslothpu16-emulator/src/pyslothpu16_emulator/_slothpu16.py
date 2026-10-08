@@ -159,6 +159,10 @@ class SlothPU16:
                 assert instr.value_to_set is not None
                 self.registers[instr.r_C] = instr.value_to_set
 
+            case OpCode.LOADPC:
+                assert instr.r_C is not None
+                self.registers[instr.r_C] = self.program_counter
+
             case OpCode.HALT:
                 self._halted = True
                 inhibit_pc_update = True

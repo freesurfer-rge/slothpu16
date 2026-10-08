@@ -334,3 +334,16 @@ class TestStoreW:
 
         target.execute_instruction()
         assert target.memory.get_word(a) == b
+
+
+class TestLoadPC:
+    def test_smoke(self) -> None:
+        target = SlothPU16()
+
+        for i in range(2**REG_BITS):
+            instr = AsmInstruction(OpCode.LOADPC, r_A=None, r_B=None, r_C=i)
+            target.instruction_register = instr.to_int()
+            target.execute_instruction()
+
+        for i in range(2**REG_BITS):
+            assert target.registers[i] == 2 * i
