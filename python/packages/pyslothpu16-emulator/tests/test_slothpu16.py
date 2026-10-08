@@ -1,4 +1,5 @@
 import pytest
+from bitarray.util import ba2int, int2ba, zeros
 from pyslothpu16_core import N_BITS, REG_BITS, AsmInstruction, Compare, OpCode
 from pyslothpu16_emulator import SlothPU16
 
@@ -203,6 +204,55 @@ class TestXOR:
         assert target.registers[rA] == a
         assert target.registers[rB] == b
         assert target.registers[rC] == c
+
+
+class TestBarrel:
+    @pytest.mark.parametrize("rC", [0, 5, 15])
+    @pytest.mark.parametrize("rB", [7, 8, 14])
+    @pytest.mark.parametrize("rA", [9, 11, 12])
+    @pytest.mark.parametrize("a", [0, 1, 254, 65535])
+    @pytest.mark.parametrize("b", range(20))
+    def test_smoke(self, rA: int, rB: int, rC: int, a: int, b: int) -> None:
+        b_red = b % 16
+
+        a_bits = int2ba(a, N_BITS, endian="little")
+        c_bits = zeros(N_BITS, endian="little")
+
+        for i in range(N_BITS):
+            c_bits[(i + b_red) % N_BITS] = a_bits[i]
+
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.BARREL, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == b
+        assert target.registers[rC] == ba2int(c_bits)
+
+    @pytest.mark.parametrize("rC", [0, 5, 15])
+    @pytest.mark.parametrize("rB", [7, 8, 14])
+    @pytest.mark.parametrize("rA", [9, 11, 12])
+    @pytest.mark.parametrize("a", [0, 1, 254, 65535])
+    def test_no_op(self, rA: int, rB: int, rC: int, a: int) -> None:
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = 0  # So no shift
+
+        instr = AsmInstruction(OpCode.BARREL, r_A=rA, r_B=rB, r_C=rC)
+        target.instruction_register = instr.to_int()
+
+        target.execute_instruction()
+        assert target.registers[rA] == a
+        assert target.registers[rB] == 0
+        assert target.registers[rC] == a
 
 
 class TestLoadB:

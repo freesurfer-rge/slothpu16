@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from bitarray.util import ba2int, int2ba
+from bitarray.util import ba2int, int2ba, zeros
 from pyslothpu16_core import N_BITS, AsmInstruction, Compare, OpCode
 
 from ._mainmemory import MainMemory, mainmemory_from_file
@@ -114,6 +114,20 @@ class SlothPU16:
                 a = int2ba(self.registers[instr.r_A], length=N_BITS, endian="little")
                 b = int2ba(self.registers[instr.r_B], length=N_BITS, endian="little")
                 c = a ^ b
+                self.registers[instr.r_C] = ba2int(c)
+
+            case OpCode.BARREL:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                assert instr.r_C is not None
+
+                b_red = self.registers[instr.r_B] % N_BITS
+                a = int2ba(self.registers[instr.r_A], length=N_BITS, endian="little")
+                c = zeros(N_BITS, endian="little")
+
+                for i in range(N_BITS):
+                    c[(i + b_red) % N_BITS] = a[i]
+
                 self.registers[instr.r_C] = ba2int(c)
 
             case OpCode.LOADB:
