@@ -56,6 +56,10 @@ class SlothPU16:
             raise ValueError(f"PC value not aligned {value}")
         self._pc = value
 
+    def advance(self) -> None:
+        self.execute_instruction()
+        self.load_instruction()
+
     def load_instruction(self) -> None:
         if self.halted:
             return
