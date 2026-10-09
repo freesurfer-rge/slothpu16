@@ -1,0 +1,8 @@
+# Simple program to increment a register in an infinite loop
+
+set 0 R0          # Use register zero for branches
+set 8 R1          # Address of top of main loop
+set 1 R2          # The increment value
+set 0 R15         # The register we count
+add R2 R15 R15    # Do the add
+branchzero R1 R0  # Go back to the add

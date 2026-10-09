@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Emulator for SlothPU16"
 requires-python = ">=3.13"
 dependencies = [
+    "bitarray",
     "pyslothpu16-core",
 ]
 

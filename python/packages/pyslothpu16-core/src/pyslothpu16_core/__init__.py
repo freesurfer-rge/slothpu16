@@ -1,5 +1,5 @@
 from ._asm_instr import AsmInstruction
 from ._constants import INSTR_BITS, N_BITS, REG_BITS
-from ._opcode import OpCode
+from ._opcode import Compare, OpCode
 
-__all__ = ["INSTR_BITS", "N_BITS", "REG_BITS", "AsmInstruction", "OpCode"]
+__all__ = ["INSTR_BITS", "N_BITS", "REG_BITS", "AsmInstruction", "Compare", "OpCode"]

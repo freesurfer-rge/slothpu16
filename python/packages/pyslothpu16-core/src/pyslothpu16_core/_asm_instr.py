@@ -62,6 +62,11 @@ class AsmInstruction:
                     raise ValueError(f"Invalid Instruction: {self}")
                 self.validate_reg_in_range(self.r_A)
                 self.validate_reg_in_range(self.r_C)
+            case OpCode.STOREB | OpCode.STOREW | OpCode.BRANCHZERO:
+                if self.r_C is not None:
+                    raise ValueError(f"Invalid Instruction: {self}")
+                self.validate_reg_in_range(self.r_A)
+                self.validate_reg_in_range(self.r_B)
             case _:
                 self.validate_reg_in_range(self.r_A)
                 self.validate_reg_in_range(self.r_B)
@@ -108,6 +113,10 @@ class AsmInstruction:
                 if rB != 0:
                     raise ValueError(f"Bad regblock: {oc} {rA} {rB} {rC}")
                 return AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+            case OpCode.STOREB | OpCode.STOREW | OpCode.BRANCHZERO:
+                if rC != 0:
+                    raise ValueError(f"Bad regblock: {oc} {rA} {rB} {rC}")
+                return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=None)
             case _:
                 # No need to special case set here
                 return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=rC)
@@ -134,6 +143,12 @@ class AsmInstruction:
                 rA = _parse_reg_string(items[1])
                 rC = _parse_reg_string(items[2])
                 return AsmInstruction(oc, r_A=rA, r_B=None, r_C=rC)
+            case OpCode.STOREB | OpCode.STOREW | OpCode.BRANCHZERO:
+                if len(items) > 3:
+                    raise ValueError(f"Parse error: {source}")
+                rA = _parse_reg_string(items[1])
+                rB = _parse_reg_string(items[2])
+                return AsmInstruction(oc, r_A=rA, r_B=rB, r_C=None)
             case OpCode.SET:
                 if len(items) > 3:
                     raise ValueError(f"Parse error: {source}")

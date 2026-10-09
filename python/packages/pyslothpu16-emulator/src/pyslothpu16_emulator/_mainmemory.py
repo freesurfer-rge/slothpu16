@@ -1,4 +1,6 @@
-from pyslothpu16_core import N_BITS
+from pathlib import Path
+
+from pyslothpu16_core import N_BITS, AsmInstruction
 
 
 class MainMemory:
@@ -31,3 +33,20 @@ class MainMemory:
         ub, lb = divmod(value, 256)
         self[key] = lb
         self[key + 1] = ub
+
+
+def mainmemory_from_file(file_path: Path) -> MainMemory:
+    result = MainMemory()
+
+    with open(file_path, "r", encoding="utf-8-sig") as asm_file:
+        instr_count = 0
+        for line in asm_file:
+            stripped_line = line.strip()
+            if len(stripped_line) == 0 or stripped_line[0] == "#":
+                continue
+            trimmed_line = stripped_line.split("#")[0]
+            asm_instr = AsmInstruction.from_str(trimmed_line)
+            result.set_word(2 * instr_count, asm_instr.to_int())
+            instr_count += 1
+
+    return result
