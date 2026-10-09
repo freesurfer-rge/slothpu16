@@ -42,7 +42,7 @@ def mainmemory_from_file(file_path: Path) -> MainMemory:
         instr_count = 0
         for line in asm_file:
             stripped_line = line.strip()
-            if stripped_line[0] == "#":
+            if len(stripped_line) == 0 or stripped_line[0] == "#":
                 continue
             trimmed_line = stripped_line.split("#")[0]
             asm_instr = AsmInstruction.from_str(trimmed_line)
