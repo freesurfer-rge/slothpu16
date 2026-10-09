@@ -163,6 +163,15 @@ class SlothPU16:
                 assert instr.r_C is not None
                 self.registers[instr.r_C] = self.program_counter
 
+            case OpCode.BRANCHZERO:
+                assert instr.r_A is not None
+                assert instr.r_B is not None
+                if self.registers[instr.r_B] == 0:
+                    self.program_counter = self.registers[instr.r_A]
+                    inhibit_pc_update = True
+                else:
+                    pass
+
             case OpCode.HALT:
                 self._halted = True
                 inhibit_pc_update = True

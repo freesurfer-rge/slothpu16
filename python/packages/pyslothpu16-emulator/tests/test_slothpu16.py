@@ -347,3 +347,40 @@ class TestLoadPC:
 
         for i in range(2**REG_BITS):
             assert target.registers[i] == 2 * i
+
+
+class TestBranchZero:
+    @pytest.mark.parametrize("rB", [7, 8, 14])
+    @pytest.mark.parametrize("rA", [9, 11, 12])
+    @pytest.mark.parametrize("a", [0, 254, 256, 32768])
+    @pytest.mark.parametrize("b", [1, 2, 254, 256, 32768, 65535])
+    def test_nobranch(self, rA: int, rB: int, a: int, b: int) -> None:
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = b
+
+        instr = AsmInstruction(OpCode.BRANCHZERO, r_A=rA, r_B=rB, r_C=None)
+        target.instruction_register = instr.to_int()
+
+        assert target.program_counter == 0
+        target.execute_instruction()
+        assert target.program_counter == 2
+
+    @pytest.mark.parametrize("rB", [7, 8, 14])
+    @pytest.mark.parametrize("rA", [9, 11, 12])
+    @pytest.mark.parametrize("a", [0, 254, 256, 32768])
+    def test_branch(self, rA: int, rB: int, a: int) -> None:
+        target = SlothPU16()
+        for i in range(2**REG_BITS):
+            target.registers[i] = 1024
+        target.registers[rA] = a
+        target.registers[rB] = 0
+
+        instr = AsmInstruction(OpCode.BRANCHZERO, r_A=rA, r_B=rB, r_C=None)
+        target.instruction_register = instr.to_int()
+
+        assert target.program_counter == 0
+        target.execute_instruction()
+        assert target.program_counter == a
