@@ -35,6 +35,7 @@ def test_smoke(sample_program_dir) -> None:
     assert target.halted
     assert target.program_counter == 2
 
+
 def test_incrementer(sample_program_dir) -> None:
     smoke_program = sample_program_dir / "simple_counter.slothpu16"
     assert smoke_program.exists(), f"Not found: {smoke_program}"
@@ -53,8 +54,8 @@ def test_incrementer(sample_program_dir) -> None:
 
     for _ in range(10):
         expected_count += 1
-        target.advance() # Do the add
-        target.advance() # Branch back
+        target.advance()  # Do the add
+        target.advance()  # Branch back
         assert target.registers[15] == expected_count
 
 
