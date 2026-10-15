@@ -1,9 +1,10 @@
 import argparse
-
 from pathlib import Path
 
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    """Parse command-line arguments.
+    """
+    Parse command-line arguments.
 
     Args:
         argv: Argument list (defaults to ``sys.argv[1:]``).

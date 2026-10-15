@@ -10,6 +10,10 @@ dependencies = [
     "pyslothpu16-emulator",
 ]
 
+
+[project.scripts]
+pyslothpu16-ui = "pyslothpu16_ui:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
