@@ -7,6 +7,7 @@ from ._widgets import InstructionRegister, ProgramCounter
 
 
 class SlothPU16App(App[None]):
+    CSS_PATH = "app.tcss"
     BINDINGS = [("space", "step", "Step")]
 
     def __init__(

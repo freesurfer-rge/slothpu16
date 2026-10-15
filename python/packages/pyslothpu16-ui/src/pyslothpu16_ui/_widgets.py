@@ -17,6 +17,7 @@ class ProgramCounter(Static, SlothPU16Widget):
             self._display_text(),
             id="program-counter",
         )
+        self.border_title = "Program Counter"
 
     def refresh_value(self) -> None:
         self.update(self._display_text())
@@ -31,6 +32,7 @@ class InstructionRegister(Vertical, SlothPU16Widget):
         super().__init__(
             id="instruction-register",
         )
+        self.border_title = "Instruction Register"
 
     def _display_values(self) -> dict[str, str]:
         instruction = AsmInstruction.from_int(self._spu16.instruction_register)
