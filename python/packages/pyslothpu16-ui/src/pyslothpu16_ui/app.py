@@ -3,7 +3,7 @@ from textual.app import App, ComposeResult
 from textual.containers import Horizontal, ScrollableContainer, Vertical
 from textual.widgets import Footer, Header
 
-from ._widgets import InstructionRegister, ProgramCounter
+from ._widgets import InstructionRegister, ProgramCounter, RegisterFile
 
 
 class SlothPU16App(App[None]):
@@ -22,6 +22,7 @@ class SlothPU16App(App[None]):
         self._slothpu16.advance()
         self.query_one(ProgramCounter).refresh_value()
         self.query_one(InstructionRegister).refresh_value()
+        self.query_one(RegisterFile).refresh_value()
 
     def compose(self) -> ComposeResult:
         """Compose the application layout."""
@@ -31,6 +32,7 @@ class SlothPU16App(App[None]):
             with Vertical(id="register-area"):
                 yield ProgramCounter(self._slothpu16)
                 yield InstructionRegister(self._slothpu16)
+                yield RegisterFile(self._slothpu16)
             with ScrollableContainer(id="main-memory"):
                 pass
 

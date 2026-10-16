@@ -7,13 +7,14 @@ Screen {
 }
 
 #register-area {
-    width: 36;
+    width: 48;
     height: 1fr;
     padding: 1;
 }
 
 #program-counter,
-#instruction-register {
+#instruction-register,
+#register-file {
     width: 1fr;
     height: auto;
     border: round $accent;

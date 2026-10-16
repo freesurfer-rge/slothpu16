@@ -1,4 +1,5 @@
-from pyslothpu16_core import AsmInstruction, OpCode
+from bitarray.util import int2ba
+from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
 from pyslothpu16_emulator import SlothPU16
 from textual.app import ComposeResult
 from textual.containers import Vertical
@@ -63,3 +64,35 @@ class InstructionRegister(Vertical, SlothPU16Widget):
     @staticmethod
     def _format_register(register: int | None) -> str:
         return f"{register}" if register is not None else "-"
+
+
+class RegisterFile(Vertical, SlothPU16Widget):
+    def __init__(self, spu16: SlothPU16) -> None:
+        SlothPU16Widget.__init__(self, spu16)
+        super().__init__(
+            id="register-file",
+        )
+        self.border_title = "Register File"
+
+    def compose(self) -> ComposeResult:
+        for r_i, text in enumerate(self._display_values()):
+            yield Static(text, id=self._get_fieldname(r_i))
+
+    def refresh_value(self) -> None:
+        for r_i, text in enumerate(self._display_values()):
+            self.query_one(f"#{self._get_fieldname(r_i)}", Static).update(text)
+
+    def _display_values(self) -> list[str]:
+        result = [
+            f"{i:>2d}: {self._format_register(r)}" for (i, r) in enumerate(self._spu16.registers)
+        ]
+        return result
+
+    @staticmethod
+    def _get_fieldname(reg: int) -> str:
+        return f"register-{reg}"
+
+    @staticmethod
+    def _format_register(reg: int) -> str:
+        ba = int2ba(reg, length=N_BITS, endian="little")
+        return f"{ba.to01()} {reg:>5d}"
