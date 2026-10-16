@@ -3,6 +3,13 @@ from pyslothpu16_core import N_BITS
 from pyslothpu16_emulator import MainMemory
 
 
+def test_iterator():
+    mm = MainMemory()
+
+    vals = list(mm)
+    assert len(vals) == 2**N_BITS
+
+
 @pytest.mark.parametrize("loc", [0, 1, 65535])
 @pytest.mark.parametrize("value", [0, 1, 255])
 def test_set_retrieve(loc: int, value: int) -> None:
