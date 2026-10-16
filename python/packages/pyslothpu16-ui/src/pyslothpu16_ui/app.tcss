@@ -14,7 +14,8 @@ Screen {
 
 #program-counter,
 #instruction-register,
-#register-file {
+#register-file,
+#main-memory {
     width: 1fr;
     height: auto;
     border: round $accent;
@@ -22,7 +23,7 @@ Screen {
     margin-bottom: 1;
 }
 
-#main-memory {
+#main-memory-area {
     width: 1fr;
     height: 1fr;
 }

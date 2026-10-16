@@ -2,7 +2,7 @@ from bitarray.util import int2ba
 from pyslothpu16_core import N_BITS, AsmInstruction, OpCode
 from pyslothpu16_emulator import SlothPU16
 from textual.app import ComposeResult
-from textual.containers import Vertical
+from textual.containers import Vertical, Grid
 from textual.widgets import Static
 
 
@@ -96,3 +96,50 @@ class RegisterFile(Vertical, SlothPU16Widget):
     def _format_register(reg: int) -> str:
         ba = int2ba(reg, length=N_BITS, endian="little")
         return f"{ba.to01()} {reg:>5d}"
+
+
+class MainMemory(Vertical, SlothPU16Widget):
+    BYTES_PER_ROW = 8
+
+    def __init__(self, spu16: SlothPU16) -> None:
+        SlothPU16Widget.__init__(self, spu16)
+        super().__init__(
+            id="main-memory",
+        )
+        self.border_title = "Main Memory"
+        self._values = list(self._spu16.memory)
+        assert len(self._values) % MainMemory.BYTES_PER_ROW == 0
+
+
+    def compose(self) -> ComposeResult:
+        for idx in range(0, len(self._values), self.BYTES_PER_ROW):
+            yield self._get_row_widget(idx)
+
+    
+    def refresh_value(self) -> None:
+        rows_to_update : set[int] = set()
+        for idx in range(len(self._values)):
+            if self._values[idx]!=self._spu16.memory[idx]:
+                row_idx = idx // self.BYTES_PER_ROW
+                self._values[idx]= self._spu16.memory[idx]
+                rows_to_update.add(row_idx)
+        for row_idx in rows_to_update:
+            text = self._get_row_text(row_idx)
+            self.query_one(f"#{self._get_fieldname(row_idx)}", Static).update(text)
+
+    def _get_row_widget(self, start_idx: int) -> Static:
+        return Static(self._get_row_text(start_idx), id=self._get_fieldname(start_idx))
+
+    def _get_row_text(self, start_idx: int) -> str:
+        val_strings = [self._format_byte(v) for v in self._values[start_idx:start_idx+self.BYTES_PER_ROW]]
+        text = f"{start_idx:>5d}: {'  '.join(val_strings)}"
+        return text
+    
+    @staticmethod
+    def _get_fieldname(loc: int) -> str:
+        return f"mm-byte-{loc}"
+
+    @staticmethod
+    def _format_byte(value: int) -> str:
+        #ba = int2ba(value, length=8, endian="little")
+        return f"{value:>3d}"

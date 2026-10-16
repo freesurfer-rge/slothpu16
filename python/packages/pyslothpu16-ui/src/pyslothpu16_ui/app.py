@@ -3,7 +3,7 @@ from textual.app import App, ComposeResult
 from textual.containers import Horizontal, ScrollableContainer, Vertical
 from textual.widgets import Footer, Header
 
-from ._widgets import InstructionRegister, ProgramCounter, RegisterFile
+from ._widgets import InstructionRegister, ProgramCounter, RegisterFile, MainMemory
 
 
 class SlothPU16App(App[None]):
@@ -33,7 +33,7 @@ class SlothPU16App(App[None]):
                 yield ProgramCounter(self._slothpu16)
                 yield InstructionRegister(self._slothpu16)
                 yield RegisterFile(self._slothpu16)
-            with ScrollableContainer(id="main-memory"):
-                pass
+            with ScrollableContainer(id="main-memory-area"):
+                yield MainMemory(self._slothpu16)
 
         yield Footer()
