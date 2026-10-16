@@ -1,9 +1,9 @@
 from pyslothpu16_emulator import SlothPU16
 from textual.app import App, ComposeResult
-from textual.containers import Horizontal, ScrollableContainer, Vertical
+from textual.containers import Container, Horizontal, Vertical
 from textual.widgets import Footer, Header
 
-from ._widgets import InstructionRegister, ProgramCounter, RegisterFile, MainMemory
+from ._widgets import InstructionRegister, MainMemory, ProgramCounter, RegisterFile
 
 
 class SlothPU16App(App[None]):
@@ -33,7 +33,7 @@ class SlothPU16App(App[None]):
                 yield ProgramCounter(self._slothpu16)
                 yield InstructionRegister(self._slothpu16)
                 yield RegisterFile(self._slothpu16)
-            with ScrollableContainer(id="main-memory-area"):
+            with Container(id="main-memory-area"):
                 yield MainMemory(self._slothpu16)
 
         yield Footer()
