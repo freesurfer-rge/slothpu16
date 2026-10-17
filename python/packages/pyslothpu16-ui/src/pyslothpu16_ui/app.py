@@ -23,6 +23,7 @@ class SlothPU16App(App[None]):
         self.query_one(ProgramCounter).refresh_value()
         self.query_one(InstructionRegister).refresh_value()
         self.query_one(RegisterFile).refresh_value()
+        self.query_one(MainMemory).refresh_cells()
 
     def compose(self) -> ComposeResult:
         """Compose the application layout."""
