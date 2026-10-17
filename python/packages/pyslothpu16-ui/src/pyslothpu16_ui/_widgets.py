@@ -126,12 +126,13 @@ class MainMemory(DataTable, SlothPU16Widget):
                 result.append(i)
         return result
 
-    def refresh_cells(self)-> None:
+    def refresh_cells(self) -> None:
         for idx in self.get_changed_cells():
             yloc, xloc = divmod(idx, self.BYTES_PER_ROW)
-            self.update_cell_at(Coordinate(row=yloc, column=xloc), self._format_byte(self._spu16.memory[idx]))
+            self.update_cell_at(
+                Coordinate(row=yloc, column=xloc), self._format_byte(self._spu16.memory[idx])
+            )
             self._values[idx] = self._spu16.memory[idx]
-
 
     @staticmethod
     def _format_byte(value: int) -> str:
