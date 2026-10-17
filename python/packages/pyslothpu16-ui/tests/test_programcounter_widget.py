@@ -1,9 +1,9 @@
-import pytest
 from pathlib import Path
 
+import pytest
 from pyslothpu16_emulator import SlothPU16
-from pyslothpu16_ui.app import SlothPU16App
 from pyslothpu16_ui._widgets import ProgramCounter
+from pyslothpu16_ui.app import SlothPU16App
 
 
 @pytest.mark.asyncio
