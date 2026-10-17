@@ -136,5 +136,4 @@ class MainMemory(DataTable, SlothPU16Widget):
 
     @staticmethod
     def _format_byte(value: int) -> str:
-        # ba = int2ba(value, length=8, endian="little")
         return f"{value:>3d}"
