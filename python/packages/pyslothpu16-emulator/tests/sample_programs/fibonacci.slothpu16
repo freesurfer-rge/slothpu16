@@ -2,7 +2,7 @@
 # Stores the Fibonacci numbers starting in memory location 256
 # for the number of iterations specified in R14
 set 2 R15 # Address increment
-set 2 R14 # Loop counter
+set 255 R14 # Loop counter
 set 1 R13 # Decrement
 set 0 R12
 set 8 R0
