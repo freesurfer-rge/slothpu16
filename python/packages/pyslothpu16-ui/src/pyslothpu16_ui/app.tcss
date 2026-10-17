@@ -1,0 +1,29 @@
+Screen {
+    layout: vertical;
+}
+
+#main-divide {
+    height: 1fr;
+}
+
+#register-area {
+    width: 48;
+    height: 1fr;
+    padding: 1;
+}
+
+#program-counter,
+#instruction-register,
+#register-file,
+#main-memory {
+    width: 1fr;
+    height: auto;
+    border: round $accent;
+    padding: 1 2;
+    margin-bottom: 1;
+}
+
+#main-memory-area {
+    width: 1fr;
+    height: 1fr;
+}

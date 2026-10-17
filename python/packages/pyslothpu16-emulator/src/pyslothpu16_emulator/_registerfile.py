@@ -1,3 +1,5 @@
+from collections.abc import Iterator
+
 from pyslothpu16_core import N_BITS, REG_BITS
 
 
@@ -7,6 +9,9 @@ class RegisterFile:
 
     def __getitem__(self, key: int) -> int:
         return self._locs[key]
+
+    def __iter__(self) -> Iterator[int]:
+        return iter(self._locs)
 
     def __setitem__(self, key: int, value: int) -> None:
         if value < 0 or value >= 2**N_BITS:

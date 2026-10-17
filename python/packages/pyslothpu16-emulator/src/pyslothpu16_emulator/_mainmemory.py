@@ -1,3 +1,4 @@
+from collections.abc import Iterator
 from pathlib import Path
 
 from pyslothpu16_core import N_BITS, AsmInstruction
@@ -6,6 +7,9 @@ from pyslothpu16_core import N_BITS, AsmInstruction
 class MainMemory:
     def __init__(self):
         self._locs: list[int] = [0] * (2**N_BITS)
+
+    def __iter__(self) -> Iterator[int]:
+        return iter(self._locs)
 
     def __getitem__(self, key: int) -> int:
         return self._locs[key]

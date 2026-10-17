@@ -15,14 +15,17 @@ members = ["packages/*"]
 [tool.uv.sources]
 pyslothpu16-core = { workspace = true }
 pyslothpu16-emulator = { workspace = true }
+pyslothpu16-ui = { workspace = true }
 
 [dependency-groups]
 dev = [
     "pytest>=8",
+    "pytest-asyncio",
     "ruff==0.16.8",
     "ty",
     "pyslothpu16-core",
-    "pyslothpu16-emulator"
+    "pyslothpu16-emulator",
+    "pyslothpu16-ui"
 ]
 
 [tool.pytest.ini_options]

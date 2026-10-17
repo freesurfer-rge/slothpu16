@@ -26,3 +26,11 @@ def test_badvalue(bad_value: int) -> None:
     with pytest.raises(ValueError) as ve:
         rf[0] = bad_value
     assert ve.value.args[0] == expected_msg
+
+
+def test_iter() -> None:
+    rf = RegisterFile()
+    rf[0] = 10
+    rf[2] = 20
+
+    assert list(rf) == [10, 0, 20, *([0] * (2**REG_BITS - 3))]
