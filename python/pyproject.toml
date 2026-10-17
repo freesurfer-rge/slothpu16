@@ -20,6 +20,7 @@ pyslothpu16-ui = { workspace = true }
 [dependency-groups]
 dev = [
     "pytest>=8",
+    "pytest-asyncio",
     "ruff==0.16.8",
     "ty",
     "pyslothpu16-core",
