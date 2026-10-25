@@ -6,6 +6,7 @@ requires-python = ">=3.13"
 members = [
     "pyslothpu16-core",
     "pyslothpu16-emulator",
+    "pyslothpu16-nqcc",
     "pyslothpu16-ui",
     "pyslothpu16-workspace",
 ]
@@ -179,6 +180,21 @@ requires-dist = [
 ]
 
 [[package]]
+name = "pyslothpu16-nqcc"
+version = "0.1.0"
+source = { editable = "packages/pyslothpu16-nqcc" }
+dependencies = [
+    { name = "bitarray" },
+    { name = "pyslothpu16-core" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "bitarray" },
+    { name = "pyslothpu16-core", editable = "packages/pyslothpu16-core" },
+]
+
+[[package]]
 name = "pyslothpu16-ui"
 version = "0.1.0"
 source = { editable = "packages/pyslothpu16-ui" }
@@ -206,6 +222,7 @@ source = { virtual = "." }
 dev = [
     { name = "pyslothpu16-core" },
     { name = "pyslothpu16-emulator" },
+    { name = "pyslothpu16-nqcc" },
     { name = "pyslothpu16-ui" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
@@ -219,6 +236,7 @@ dev = [
 dev = [
     { name = "pyslothpu16-core", editable = "packages/pyslothpu16-core" },
     { name = "pyslothpu16-emulator", editable = "packages/pyslothpu16-emulator" },
+    { name = "pyslothpu16-nqcc", editable = "packages/pyslothpu16-nqcc" },
     { name = "pyslothpu16-ui", editable = "packages/pyslothpu16-ui" },
     { name = "pytest", specifier = ">=8" },
     { name = "pytest-asyncio" },

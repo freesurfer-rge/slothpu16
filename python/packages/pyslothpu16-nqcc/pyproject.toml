@@ -5,14 +5,12 @@ description = "Not-Quite-C-Compiler for SlothPU16"
 requires-python = ">=3.13"
 dependencies = [
     "bitarray",
-    "textual>=0.40",
     "pyslothpu16-core",
-    "pyslothpu16-emulator",
 ]
 
 
 [project.scripts]
-pyslothpu16-ui = "pyslothpu16_ui:main"
+pyslothpu16-nqcc = "pyslothpu16_nqcc:main"
 
 [build-system]
 requires = ["hatchling"]
