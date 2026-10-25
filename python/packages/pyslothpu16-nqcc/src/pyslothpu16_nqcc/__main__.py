@@ -3,6 +3,8 @@ import logging
 import pathlib
 import shutil
 
+from nqcc.frontend import FrontEnd
+
 from ._invoke_gcc import preprocess_c_file
 
 _DESC = "A simple C compiler, based on that in Nora Sandler's book."
@@ -65,6 +67,21 @@ def main():
 
     with open(preprocessed_file_path, "r") as f:
         c_source = f.read()
+
+    
+    fe = FrontEnd(c_source, working_dir=args.working_dir)
+
+    _logger.info("Running lexer")
+    fe.run_lexer()
+
+    _logger.info("Running parser")
+    fe.run_parser()
+
+    _logger.info("Running semantic analysis")
+    fe.run_semantic_analysis()
+
+    _logger.info("Running tacking generation")
+    fe.run_tacky_generation()
 
 
 if __name__ == "__main__":

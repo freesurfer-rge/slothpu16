@@ -5,12 +5,16 @@ description = "Not-Quite-C-Compiler for SlothPU16"
 requires-python = ">=3.13"
 dependencies = [
     "bitarray",
+    "nqcc-frontend",
     "pyslothpu16-core",
 ]
 
 
 [project.scripts]
 pyslothpu16-nqcc = "pyslothpu16_nqcc:main"
+
+[tool.uv.sources]
+nqcc-frontend = { git = "https://github.com/freesurfer-rge/nqcc", subdirectory = "packages/nqcc-frontend" }
 
 [build-system]
 requires = ["hatchling"]
