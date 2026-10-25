@@ -3,6 +3,8 @@ import logging
 import pathlib
 import shutil
 
+from ._invoke_gcc import preprocess_c_file
+
 _DESC = "A simple C compiler, based on that in Nora Sandler's book."
 
 _DEFAULT_WORKING_DIR = "temp-nqcc"
@@ -57,6 +59,13 @@ def main():
 
 
     _logger.info("Running preprocessor")
+    preprocessed_file_path = preprocess_c_file(
+        args.target, args.working_dir, macro_defines=args.define_list
+    )
+
+    with open(preprocessed_file_path, "r") as f:
+        c_source = f.read()
+
 
 if __name__ == "__main__":
     main()
